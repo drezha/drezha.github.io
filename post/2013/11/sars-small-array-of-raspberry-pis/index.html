@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SARS - Small Array of Raspberry Pi&#39;s - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="SARS - Small Array of Raspberry Pi&#39;s">
+<meta itemprop="description" content="SARS Background Ok, so not the Severe Acute Respiratory sort of SARS, but in fact a form of computer…
+In fact, SARS is what I&rsquo;ve nicknamed my new &ldquo;supercomputer&rdquo;. SARS stands for Small Array of Raspberry piS. I built this as I&rsquo;ve also been interested in multi core computing, even before dual core and multi core chips were the norm (this is back in the pre-64 bit chips as well, when AMD Athlon chips were king!"><meta itemprop="datePublished" content="2013-11-10T21:21:00+00:00" />
+<meta itemprop="dateModified" content="2013-11-10T21:21:00+00:00" />
+<meta itemprop="wordCount" content="1129">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">SARS - Small Array of Raspberry Pi&#39;s</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2013-11-10T21:21:00Z">2013-11-10</time></div></div>
+		</header><div class="content post__content clearfix">
+			<h1 id="sars">SARS</h1>
+<h2 id="background">Background</h2>
+<p>Ok, so not the Severe Acute Respiratory sort of SARS, but in fact a form of computer…</p>
+<p>In fact, SARS is what I&rsquo;ve nicknamed my new &ldquo;supercomputer&rdquo;. SARS stands for Small Array of Raspberry piS. I built this as I&rsquo;ve also been interested in multi core computing, even before dual core and multi core chips were the norm (this is back in the pre-64 bit chips as well, when AMD Athlon chips were king!). Back then, the only way to get multi core operations was to either run lots of computers simultaneously or create a cluster (a <a href="http://en.wikipedia.org/wiki/Beowulf_cluster">Beowulf</a> cluster can be easily setup and used by anyone using consumer grade hardware). Back in the days of SETI Classic, I was always amazed at the various crunching farms that people had created. Whilst I always fancied creating my own, I was always put off by the cost of it.</p>
+<p>I&rsquo;m a fire engineer by trade and a big part of my work involves modelling smoke spread and the ability criteria, using the program, <a href="http://code.google.com/p/fds-smv/">FDS</a>. Now FDS couldn&rsquo;t really be called
+a true multicore program, however it does allow for simulations to be
+manually split over different cores, depending on how you create the model. This allows for the spreading of data over different cores and running the calculations in parallel. Normally, we split the model over a few cores (2-4 normally) and this will run fine on the hardware that we have, as the models will run perfectly on multi core machines where all the cores are local (I.e. we use multi core consumer machines, like the Xeon range of Intel chips.). However, the method of running these models multicore uses MPI - message passing interface, which is used in multi core clusters. Therefore, FDS can be run on a massive multicore cluster if required. So part of this experiment is to try and get FDS running multicore on SARS. There is a basic guide on creating and running an FDS cluster on the <a href="https://code.google.com/p/fds-smv/wiki/LAM_MPI_for_Ubuntu_Linux">FDS website</a>.</p>
+<h2 id="pis">Pi&rsquo;s</h2>
+<p>Since I saw the Raspberry Pi, I&rsquo;ve always considered trying my hand at
+building a cluster. Nothing to large, like the University of Southampton&rsquo;s <a href="http://www.southampton.ac.uk/mediacentre/features/raspberry_pi_supercomputer.shtml">cluster</a> but something on a smaller scale so I could have a play with creating my own cluster. Speedwise it&rsquo;s not going to blow anyone away (Phoronix created a twelve core ARM based cluster and benchmarked it against an Atom and i7 3770K - performance was <a href="http://www.phoronix.com/scan.php?page=article&amp;item=phoronix_effimass_cluster&amp;num=1">reasonable</a>, but not exciting), but as a learning exercise, it would be a good experience and perhaps a bit of fun.</p>
+<p>So with some free time coming up, I decided it was time to get the Pi&rsquo;s out and going. The end result is this mess!</p>
+<p><img src="http://i.imgur.com/2yGsFZI.jpg" alt="Imgur"></p>
+<h2 id="creation">Creation</h2>
+<p>So the shopping list for this build was simple.</p>
+<ul>
+<li>
+<p>2 x Raspberry Pi&rsquo;s (Model B)</p>
+</li>
+<li>
+<p>1 x <a href="http://cubox-i.com/">Cubox</a></p>
+</li>
+<li>
+<p>1 x Powered USB hub (not really needed but wanted for additional USB ports - see later)</p>
+</li>
+<li>
+<p>2 x SD Cards</p>
+</li>
+<li>
+<p>1 x <a href="http://thepihut.com/products/multi-pi-stackable-raspberry-pi-case">Pi Case</a></p>
+</li>
+</ul>
+<p>This was to create  small, dual core cluster with a single node for storage.</p>
+<p>As you can see, all the computers are ARM based machines - another factor I wanted was low power. I love the idea of low powered machines and have always preferred a smaller quieter machine - that&rsquo;s why I love the Mac&rsquo;s (though the iMac isn&rsquo;t quite as <a href="http://support.apple.com/kb/ht3559">low powered</a> as I expected!) and I like the idea behind the <a href="http://www.intel.com/content/www/us/en/motherboards/desktop-motherboards/nuc.html">Intel NUC&rsquo;s</a>. Obviously, some factors have to be taken into account - such as I&rsquo;m not going to get i7 performance(!) but the whole ARM based computer &ldquo;revolution&rdquo; is in my eyes, pretty exciting (after all, most electronics we use are ARM based, such as phones and embedded devices). The Phoronix cluster mentioned above, draws 30W of power. This cluster draws about 10W.</p>
+<p>I choose a Cubox as the storage node for the cluster rather than another Raspberry Pi because I fancied trying one! To be honest, I felt the faster network adapter would benefit the cluster but I&rsquo;m also going to use the Cubox as a NAS device for my local network. So whilst it&rsquo;s the same clock speed as the Pi&rsquo;s (the default Pi clockspeed that is…), it has double the memory available (1GB rather than 512MB) and a 1Gb network link, rather than 100Mb (though due to restrictions, it&rsquo;s not a full Gb link) so it should perform slightly better than than a Pi in the same position.</p>
+<h2 id="setup">Setup</h2>
+<p>Setting up the cluster required some messing around. The Pi&rsquo;s were easy to set up. Of the ARM based boards I&rsquo;ve tried, the Pi is by far the best supported and easiest to get going.I just downloaded the latest version of Raspbian (I&rsquo;m a Debian fan) and wrote to the SD Card and away you go.</p>
+<p>The Cubox was a bit more involved and a bit more difficult. Solid Run advertise it as unbrickable, which is good, because I pretty much bricked it as soon as I got it, trying to update the firmware!</p>
+<p>Anyhow, once I got the Cubox running Debian and installed to the latest
+firmware, I set it up as the Master node.</p>
+<h2 id="cubox">Cubox</h2>
+<p>The Cubox is a small, fairly powerful machine. I was interested in how it
+compared to the Raspberry Pi - it&rsquo;s more expensive (£100), compared to the Pi (£30) but does it give more bang for the buck? I thought I&rsquo;d test it using the Science benchmarking suite from <a href="http://openbenchmarking.org">Open
+Benchmarking</a>. This makes it somewhat easier to test. The Science benchmark was chosen as this was to run FDS software, which performs the same kind of tests as the science benchmarks will have the software run.</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/388ef917-0bdb-4b53-89f5-07989f240c1c/a48bba26541150d1383725ff749d1b0e/deep/0/Cubox-Vs-Raspberry-Pi-Specs.png" alt="Cubox and Raspberry Pi Specs Comaprison"></p>
+<p>As can be seen, the Cubox contains an ARM v7 CPU and the Pi is an ARM v6 - a small difference (the Pi is also overclocked using the default overclocking settings). The Cubox is at 1GHz (not shown as OpenBenchmarking didn&rsquo;t pick it up). Either way, it has additional RAM over the Pi and I thought this would come in handy. I ran the benchmarks (and also compared it to an old Pentium M laptop
+I had lying around). The results are shown below.</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/d9fa3608-5675-49af-aa1a-5e18eea8c62f/61f5811d404b6f17566485f663f9d199/deep/0/Cubox-Benchmarks-Vs-Pi-+-Pentium-M.png" alt="Science benchmarking tests"></p>
+<p>We can get a close look at the Pi Vs Cubox devices as they&rsquo;re fairly similar and the Pentium can be seen to outstrip them, even considering it&rsquo;s ages.</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/a4e7de1c-a2ba-416d-aa6b-d5ea651db3ee/fb2cddfaf3f34ef29634259214fe7872/deep/0/Cubox-Vs-Pi-Benchmarks.png" alt="Cubox Vs Pi"></p>
+<p>As can be seen, the Cubox is faster, but not by a significant margin - not
+perhaps, enough to consider the cost difference. It should be pointed out that the Raspberry Pi is also nicer to work with and whilst the Cubox is sold as impossible to brick, the Pi doesn&rsquo;t have any firmware <strong>to</strong> brick and therefore is a far more user friendly machine to work with.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2013/09/chromeos-is-to-windows-like-android-was-to-ios/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">ChromeOS is to Windows like Android was to iOS circa 2008</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2014/01/getting-started/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Getting Started</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

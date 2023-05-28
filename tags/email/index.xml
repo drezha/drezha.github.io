@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Email on Voxcaster</title>
+    <link>http://vox.me.uk/tags/email/</link>
+    <description>Recent content in Email on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Sep 2021 20:51:37 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Email and Hook</title>
+      <link>http://vox.me.uk/post/2021/09/email-and-hook/</link>
+      <pubDate>Tue, 28 Sep 2021 20:51:37 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/09/email-and-hook/</guid>
+      <description>I&amp;rsquo;d been looking at my email clients on the Mac for using with Hook. I like the ability to link any previous email, as it helps me link to emails I&amp;rsquo;ve received or sent within my Obsidian notebook, and to be honest, it&amp;rsquo;s paid off a number of times now where it was quicker to look for the specific email that I&amp;rsquo;d linked in my Obsidian notebook, rather than search for the email I needed.</description>
+    </item>
+    
+  </channel>
+</rss>

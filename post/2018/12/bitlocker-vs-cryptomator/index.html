@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bitlocker vs Cryptomator - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Bitlocker vs Cryptomator">
+<meta itemprop="description" content="I carry around a USB drive with me - usually a Sandisk Ultra USB, but occasionally a SSD drive1. It usually comes in handy, as I either want to carry around my documents and images or need to transfer files between devices. However, the most common use, is for work files so that I can edit/continue working whilst I&rsquo;m away from the office and I cannot connect to the VPN or to overcome the poor VPN speeds."><meta itemprop="datePublished" content="2018-12-11T21:58:08+00:00" />
+<meta itemprop="dateModified" content="2018-12-11T21:58:08+00:00" />
+<meta itemprop="wordCount" content="727">
+<meta itemprop="keywords" content="computer,software,encryption," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Bitlocker vs Cryptomator</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-12-11T21:58:08Z">2018-12-11</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>I carry around a USB drive with me - usually a Sandisk Ultra USB, but occasionally a SSD drive<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It usually comes in handy, as I either want to carry around my documents and images or need to transfer files between devices. However, the most common use, is for work files so that I can edit/continue working whilst I&rsquo;m away from the office and I cannot connect to the VPN or to overcome the poor VPN speeds.</p>
+<p>I take a lot of photos whilst doing site visits and then have to put those in to reports at a later date, so accessing these over the VPN can be a right pain and therefore working locally (and then syncing via FreeFileSync at a later date) is usually the best option. However, I don&rsquo;t really want to be carrying around work files on a USB in case I lose it. Whilst I don&rsquo;t generally work on anything fancy or requiring security, I still have a responsibility to my clients not to mishandle the information.</p>
+<p>With that in mind, I generally encrypt the portable drives using Bitlocker and use that, as the work laptop uses Windows and therefore I should have no issues.</p>
+<p>Except I ran in to one last night. When I encrypted the drive itself, I chose the new Windows encryption method. After all, I was going to use it on my work laptop and this had the latest version of Windows 10 installed, so I&rsquo;d be fine right? Well, I forgot this, so when I tried to move some files between PC&rsquo;s at my local air cadet unit last night, I ran in to issues thanks to the laptops running Windows 7. Great. Simple to sort out, it just requires that I reformat the drive and then re-encrypt using the older Bitlocker version. However, before I gave this a go, I thought I&rsquo;d investigate the cross platform alternative of <a href="https://cryptomator.org/">Cryptomator</a>. It&rsquo;s designed to encrypt files to upload to the cloud, but there is no reason why it wouldn&rsquo;t work with the USB drive.</p>
+<p>Unlike Bitlocker which encrypts the whole drive, Cryptomator encrypts individual files, very similar to EncFS. This means that I can encrypt the files I need to whilst leaving the rest of the files untouched. It also works on Windows and Linux so I&rsquo;m not limited to what system I try and access it on at home.</p>
+<p>The first test was to benchmark the drive without any encryption at all. This was done with <a href="https://crystalmark.info/en/software/crystaldiskmark/">Crystalmark</a>. It&rsquo;s not a hugely scientific test, as I was running the drive off an <a href="https://www.anker.com/products/variant/3-port-usb-3-0-hub-with-ethernet-converter/A7522012">Anker USB 3 hub with ethernet</a> as the laptop doesn&rsquo;t have great Wifi connection in my office.</p>
+<p><img src="https://vox.me.uk/images/2018-12-11%2009_48_14-Drevo-SSD.png" alt="Drevo SSD - No encryption"></p>
+<p>I&rsquo;m not entirely sure how the write speeds are being quicker than the read speeds as that doesn&rsquo;t make much sense. However, it works and that&rsquo;s a benchmark figure.</p>
+<p>Next, I added the folder to use Cryptomator and re-ran the results, pointing the benchmark test to the encrypted folder, which should then give the value for accessing the file system.</p>
+<p><img src="https://vox.me.uk/images/2018-12-11%2009_59_00-Drevo-SSD-Cryptomater.png" alt="Drevo SSD - With Cryptomator"></p>
+<p>Cryptomator accesses the files over a WebDAV connection. I could potentially speed up the access by using a third party WebDAV client, as the Windows explorer WebDAB implementation isn&rsquo;t ideal but the in built one requires no faff.</p>
+<p>Lastly, I wiped the drive and put Bitlocker on and re-ran the benchmark again.</p>
+<p><img src="https://vox.me.uk/images/2018-12-11%2011_05_38-Drevo-SSD-Bitlocker.png" alt="Drevo SSD - With Bitlocker"></p>
+<p>Not to bad. Some differences between the raw benchmark and the Bitlocker run. I&rsquo;m not sure how the tests got a faster write speed under Bitlocker than not, but as I said, it&rsquo;s not a completely scientific test, so I might have had more data over the ethernet in the first test.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This shows that there is a drop in speeds between Bitlocker and no Bitlocker. However, it also shows that the Cryptomator has a greater drop off in speeds in comparison. However, it has the perk that I don&rsquo;t have to encrypt the full drive.</p>
+<p>I&rsquo;ll be sticking with Bitlocker for now, but it&rsquo;s nice to know that I can still use Cryptomator for whatever I need to.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>I use an <a href="https://www.aukey.com/products/usb-3-0-external-hard-drive-enclosure-ds-b4-1">Aukey USB 3</a> enclosure and a <a href="https://www.drevo.net/product/storage/x1-ssd">Drevo 240GB SSD</a>. Purely because I used to use the SSD in a laptop, and I wanted a USB C dock, as my work laptop (Lenovo Yoga) has two USB C ports, but a single USB A port.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/computer/" rel="tag">computer</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/software/" rel="tag">software</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/encryption/" rel="tag">encryption</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2018/12/nvalt-on-windows/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">NValt on Windows</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2018/12/brompton-in-switzerland/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Brompton in Switzerland</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

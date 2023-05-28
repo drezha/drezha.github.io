@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>QNAP on Voxcaster</title>
+    <link>http://vox.me.uk/tags/qnap/</link>
+    <description>Recent content in QNAP on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Mar 2021 15:20:21 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/qnap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RAID 0 QNAP</title>
+      <link>http://vox.me.uk/post/2021/03/qnap-raid-0/</link>
+      <pubDate>Fri, 19 Mar 2021 15:20:21 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/03/qnap-raid-0/</guid>
+      <description>I’d posted about my QNAP TR-002 previously and how I was using it as direct attached storage for my Mac. Recently, I moved it to the PC to use it as storage for gaming, as I’d switched my Mac external storage to a Samsung T7 external drive.
+For the gaming rig, I added a second 3TB drive to the TR-002 and used reformatted to NTFS. RAID 0 should give me some additional speeds over the storage I was currently using.</description>
+    </item>
+    
+  </channel>
+</rss>

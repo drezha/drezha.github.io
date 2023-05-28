@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sync on Voxcaster</title>
+    <link>http://vox.me.uk/tags/sync/</link>
+    <description>Recent content in Sync on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Dec 2020 15:49:11 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/sync/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Insync</title>
+      <link>http://vox.me.uk/post/2020/12/insync/</link>
+      <pubDate>Tue, 15 Dec 2020 15:49:11 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/12/insync/</guid>
+      <description>My current job sees me using Onedrive as the primary storage location for files, and since the initial lockdown in the UK, we moved to using Microsoft Teams and storing data in Teams instead, rather than our on site servers and mapped hard drives.
+This took some getting used to but suited me, as it meant that I could use my Mac Mini at home to access the files and work, rather than a work machine, which was good, as I had forgone the standard laptops that everyone else used so I could have an iPad for carrying out my risk assessments on, but this obviously isn&amp;rsquo;t as good for general office tasks1!</description>
+    </item>
+    
+  </channel>
+</rss>

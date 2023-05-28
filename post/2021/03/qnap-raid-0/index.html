@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>RAID 0 QNAP - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="RAID 0 QNAP">
+<meta itemprop="description" content="I’d posted about my QNAP TR-002 previously and how I was using it as direct attached storage for my Mac. Recently, I moved it to the PC to use it as storage for gaming, as I’d switched my Mac external storage to a Samsung T7 external drive.
+For the gaming rig, I added a second 3TB drive to the TR-002 and used reformatted to NTFS. RAID 0 should give me some additional speeds over the storage I was currently using."><meta itemprop="datePublished" content="2021-03-19T15:20:21+00:00" />
+<meta itemprop="dateModified" content="2021-03-19T15:20:21+00:00" />
+<meta itemprop="wordCount" content="245">
+<meta itemprop="keywords" content="Windows,QNAP," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">RAID 0 QNAP</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-03-19T15:20:21Z">2021-03-19</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/computer/" rel="category">Computer</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>I’d posted about my QNAP TR-002 previously and <a href="https://www.vox.me.uk/post/2021/01/qnap-tr-002-das/">how I was using</a> it as direct attached storage for my Mac. Recently, I moved it to the PC to use it as storage for gaming, as I’d switched my Mac external storage to a Samsung T7 external drive.</p>
+<p>For the gaming rig, I added a second 3TB drive to the TR-002 and used reformatted to NTFS. RAID 0 should give me some additional speeds over the storage I was currently using.</p>
+<p>Crystal Mark gave me the following speeds for the 4TB internal drive I was using.</p>
+<p><img src="https://vox.me.uk/images/2021-01-30%2011_40_10-CrystalDiskMark%208.0.0%20x64%20%5BAdmin%5D.png" alt="Internally installed 4TB drive"></p>
+<p>This is a 4TB drive that I’d shucked from a Seagate external drive.</p>
+<p>I checked a single drive installed on the QNAP, accessed over USB 3 and got the following speeds - this was a 3TB WD Red drive that had been my NAS drive.</p>
+<p><img src="https://vox.me.uk/images/CrystalDiskMark_20210130114720.png" alt="Drive in QNAP"></p>
+<p>Once I’d put them together and set up the RAID 0, I the speeds weren’t bad. Not sure about the seek speeds, but it gives me additional storage for games, as the 4TB was getting a bit tight on space. I prefer to have all my games downloaded, as I don’t want to wait to download it when I do want to play it, being on a average download speed of 35Mb/s, means I’d have to wait 4-6 hours for some of the larger games to download.</p>
+<p><img src="https://vox.me.uk/images/CrystalDiskMark_20210130115436.png" alt="RAID 0 in QNAP TR-002"></p>
+<p>The TR-002 works fine in RAID 0 and I’m getting reasonable enough speeds from it for my purposes.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/windows/" rel="tag">Windows</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/qnap/" rel="tag">QNAP</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2021/01/fds-m1-mac/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">FDS on the M1 Mac</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2021/04/performance-per-watt/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Performance per Watt</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

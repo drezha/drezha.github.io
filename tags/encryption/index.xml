@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>encryption on Voxcaster</title>
+    <link>http://vox.me.uk/tags/encryption/</link>
+    <description>Recent content in encryption on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Dec 2018 21:58:08 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/encryption/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bitlocker vs Cryptomator</title>
+      <link>http://vox.me.uk/post/2018/12/bitlocker-vs-cryptomator/</link>
+      <pubDate>Tue, 11 Dec 2018 21:58:08 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2018/12/bitlocker-vs-cryptomator/</guid>
+      <description>I carry around a USB drive with me - usually a Sandisk Ultra USB, but occasionally a SSD drive1. It usually comes in handy, as I either want to carry around my documents and images or need to transfer files between devices. However, the most common use, is for work files so that I can edit/continue working whilst I&amp;rsquo;m away from the office and I cannot connect to the VPN or to overcome the poor VPN speeds.</description>
+    </item>
+    
+  </channel>
+</rss>

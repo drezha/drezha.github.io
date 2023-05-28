@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bittorrent Sync - An Overview - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Bittorrent Sync - An Overview">
+<meta itemprop="description" content="So I&rsquo;ve been using Bittorrent Sync for a while now and thought I&rsquo;d write some thoughts on it.
+A brief description of it would be that it&rsquo;s the sync elements of Dropbox, but running on your own server. It doesn&rsquo;t have the web interface (but that can be added with third party applications, such as Owncloud) but does one thing, and one thing well.
+Basics BTSync is advertised as server-less Dropbox."><meta itemprop="datePublished" content="2013-09-07T17:23:59+00:00" />
+<meta itemprop="dateModified" content="2013-09-07T17:23:59+00:00" />
+<meta itemprop="wordCount" content="1934">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Bittorrent Sync - An Overview</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2013-09-07T17:23:59Z">2013-09-07</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>So I&rsquo;ve been using <a href="http://labs.bittorrent.com/experiments/sync.html">Bittorrent Sync</a> for a while now and thought I&rsquo;d write some thoughts on it.</p>
+<p>A brief description of it would be that it&rsquo;s the sync elements of Dropbox, but running on your own server. It doesn&rsquo;t have the web interface (but that can be added with third party applications, such as <a href="http://owncloud.org">Owncloud</a>) but does one thing, and one thing well.</p>
+<h2 id="basics">Basics</h2>
+<p>BTSync is advertised as server-less Dropbox. This means that you don&rsquo;t have to upload your files to a third party server to sync them between devices. This unfortunately means that both devices need to be on for BTSync to &ldquo;see&rdquo; them and sync the files. This maybe fine for your uses (for example, syncing folders between a desktop and a web server to have your web server update as soon as you change a file locally) but might mean that it&rsquo;s not the sync solution for you.</p>
+<p>It uses the same network solution as torrents to send data between the different clients that are syncing the files and therefore does not rely on a central server. The only data that <em>can</em> be sent to a third party server is a lookup as it can use trackers (the same as other torrents) to find its intended destination (however, this can be disabled on a per share basis). Each share is protected by a secret key that allows each share to share the files - without this key, it&rsquo;s not possible to share, it&rsquo;s safe from prying eyes (though it would be interesting how the traffic shows up in Wireshark or similar).</p>
+<p>Unlike Dropbox, files don&rsquo;t have to be moved into a central location and can be shared from where they are. This might mean however, that you need to have many different shares rather than one but it does allow more flexibility. For example, I used to sync my Windows and Mac installs to Dropbox. Before Dropbox introduced selective sync, I had to sync all my Windows save games to my Mac, even though having them on there was pointless. Likewise, my Windows install was solely for playing games, so I didn&rsquo;t need any of my other documents on it. Now I can select sync both and not have to worry about one appearing on the other install.</p>
+<p>So how does it all work? I&rsquo;ll discuss below.</p>
+<h2 id="syncing">Syncing</h2>
+<p>Sharing files is the heart of Bittorrent and the sole purpose of BTSync. Syncing is quick (though depends on your network speed and whether you&rsquo;re syncing across the internet) and easy and large files are resumed from where they left off, just like actual Bittorrent. Syncing across the web works perfectly as well - I share files with a VPS server running <a href="http://www.subsonic.org">Subsonic</a> to sync my music on my Mac with the server. It&rsquo;s a nicer, simpler solution than using Google Music as Subsonic works on all my devices and is a bit more feature filled (Last.fm syncing for a start).</p>
+<p>However, it&rsquo;s a bit more convoluted to setup than Dropbox. As mentioned above, files don&rsquo;t have to be in a central folder, so you have to select each and every folder. Adding a folder in the Mac version gives the following window.</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/c20444d9-ad69-4b88-a199-9610aad14ab7/913ad65d103ef82bf73714ea19d4ad0e/deep/0/Screen%20Shot%202013-09-07%20at%2009.51.05.png" alt="BTSync Sync Setup"></p>
+<p>The shared secret is the key to let you sync your data to your own devices.</p>
+<p>To add the sync folder to the other device, you open the same window and paste in the same key and choose what folder it is you want to sync.</p>
+<p>You can view all the synced folders within the program.</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/2cdb95a9-07de-4c4a-8c0f-bc34ffa50423/602c25846b88b3129883794ede0d7a4c/deep/0/Screen%20Shot%202013-09-07%20at%2009.57.55.png" alt="Synced folders status"></p>
+<p>As you can see, I&rsquo;m syncing many different folders within my Home folder than the actual home folder itself. This gives me a bit more flexibility. However, you can set a folder to sync and then set files and folders to ignore - this involves editing a text file, a bit more involved perhaps than the Dropbox method, but an effective one.</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/6f329fcc-8a0a-425b-9bd4-bb2b2ad898cb/b841fb2b7b61038c5bf1ac11d05f8f0d/deep/0/Output.png" alt="Comparison of Dropbox and BTSync Selective Sync Options"></p>
+<h2 id="drawbacks-and-remote-access">Drawbacks And Remote Access</h2>
+<p>As stated in my introduction, the main drawback is that BTSync requires that both devices are on to sync. This was to prove to be an issue for me, as my devices weren&rsquo;t always on. I also wanted to replace Dropbox as my main source of syncing as I&rsquo;m not 100% trusting of the major cloud services anymore (though I still use <a href="https://spideroak.com/">Spideroak</a> to backup my data as I <strong>DO</strong> trust them) but was annoyed that I&rsquo;d be missing out on one of the features I did like about Dropbox, the remote access to files from a browser.</p>
+<p>I managed to solve this issue by adding a single, always on, node within my sharing network. I added a Raspberry Pi as my node. I have this on all the time already, performing a number of tasks, so I thought I&rsquo;d add BTSync to it (following the <a href="http://jack.minardi.org/raspberry_pi/replace-dropbox-with-bittorrent-sync-and-a-raspberry-pi/">guide</a> here) and allow me to sync my files. However, Jack misses a crucial step in his effort to replace Dropbox - the remote access.</p>
+<p>I got around this issue as the Pi already has SSH running to allow me to remote in and administer it, so it was a simple case of using either SFTP or other SSH file system tool (I use <a href="http://dokan-dev.net/en/">Dokan SSHFS</a> on Windows (<a href="http://www.expandrive.com/expandrive">Expandrive</a> works better, but I can&rsquo;t justify the expense at the minute), <a href="http://www.panic.com/transmit/">Transmit</a> on Mac) to access my data. This &ldquo;tricks&rdquo; my computer into thinking the data is held locally, but it&rsquo;s really on my Pi at home. So far, it&rsquo;s been working flawlessly - editing the files on the Pi will sync back to my Mac when I get home and switch the machine on.</p>
+<h2 id="advanced-settings-and-versions">Advanced Settings and Versions</h2>
+<p>Like Dropbox, BTSync keeps versions of files. These can be found in the .SyncArchive folder (which can be opened by Right Clicking on the folder within the program or browse to the folder within your file browser of choice).</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/cb52c337-16ee-442b-b180-f4d982e95f76/a98803858d175f60d770a1675e756abb/deep/0/Screen%20Shot%202013-09-07%20at%2010.26.11.png" alt="Versions of files"></p>
+<p>These file versions are kept numbered within this SyncArchive folder. If you regularly update large files, you might want to consider clearing this out at times as it might take up a lot of space. Bitttorrent has this to say about versioning:</p>
+<blockquote>
+  **Does BitTorrent Sync support versioning?**  
+<p>Yes, versioning is available in BitTorrent Sync. It creates and stores all the old copies of edited files for the period of 30 days (this default period can be changed in General advanced preferences - sync_trash_ttl). The versions are stored in the hidden .SyncArchive directory within your sync folder that you can open by right click on the sync folder and choosing ‘Open SyncArchive’.</p>
+</blockquote>
+<p>Therefore, if you decide that 30 days of versions are to many, you can change the settings in the Advanced Settings within the settings menu.</p>
+<p>One of the benefits to torrent sync is that you can share files to family members, friend and co-workers. Dropbox allowed you to do this but if the other person accidentally deleted a file, it would delete on all machines. BTSync offers a read only sync function.</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/66f816b2-e718-4c81-8934-ed5056f3bf3b/55a6addcc3672339704edae925cea81a/deep/0/Screen%20Shot%202013-09-07%20at%2010.30.03.png" alt="Read Only share key"></p>
+<p>This can be accessed by right clicking a folder within the program and selecting &ldquo;Show folder preferences&rdquo;. The read only key does as it says - it syncs all the files to the recipients device but that are unable to delete or change anything. So you can now share your holiday photos and not risk them being deleted!</p>
+<p>The other tab at the top of the preferences window sets the advanced preferences for the folder being shared.</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/e2dbde24-4803-4d60-a618-277256ed4d1c/3d0e1f3c49047325182ea16f03360869/deep/0/Screen%20Shot%202013-09-07%20at%2010.30.18.png" alt="Advanced folder properties"></p>
+<p>This lets you have deeper control over how the data is shared. As can be seen, there are a number of options. These are:</p>
+<ol>
+<li>
+<p><strong>Use relay server</strong> - This uses the bittorrent sync server as an intermediary server to help direct clients to find each other. Disable this if you want no communication with the Bittorrent server for any reason.</p>
+</li>
+<li>
+<p><strong>Use tracker server</strong> - This option means that the Bittorrent server is used to  direct connections to individual instances</p>
+</li>
+<li>
+<p><strong>Search LAN</strong> - As stated, searches the LAN for instances of BTSync.</p>
+</li>
+<li>
+<p><strong>Search DHT network</strong> - Use DHT (Distributed Hash Table) to connect to different peers (if ticked, the instance stores details of other clients it&rsquo;s connected to and shares this with any other clients that connect to it).</p>
+</li>
+<li>
+<p><strong>Store deleted files</strong> - As stated, for storing deleted files.</p>
+</li>
+<li>
+<p><strong>Use predefined hosts</strong> - If you don&rsquo;t want to use the Bittorrent servers to help connect to other clients, you can add either an IP or domain here. For example, for instances outside my network, I could turn off tracker and relay servers and specify my (dynamic) domain name of my Raspberry Pi here for the client to automatically connect to that client.</p>
+</li>
+</ol>
+<p>In this way, you can setup the client to complete ignore third party services (by disabling relay and tracker). By enabling DHT and predefined hosts, you can have a single node acting as a &ldquo;server&rdquo; for your other nodes.</p>
+<p>Compare this to services such as  Dropbox that will require you to connect to the server to store data and connect!</p>
+<h2 id="mobile-apps">Mobile Apps</h2>
+<p>Bittorrent have outdone themselves in regards to mobile apps. They offer an iOS and Android client. When you create a secret key, you can also generate a QR code to connect to a server.</p>
+<h3 id="ios-app">iOS App</h3>
+<p>The iOS BTSync app allows you to sync folders from your PC&rsquo;s to the iOS device. It also (conveniently), allows you to sync between other mobile devices and to backup your photo roll. However, the iOS app suffers from a number of limitations - namely, it only syncs when the application is running.</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/7d7b007c-121a-4bf5-9403-afe0d9b87446/4014fcfc990edf210ecb2471c2f7dca0/deep/0/iOS_BTSync.png" alt="iOS app - Screenshots"></p>
+<p>As can be seen, you can only backup the camera roll, though you can download any file to the device. When you add a folder, it adds a list of files being shared (as seen in the left of the photo)</p>
+<h3 id="android-app">Android App</h3>
+<p>Unfortunately for iOS users, the Android app is far better than the iOS app but this is due to the programming of the individual operating systems rather than the app itself. The iOS app can only sync when open, the Android app runs in the background.</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/f502aa28-11ca-4c2f-a9fd-809d10bf28ce/9651af13693d75be00870d69135e7dcf/deep/0/BTSync.png" alt="Android app - Screenshots of different pages"></p>
+<p>As you can see in the top left hand corner of the screen, a similar icon to the Windows/Mac/Linux icon is shown. BTSync can run in the background of an Android phone, keeping files either backed up or in sync. In addition to that, Android isn&rsquo;t restricted to only backing up the camera roll and can back up (or sync) any folder you want on your phone.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>Even though the software is in Beta, BTSync works extremely well, keeping computers in sync.</p>
+<p>The programs allow files to be easily synced (and versioned) between you and wherever you are. It may not be as simple as Dropbox but it&rsquo;s better for those that want consider the privacy of their data or for those that want an automatic syncing solution that perhaps doesn&rsquo;t rely on a third party server.</p>
+<p>It&rsquo;ll be interesting to see if Bittorrent add additional features - at the minute, I can&rsquo;t see to much more I would want added. The current feature set works and works well. I can&rsquo;t even see the need for easier selective sync. Perhaps an API (which is in the works) to allow apps or similar, to sync would be a good idea.</p>
+<p>I don&rsquo;t forsee this ending Dropbox&rsquo;s reign on desktop/device syncing as that seems to be fairly well entrenched at the minute and BTSync does require more steps to setup compared to Dropbox. However, for those that are more tech say than the average user, then BTSync offers a very decent application and service.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2013/08/improving-day-one/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Improving Day One</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2013/09/chromeos-is-to-windows-like-android-was-to-ios/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">ChromeOS is to Windows like Android was to iOS circa 2008</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

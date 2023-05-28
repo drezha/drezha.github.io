@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>FDS on the M1 Mac - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="FDS on the M1 Mac">
+<meta itemprop="description" content="So whenever I get a new machine, I always run an FDS benchmark on it - purely for fun and comparative purposes. I’ll often run it, even on a machine that isn’t likely to run FDS in a normal situations, such as the M1T Mini PC and Raspberry Pi.
+So with the M1 Mac Mini, there was no reason not to run the benchmarks as well. However, as the M1 Mac is based on an ARM based chip, I wasn’t expecting it to perform that well - after all, it would be running on the Mac using Rosetta 2, as FDS is compiled for x86 processors1."><meta itemprop="datePublished" content="2021-01-14T10:33:07+00:00" />
+<meta itemprop="dateModified" content="2021-01-14T10:33:07+00:00" />
+<meta itemprop="wordCount" content="482">
+<meta itemprop="keywords" content="macOS,M1 Mac,FDS,Fire Engineering," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">FDS on the M1 Mac</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-01-14T10:33:07Z">2021-01-14</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/computer/" rel="category">Computer</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>So whenever I get a new machine, I always run an <a href="https://pages.nist.gov/fds-smv/">FDS</a> benchmark on it - purely for fun and comparative purposes. I’ll often run it, even on a machine that isn’t likely to run FDS in a normal situations, such as the <a href="https://m1tminipc.com">M1T Mini PC</a> and Raspberry Pi.</p>
+<p>So with the M1 Mac Mini, there was no reason not to run the benchmarks as well. However, as the M1 Mac is based on an ARM based chip, I wasn’t expecting it to perform that well - after all, it would be running on the Mac using <a href="https://support.apple.com/en-us/HT211861">Rosetta 2</a>, as FDS is compiled for x86 processors<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>I ran my standard testing regime (the last FDS 5 release and FDS 6.5.3) against a benchmark file that was included with FDS 5<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. All benchmarks were purely of single core</p>
+<p>Both ran fine without any issues what so ever. I was mildly surprised when I got the results.</p>
+<h2 id="fds-5">FDS 5</h2>
+<p>Whilst FDS 5 is end of life now, and has been replaced with v6, it’s still worth  running just to see how things have changed over the years.</p>
+<p><img src="https://www.vox.me.uk/images/2020-12-13_08-15-43.jpg" alt="FDS 5 Running"></p>
+<p>I keep all the records on a Google Sheet, so it’s visible to all <a href="https://docs.google.com/spreadsheets/d/1UKCHV9tYZWsmHYmC7aGup9Q2drzTSx9P-6KUkLh04e0/edit?usp=sharing">here</a>. However, a screen shot of the results is shown below.</p>
+<p>The results of the M1 run show that the M1 chip, even using Rosetta, is the fastest chip I’ve tested!</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-12-12%20at%2007.47.47.png" alt=""></p>
+<h2 id="fds-6">FDS 6</h2>
+<p>FDS 6 worked without an issue as well. As normal, I set the number of MPI threads to 1, so that it’s a pure single thread test.</p>
+<p><img src="https://www.vox.me.uk/images/2020-12-13_08-15-44.jpg" alt="FDS 6 Running"></p>
+<p>The result for this was a bit more muted - the results indicate that it took longer to complete than the other devices I’d tested, including the items it beat on the single core FDS 5 test.</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-12-12%20at%2008.05.11.png" alt=""></p>
+<p>Not quite sure why that’s the case, however, it demonstrates that the system runs FDS without issues.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>Would I run FDS on it? Probably not - the max limit of 16GB of RAM will be an issue as will the limited number of cores<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>, this is reasonable performance for a PC that draws only 26W at full load!</p>
+<p>Keep in mind my AMD Ryzen 5 1600X draws 149W at load - almost 6 times more  electric, though only approximately 7% faster. However, where speed is primarily a factor, then the extra power draw may be worthwhile, but for my use case currently, this isn’t an issue.</p>
+<p>Overall, it’s exciting to see the performance and it’ll be interesting to see how Apple continue forward with the Apple Silicon and see how this works with the more professional Macs in the future.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>And I didn’t fancy trying to compile from source - which apparently isn’t yet possible from discussions on the FDS forums.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Can be found at Github <a href="https://github.com/drezha/FDS_Resources/blob/master/FDS%20Benchmarking%20Files/bench1.fds">here</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>The machine has 8 in total, but 4 are high power cores, 4 are low power, slower cores&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/macos/" rel="tag">macOS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/m1-mac/" rel="tag">M1 Mac</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/fds/" rel="tag">FDS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/fire-engineering/" rel="tag">Fire Engineering</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2021/01/synology-issues/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Synology Issues</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2021/03/qnap-raid-0/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">RAID 0 QNAP</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

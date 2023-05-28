@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Launch Center Pro and Day One - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Launch Center Pro and Day One">
+<meta itemprop="description" content="I&rsquo;ve recently discovered Launch Center Pro for iOS that lets you create actions and generally extends the abilities of iOS a bit (basically allowing you to create shortcuts to tasks you do often).
+There&rsquo;s a number of things I do on the iPhone or iPad consistently, so being able to do these from a single app can make it shorter to do. It&rsquo;s a one stop shop for accessing stuff. For example, I&rsquo;ve set up a shortcut so I can message both my mum and dad at the same time, without having to open Messages, select new message (or find a previous message I&rsquo;ve sent to them both) and add them both to the message and then compose."><meta itemprop="datePublished" content="2014-07-19T09:06:28+00:00" />
+<meta itemprop="dateModified" content="2014-07-19T09:06:28+00:00" />
+<meta itemprop="wordCount" content="840">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Launch Center Pro and Day One</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-07-19T09:06:28Z">2014-07-19</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>I&rsquo;ve recently discovered <a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> for iOS that lets you create actions and generally extends the abilities of iOS a bit (basically allowing you to create shortcuts to tasks you do often).</p>
+<p>There&rsquo;s a number of things I do on the iPhone or iPad consistently, so being able to do these from a single app can make it shorter to do. It&rsquo;s a one stop shop for accessing stuff. For example, I&rsquo;ve set up a shortcut so I can message both my mum and dad at the same time, without having to open Messages, select new message (or find a previous message I&rsquo;ve sent to them both) and add them both to the message and then compose. This one lets me just open Launch Center (it&rsquo;s on my dock), select contacts and then the message parents option. Easier.</p>
+<p>Other tasks I do on the iPad regularly, one of which is logging using <a href="http://dayoneapp.com/">Day One</a>. I&rsquo;ll often do this in bed on the iPad after I&rsquo;ve put my kindle down or stepped away from the Mac.</p>
+<p>However, whilst I&rsquo;ve managed to journal everyday for the past year, I&rsquo;m always looking to improve.</p>
+<h2 id="activity-logging">Activity Logging</h2>
+<p>One of the things I would like to add is activity logging. So I cycle fairly regularly and upload most of my rides (not my standard weekday commute though) to Strava and Garmin for tracking (as I do like statistics, even if they&rsquo;re just to create graphs).</p>
+<p>However, there wasn&rsquo;t really an easy way to add these to Day One without just adding them to the text. I&rsquo;d like to include them in an easy to read format and perhaps in instances separate to my main journal entries.</p>
+<p>Then I stumbled across <a href="http://jwie.be/writing/launch-center-pro-daily-journaling/">this</a> post when investigating Launch Center. It has a number of ready made logging shortcuts for Day One that are launched from Launch Center itself and populates it with a table. This was what I&rsquo;d been looking for!</p>
+<p>After some playing, the basic table I came up with was the following:</p>
+<table ><tr >Daily Activity
+</tr><tbody ><tr >
+<td >Type
+</td>
+<td >
+</td>
+</tr><tr >
+<td >Distance (Km)
+</td>
+<td >
+</td>
+</tr><tr >
+<td >Time (minutes)
+</td>
+<td >
+</td>
+</tr><tr >
+<td >Calories Burnt (KCal)
+</td>
+<td >
+</td>
+</tr><tr >
+<td >URL
+</td>
+<td >
+</td>
+</tr></tbody></table>
+<p>This would give me a basic table. However, the benefit of Launch Center was that I could also repopulate the table when inserting it into Day One, using prompts for the user. I was therefore then able to add prompts to allow the user to fill it in as they inserted it. This allows the user to select from either Cycling, Running, Walking, Swimming or Other (this covers my own activities) and then lets you specify the other item - the URL field is for linking to online tracks of the data (on Strava or Garmin).</p>
+<p>This gives the following code to insert into Launch Center.</p>
+<pre><code>&lt;code&gt;dayone://post?entry=%0D%0A%7C%20Daily%20Activity%20%7C%20%7C%0D%0A%7C%20---%20%7C%20---%20%7C%20---%20%7C%0D%0A%7C%20Type%20%7C%20[list:Activity Type|Cycling|Running|Walking|Swimming|Other]%20%7C%0D%0A%7C%20Distance%20%7C%20[prompt-num:How long was it?]Km%20%7C%0D%0A%7C%20Time%20%7C%20[prompt-num:How long did you do it for?]%20minutes%20%7C%0D%0A%7C%20Calories%20Burnt%20%7C%20[prompt-num:Amount of calories burnt?]Kcal%20%7C%0D%0A%7C%20URL%20%7C%20[ [list:URL Location|Strava|Garmin|] ]([prompt:URL Location])%20%7C
+&lt;/code&gt;
+</code></pre>
+<p>You can also grab the URL from Launch Center&rsquo;s site <a href="https://launchcenterpro.com/twkrhn">here</a>. This allows a laid out entry to inserted into Day One, such as this.</p>
+<p><a href="https://www.flickr.com/photos/113531214@N07/14709338833"><img src="https://farm4.staticflickr.com/3835/14709338833_61b3c16621_z.jpg" alt="2014-07-19 09.52.25"></a></p>
+<p>(Ignore the music log, that&rsquo;s to be sorted slightly and discussed in another post).</p>
+<p>The Strava or Garmin URL is easily taken from the Strava/Garmin app and inserted and as the URL doesn&rsquo;t mess with the clipboard, I can open Strava, copy the URL, open Launch Center, select the action and walk through it and paste the URL in.</p>
+<h2 id="keyboard-maestro">Keyboard Maestro</h2>
+<p>However, I don&rsquo;t just log on my iPad, I also log on my iMac as well, depending on my mood or where I am.</p>
+<p>How could I do the same on the Mac? Well, I&rsquo;ve been a keen user of <a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a> since I discovered it was a lot more powerful than Textexpander (but still allowed me to use it for basic text expansion like Textexpander). Now it&rsquo;s a program I miss when not at a Mac (the big one for me is highlighting a word and then pressing specific hotkey to replace it with a Markdown link!)</p>
+<p>Anyhow, after some playing about, I was able to get the Launch Center Pro URL translated fairly well into Keyboard Maestro.</p>
+<p>Here&rsquo;s how (I have this set to only run in Day One).</p>
+<p><a href="https://www.flickr.com/photos/113531214@N07/14688870122"><img src="https://farm4.staticflickr.com/3913/14688870122_3f3ff9c20e_z.jpg" alt="Activity Log"></a></p>
+<p>Typing activity in Day One will then bring me up the following input dialogue box that lets me repopulate the table for pasting.</p>
+<p><a href="https://www.flickr.com/photos/113531214@N07/14502837249"><img src="https://farm4.staticflickr.com/3835/14502837249_9be0952f4a_z.jpg" alt="Screen Shot 2014-07-19 at 10.00.02"></a></p>
+<p>This then outputs exactly the same table so I&rsquo;m able to log regardless of what platform I&rsquo;m on!</p>
+<p>If you want to download this macro, I have it on <a href="https://dl.dropboxusercontent.com/u/1511916/Activity%20Log.kmmacros">Dropbox</a>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>With this basic table template completed, I&rsquo;m looking at expanding this to a few more items - I&rsquo;m playing with recording all my Last.fm scribbles into a text file using <a href="https://ifttt.com/">IFTTT</a> to help me log them. I&rsquo;ve already got the basic working, with the scribbles being download to my Dropbox in a Markdown formatted table.</p>
+<p>Hopefully, I&rsquo;ll be able to add some more in the near future - I&rsquo;m using the Book Logging one from the previously mentioned blog post. The next time I run this, I&rsquo;ll convert it to a Keyboard Maestro macro as well.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2014/07/breaking-cloud-reliance/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Breaking Cloud Reliance</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2014/07/hatfield-to-cambirdge-again/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Hatfield to Cambridge - Again</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

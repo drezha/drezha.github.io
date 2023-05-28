@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Benchmarking ARM - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Benchmarking ARM">
+<meta itemprop="description" content="There has been much talk on how well ARM processors have moved on and how they can potentially now compete with x86-64 chips. Even though Microsoft have launched the Surface Pro X, which uses an ARM chip and Apple are moving the Mac&rsquo;s to ARM processors, I hadn&rsquo;t really considered just how far they&rsquo;d come.
+I&rsquo;ve had a Raspberry Pi and various versions since they were released and have been able to adequately use the Pi3&#43; for minimal desktop use and I&rsquo;ve had the iPad Pro for work for a number of years as well, which has performed quite well, but I&rsquo;ve never really put two and two together on how well they compared to the X86 chips I have."><meta itemprop="datePublished" content="2020-11-03T10:28:02+00:00" />
+<meta itemprop="dateModified" content="2020-11-03T10:28:02+00:00" />
+<meta itemprop="wordCount" content="502">
+<meta itemprop="keywords" content="Windows,ARM,Benchmarking,iOS,iPhone," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Benchmarking ARM</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-11-03T10:28:02Z">2020-11-03</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/computer/" rel="category">Computer</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>There has been much talk on how well ARM processors have moved on and how they can potentially now compete with x86-64 chips. Even though Microsoft have launched the Surface Pro X, which uses an ARM chip and Apple are moving the Mac&rsquo;s to ARM processors, I hadn&rsquo;t really considered just how far they&rsquo;d come.</p>
+<p>I&rsquo;ve had a Raspberry Pi and various versions since they were released and have been able to adequately use the Pi3+ for minimal desktop use and I&rsquo;ve had the iPad Pro for work for a number of years as well, which has performed quite well, but I&rsquo;ve never really put two and two together on how well they compared to the X86 chips I have.</p>
+<p>However, I recently ran <a href="https://www.geekbench.com/">Geekbench</a> on my laptop and my desktop to try and see how the two compared, and thought I&rsquo;d also run it on all my other devices. I was impressed to see the difference in scores between them.</p>
+<p>Just from a single core perspective, my iPhone is scoring higher than my gaming laptop and gaming PC! However, in a multicore score, the ARM processors aren&rsquo;t quite as good but then they have different number of cores and a <a href="https://en.wikipedia.org/wiki/ARM_big.LITTLE">different core layout</a><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p><img src="https://www.vox.me.uk/images/2020-10-3119_58_44-drezhasProfile-GeekbenchBrowser.png" alt="Geekbench CPU Scores" title="Geekbench CPU Scores"></p>
+<p>However, I&rsquo;m not sure I&rsquo;ll be running FDS on an ARM based processor in the near future, but it does show that perhaps ARM based processors may be an interesting future for computing. Interestingly, I see that the Raspberry Pi foundation has just released a Pi built in to a keyboard (<a href="https://www.raspberrypi.org/products/raspberry-pi-400/?resellerType=home">Pi 400</a>) - things like this interest me and the lower power demand of the ARM based processors means that items like this are possible<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<p>Graphics wise however, it obviously seems that the desktop cards are far quicker, but again, that&rsquo;s to be expected, as I can do AAA gaming on the devices on the PC&rsquo;s, but my mobile devices aren&rsquo;t there for that sort of work (though, it does appear to be better than the inbuilt Intel graphics).</p>
+<p><img src="https://www.vox.me.uk/images/2020-10-3119_59_03-drezhasProfile-GeekbenchBrowser.png" alt="Geekbench GPU Scores" title="Geekbench GPU Scores"></p>
+<p>It&rsquo;ll be interesting to see how well Apple handles the move to ARM and how the developers move to it. After all, if no one supports the move, then things won&rsquo;t be very good all round, but considering the Apple are looking at making it easy for iOS apps and Mac apps to run on the same architecture, it could be very interesting indeed. We&rsquo;ll then see how well Windows supports it<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>&hellip;</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>The A13 is 6 core - 2 &ldquo;big&rdquo; cores and 4 &ldquo;little&rdquo; cores, whilst my AMD 4600H has 6 cores and 12 threads, so the speed differences between the two make sense.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Years ago, before the Pi was released, I used to have a <a href="https://en.wikipedia.org/wiki/VIA_Technologies">VIA based PC</a> because I was interested in low powered machines. I sold it when I started my PhD and LaTeX took to long to compile on it.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Linux support for ARM is fairly good already from what I&rsquo;ve found. I can generally run what I need quite nicely on the Pi.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/windows/" rel="tag">Windows</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/arm/" rel="tag">ARM</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/benchmarking/" rel="tag">Benchmarking</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/ios/" rel="tag">iOS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/iphone/" rel="tag">iPhone</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2020/11/windows-10-dpi-scaling/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Windows 10 DPI Scaling</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2020/11/motion-photos/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Motion and Live Photos</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

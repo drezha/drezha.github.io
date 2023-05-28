@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Motion and Live Photos - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Motion and Live Photos">
+<meta itemprop="description" content="Apple&rsquo;s Live Photos and Android equivalent, Motion Photos, initially seemed a bit like a gimmick when they were announced. However, there are a number of times now where the Live Photos on the iPhone has been of good use - mainly to capture amusing antics before or after the photo occurred!
+With playing with Android, I was surprised that this didn&rsquo;t appear to have the same. However, after some googling, I discovered it does, and it&rsquo;s called Motion Photos."><meta itemprop="datePublished" content="2020-11-07T12:10:46+00:00" />
+<meta itemprop="dateModified" content="2020-11-07T12:10:46+00:00" />
+<meta itemprop="wordCount" content="817">
+<meta itemprop="keywords" content="Windows,Android,iOS,Photos," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Motion and Live Photos</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-11-07T12:10:46Z">2020-11-07</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/computer/" rel="category">Computer</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>Apple&rsquo;s Live Photos and Android equivalent, Motion Photos, initially seemed a bit like a gimmick when they were announced. However, there are a number of times now where the Live Photos on the iPhone has been of good use - mainly to capture amusing antics before or after the photo occurred!</p>
+<p>With playing with Android, I was surprised that this didn&rsquo;t appear to have the same. However, after some googling, I discovered it does, and it&rsquo;s called Motion Photos.</p>
+<p>However, there are some major differences between the tow, being:</p>
+<ul>
+<li>Motion photos don&rsquo;t record sound and are silent.</li>
+<li>The motion part is a lower resolution than the main photo.</li>
+</ul>
+<p>Both of these make them a bit less useful than the live photo counterparts.</p>
+<p>One of the other issues I came across is that whilst I can upload my live photos using the excellent <a href="https://www.photosync-app.com/home.html">Photosync</a> and this splits the live section off in to a separate movie file that I can view elsewhere, but this doesn&rsquo;t work on Motion Photos. Searching online suggests that this is because the movie is encoded in to the image on the Motion Photo, after the <a href="https://en.wikipedia.org/wiki/JPEG_File_Interchange_Format#File_format_structure">end of image signature</a>.</p>
+<p>I did find a way to split the two in to separate files though, using a PHP script I found on <a href="https://android.stackexchange.com/questions/196831/how-do-i-view-googles-motion-photos-on-my-windows-pc">Android Stackexchange</a>. The following script is able to split the original JPG with motion photo in to a single photo and separate MP4 video file. It keeps the original photo in place and splits the video file and image in to two separate new files.</p>
+<pre><code>&lt;?php
+
+  $src_arg = $argv[1];
+  $src_dir = realpath(pathinfo($src_arg, PATHINFO_DIRNAME)); 
+
+  echo &quot;Scanning for files...\n&quot;;
+
+  foreach (glob($src_arg) as $src) {
+
+    $file = realpath($src);
+
+    if (!is_dir($file) &amp;&amp; in_array(strtoupper(pathinfo($file, PATHINFO_EXTENSION)), [&quot;JPEG&quot;, &quot;JPG&quot;])) {
+
+      echo &quot;\tProcessing: &quot; . $file . &quot;\n&quot;;
+
+      $filesize = filesize($file);
+      echo &quot;\t\tFile size: &quot; . $filesize . &quot;\n&quot;;
+
+      $handle = fopen($file, &quot;rb&quot;);
+      $data = fread($handle, $filesize);
+      fclose($handle);
+
+      $eoi_pos = strpos($data, &quot;\xFF\xD9\x00\x00\x00\x18&quot;);
+      echo &quot;\t\tEOI segment position: &quot; . $eoi_pos . &quot;\n&quot;;
+
+      if ($eoi_pos !== FALSE) {
+        $output_base = $src_dir . DIRECTORY_SEPARATOR . pathinfo($file, PATHINFO_FILENAME);
+        echo &quot;\t\tSaving photo...\n&quot;;
+        file_put_contents($output_base . &quot;_photo.jpg&quot;, substr($data, 0, $eoi_pos + 2));
+        echo &quot;\t\tSaving video...\n&quot;;
+        file_put_contents($output_base . &quot;_video.mp4&quot;, substr($data, $eoi_pos + 2));
+      } else {
+        echo &quot;\t\tSKIPPING - File does not appear to be a Google motion photo.\n&quot;;
+      }
+
+    }
+
+  }
+
+  echo &quot;Done.\n&quot;;
+
+?&gt;
+</code></pre>
+<h2 id="example">Example</h2>
+<p>To demonstrate, this can be seen on the following photo of my NAS. I took this photo with Motion Photo turned on<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p><img src="https://www.vox.me.uk/images/11801.jpg" alt=""></p>
+<p>Viewing the file on Windows shows a 6.74MB file.</p>
+<p><img src="https://www.vox.me.uk/images/2020-11-0509_12_12-Motion.png" alt=""></p>
+<p>Running this image through the PHP script gives the following output, showing that the file has been split in to a video and photo file.</p>
+<p><img src="https://www.vox.me.uk/images/2020-11-0509_13_34-C__Windows_System32_cmd.exe.png" alt=""></p>
+<p>Reopening the explorer folder, we now have the original photo, the new reduced in size photo (as the video has been removed) and the video file. The new photo file shows that this is now 2.52MB, a reduction of 4.22MB. It appears that this is a lossless operation, which makes sense as the video is located after the end of the JPG data<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<p><img src="https://www.vox.me.uk/images/2020-11-0509_14_05-Motion.png" alt=""></p>
+<p>This turns out to be the size of the video file that is created<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. In addition, we can see that the video file is a 1024 x 768 video file, compared to the 3024 x 4032 resolution of the original photo.</p>
+<p><img src="https://www.vox.me.uk/images/2020-11-0509_14_26-Motion.png" alt=""></p>
+<p>A video of the photo can be seen <a href="https://youtu.be/8206hJgBY2A">here on Youtube</a>, which shows the access lights flashing - not very exciting, but serves a demonstration purpose. The video file can then be viewed in your video player of choice.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Overall, I&rsquo;m less impressed with Motion Photos than I am with Live Photos. The fact that Live photos are the full resolution but also include sound make things a lot better. In addition, they seem better supported and at least Photosync splits these apart, so nothing further has to be done. Having to split the files apart with a PHP script is fine, but a bit of a hassle.</p>
+<p>It also seems like that on Windows there is no easy way to view the motion photos - using Google Photos online works, but only if you upload the photos there for safekeeping and viewing. I haven&rsquo;t seen a way to view these on Windows, whilst I know Photos on the Mac can happily play Live Photos.</p>
+<p>It&rsquo;s probably a setting that I&rsquo;ll keep turned off on the phone to be honest. I generally keep Live Photos off as well on the iPhone, so this wouldn&rsquo;t be that different, though for some occasions, turning on Live Photos can be good<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>The image displayed here has been resized, with GPS data stripped and therefore isn&rsquo;t the actual image with the video attached.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>And appears to be confirmed by using the <a href="https://www.imagemagick.org/Usage/compare/">Compare command</a> in Imagemagick to compare the two photos.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>A slight difference in file size (the video file is 4.21MB in Explorer) is likely due to rounding differences.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Photographing moving objects it comes in handy&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/windows/" rel="tag">Windows</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/android/" rel="tag">Android</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/ios/" rel="tag">iOS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/photos/" rel="tag">Photos</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2020/11/benchmarking-arm/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Benchmarking ARM</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2020/12/insync/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Insync</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

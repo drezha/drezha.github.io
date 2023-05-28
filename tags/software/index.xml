@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on Voxcaster</title>
+    <link>http://vox.me.uk/tags/software/</link>
+    <description>Recent content in software on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Jan 2022 07:09:14 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monitor Control</title>
+      <link>http://vox.me.uk/post/2022/01/monitor-control/</link>
+      <pubDate>Tue, 04 Jan 2022 07:09:14 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2022/01/monitor-control/</guid>
+      <description>I’ve got a Mac Mini and this is hooked up to a LG 27UL850-W and Dell S2421NX monitor. They’re both setup on my desk, with the LG as my main monitor and the Dell as a secondary monitor off to the side.
+When using the desktop, I’ve always missed the ability to adjust the screen brightness easily within macOS using the keyboard, like you can on the MacBook and generally any Windows laptop.</description>
+    </item>
+    
+    <item>
+      <title>Email and Hook</title>
+      <link>http://vox.me.uk/post/2021/09/email-and-hook/</link>
+      <pubDate>Tue, 28 Sep 2021 20:51:37 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/09/email-and-hook/</guid>
+      <description>I&amp;rsquo;d been looking at my email clients on the Mac for using with Hook. I like the ability to link any previous email, as it helps me link to emails I&amp;rsquo;ve received or sent within my Obsidian notebook, and to be honest, it&amp;rsquo;s paid off a number of times now where it was quicker to look for the specific email that I&amp;rsquo;d linked in my Obsidian notebook, rather than search for the email I needed.</description>
+    </item>
+    
+    <item>
+      <title>File Juggler</title>
+      <link>http://vox.me.uk/post/2020/09/file-juggler/</link>
+      <pubDate>Mon, 07 Sep 2020 12:36:50 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/09/file-juggler/</guid>
+      <description>One of the programs on macOS that I felt was missing on Windows was an alternative for Hazel. I spent ages looking around for an alternative, and the best I could find for a while was DropIt! The only issue with this is that DropIt is a bit more of a manual process in comparison to Hazel, as you have to drag and drop files into the program for them to be sorted1.</description>
+    </item>
+    
+    <item>
+      <title>Windows PowerToys</title>
+      <link>http://vox.me.uk/post/2020/08/windows-powertoys/</link>
+      <pubDate>Sat, 15 Aug 2020 08:25:52 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/08/windows-powertoys/</guid>
+      <description>Microsoft are making use of their purchase of Github to host the source for their ongoing work in to Powertoys.
+PowerToys is a collection of applications that perform a range of different tasks that users may need to undertake regularly. There&amp;rsquo;s an Image Resizer that hooks in to the right click menu, there&amp;rsquo;s fancy zones, which expands upon Windows snap, by adding zones to snap to.
+However, the big draw for me is PowerToys Run.</description>
+    </item>
+    
+    <item>
+      <title>Colours for Hue</title>
+      <link>http://vox.me.uk/post/2020/05/colours-for-hue/</link>
+      <pubDate>Tue, 05 May 2020 19:54:52 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/05/colours-for-hue/</guid>
+      <description>Colours For Hue Getting Hue lights has meant that I need to control these. Generally, this works well using the Hue application and Siri (with HomeKit), though as I’ve got one in my office as well, it would be nice to control this from my Mac as well.
+This is where Colours for Hue comes in. It’s a Mac app that sits in the menu bar and acts as a Hue light controller.</description>
+    </item>
+    
+    <item>
+      <title>Keyboard and Mouse with the iPad</title>
+      <link>http://vox.me.uk/post/2020/04/keyboard-and-mouse-with-the-ipad/</link>
+      <pubDate>Sun, 26 Apr 2020 19:51:05 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/keyboard-and-mouse-with-the-ipad/</guid>
+      <description>Keyboard and Mouse with the iPad So, I’ve been playing around with the keyboard and mouse for the iPad Pro after Apple brought out the support for it in iPad OS 13.4.
+I’ve been using the Filco 2 Tenkeyless Convertible keyboard and a Logitech MX Master mouse and have been using it on and off over the past week or so.
+The whole intention of this is to consider if it’s worth purchasing the £300 iPad Magic with a touchpad keyboard for the iPad.</description>
+    </item>
+    
+    <item>
+      <title>Outlook for Mac</title>
+      <link>http://vox.me.uk/post/2020/04/outlook-for-mac/</link>
+      <pubDate>Wed, 22 Apr 2020 19:49:29 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/outlook-for-mac/</guid>
+      <description>Outlook for Mac One of the aspects that I thought would be good about working from home on the lockdown has come from being able to use my Mac. I’ve been able to use my Mac to do all things that I’d have to do on my Windows machine at work and it’s really given me a chance to see how the Mac would be able to perform my day to day job.</description>
+    </item>
+    
+    <item>
+      <title>Inspire Writer</title>
+      <link>http://vox.me.uk/post/2020/04/inspire-writer/</link>
+      <pubDate>Tue, 14 Apr 2020 19:47:29 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/inspire-writer/</guid>
+      <description>Inspire Writer I&amp;rsquo;d been tossing up about purchasing a subscription to Ulysses on the Mac or not this year. In the end, I did and I&amp;rsquo;ve been using it for the last couple of blog posts that I&amp;rsquo;ve written. However, I&amp;rsquo;m not always on the Mac - I&amp;rsquo;m often on Windows and I miss using it when I am using Windows.
+I&amp;rsquo;d been looking around for ages to find something that replicated it.</description>
+    </item>
+    
+    <item>
+      <title>iCaching - macOS Review</title>
+      <link>http://vox.me.uk/post/2020/04/icaching-review/</link>
+      <pubDate>Sat, 04 Apr 2020 19:43:17 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/icaching-review/</guid>
+      <description>iCaching - macOS Review I’ve been geocaching for a few years now and I’ve been using Geocaching Swiss Army Knife (GSAK) for the past year. It’s a handy program for keeping track of caches that I’ve found, as well as organising GPX files for import on to my Garmin or phone.
+However, the program is Windows only. Which isn’t the end of the world, as I have a Windows machine, but I’ve also got a Mac and it tends to be my main machine for getting work done at home, so it’s often on.</description>
+    </item>
+    
+    <item>
+      <title>Shush</title>
+      <link>http://vox.me.uk/post/2020/03/shush/</link>
+      <pubDate>Wed, 25 Mar 2020 19:37:13 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/03/shush/</guid>
+      <description>Shush As Covid 19 spreads around the globe and countries go in to lockdown and work from home, I’ve had to do more and more meetings online.
+When I’ve done online meetings in the past, I’ve had to do them either via conference call or via the conferencing setup at work, and therefore on Windows. They’ve generally worked OK.
+However, as we’re all currently confined to working from home in the UK, I’ve been using my Mac.</description>
+    </item>
+    
+    <item>
+      <title>Bitlocker vs Cryptomator</title>
+      <link>http://vox.me.uk/post/2018/12/bitlocker-vs-cryptomator/</link>
+      <pubDate>Tue, 11 Dec 2018 21:58:08 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2018/12/bitlocker-vs-cryptomator/</guid>
+      <description>I carry around a USB drive with me - usually a Sandisk Ultra USB, but occasionally a SSD drive1. It usually comes in handy, as I either want to carry around my documents and images or need to transfer files between devices. However, the most common use, is for work files so that I can edit/continue working whilst I&amp;rsquo;m away from the office and I cannot connect to the VPN or to overcome the poor VPN speeds.</description>
+    </item>
+    
+    <item>
+      <title>NValt on Windows</title>
+      <link>http://vox.me.uk/post/2018/12/nvalt-on-windows/</link>
+      <pubDate>Sat, 08 Dec 2018 21:49:36 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2018/12/nvalt-on-windows/</guid>
+      <description>One of the few programs I really miss from macOS is nValt. I used that (rather than Notational Velocity) for a number of years for storing notes and stored everything in it from blog posts, to research notes and paper reviews. It worked well and I preferred it to Evernote.
+Since then however, I&amp;rsquo;ve discovered Zim Wiki and I use that for storing my data that where I may need images, as at the end of the day, it saves data as a text file still, so I&amp;rsquo;ll be able to access it at a later date wherever.</description>
+    </item>
+    
+    <item>
+      <title>Zim Journal Continued</title>
+      <link>http://vox.me.uk/post/2018/09/zim-journal-continued/</link>
+      <pubDate>Wed, 05 Sep 2018 16:49:03 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2018/09/zim-journal-continued/</guid>
+      <description>Zim is a notebook type software - think Evernote or Onenote. However, it&amp;rsquo;s free and open source and saves data locally. It also saves all files as plain text, so you can access the files however and wherever you want.
+I&amp;rsquo;ve been using it for a journal for a period of about three years now and I&amp;rsquo;ve written about it before. I did for a time switch back to Day One and tried the new syncing service, but when they had syncing issues earlier this year which exposed private data, I made sure I was back using Zim (syncing between my devices with Resilo Sync and stored on my own devices).</description>
+    </item>
+    
+  </channel>
+</rss>

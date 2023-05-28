@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>File Sync on Voxcaster</title>
+    <link>http://vox.me.uk/tags/file-sync/</link>
+    <description>Recent content in File Sync on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jun 2020 15:31:29 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/file-sync/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PhotoSync, Photos and iCloud</title>
+      <link>http://vox.me.uk/post/2020/06/photosync-photos-and-icloud/</link>
+      <pubDate>Thu, 18 Jun 2020 15:31:29 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/06/photosync-photos-and-icloud/</guid>
+      <description>I’ve been a fan of PhotoSync for a while now - I purchased the iOS version in May 2018, so I’ve been using it for 2 years. I’ve also purchased the Android version and it’s one of the key apps I’ve used regularly.
+Prior to finding it, I’d been using Dropbox to save a copy of my photos off my phone. This worked well, and the only reason I changed to PhotoSync was that I could choose different locations to send data (i.</description>
+    </item>
+    
+  </channel>
+</rss>

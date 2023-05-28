@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FDS on Voxcaster</title>
+    <link>http://vox.me.uk/tags/fds/</link>
+    <description>Recent content in FDS on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Jan 2021 10:33:07 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/fds/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FDS on the M1 Mac</title>
+      <link>http://vox.me.uk/post/2021/01/fds-m1-mac/</link>
+      <pubDate>Thu, 14 Jan 2021 10:33:07 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/01/fds-m1-mac/</guid>
+      <description>So whenever I get a new machine, I always run an FDS benchmark on it - purely for fun and comparative purposes. I’ll often run it, even on a machine that isn’t likely to run FDS in a normal situations, such as the M1T Mini PC and Raspberry Pi.
+So with the M1 Mac Mini, there was no reason not to run the benchmarks as well. However, as the M1 Mac is based on an ARM based chip, I wasn’t expecting it to perform that well - after all, it would be running on the Mac using Rosetta 2, as FDS is compiled for x86 processors1.</description>
+    </item>
+    
+  </channel>
+</rss>

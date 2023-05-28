@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Breaking Cloud Reliance - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Breaking Cloud Reliance">
+<meta itemprop="description" content="Everything seems to use the cloud today and whilst I was initially happy worth that, things such as PRISM and the Snowden releases have left me feeling a bit more lost at sea perhaps. I love the cloud, it makes accessing my own files etc a lot easier, but I also want to be in more control of my data. I also don&rsquo;t want to end up paying for drive space if I can help it and I seem to be increasing my file usages fairly considerably."><meta itemprop="datePublished" content="2014-07-12T08:00:22+00:00" />
+<meta itemprop="dateModified" content="2014-07-12T08:00:22+00:00" />
+<meta itemprop="wordCount" content="1528">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Breaking Cloud Reliance</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-07-12T08:00:22Z">2014-07-12</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>Everything seems to use the cloud today and whilst I was initially happy worth that, things such as PRISM and the Snowden releases have left me feeling a bit more lost at sea perhaps. I love the cloud, it makes accessing my own files etc a lot easier, but I also want to be in more control of my data. I also don&rsquo;t want to end up paying for drive space if I can help it and I seem to be increasing my file usages fairly considerably. Mind, I don&rsquo;t need to sync my entire picture collection between devices but it would be nice should it be required to do so.</p>
+<p>When Dropbox was first announced, I used it for everything. All my documents were uploaded to the server and all my photos etc. I thought it was a great idea - keep my MacBook and iMac in sync and let me access my files anywhere. However, I don&rsquo;t control that date really, Dropbox/Amazon did. This included documents such as scans of bills and other items that could be potentially be used to steal my identity. Mind, most of the arguments are that no one wants to steal my identity to follow me or whatever, but I&rsquo;m making it slightly easier if they do (and get access to Dropbox).</p>
+<p>There are a number of products that would allow me to continue using Dropbox but encrypt my own data - for example <a href="https://www.boxcryptor.com">Boxcryptor</a>. This encrypts data locally and then uploads it to Dropbox. This works nicely, as I&rsquo;ve played with it in the past. However, it really needs a subscription to get the most from it (as the free version works on two devices only). It also doesn&rsquo;t have a Windows phone application, so I cant access my files on there.</p>
+<h2 id="sync">Sync</h2>
+<p>A while back, I <a href="http://drezha.me.uk/post/60556897303/bittorrent-sync-an-overview">considered Bittorrent Sync</a> as a syncing option. Well, I started using this and that&rsquo;s what I&rsquo;ve ended up with.</p>
+<p>Currently, I have a Raspberry Pi that acts as always on server (though this is to be changed to my actual server when I get it back). This has a 32GB USB card and acts as the main node which is always on, regardless. It doesn&rsquo;t really perform any other functions on my local network so it performs pretty well. Write performance doesn&rsquo;t seem to be to bad - I only get about 2MB/s transfer speeds locally with Bittorrent Sync but once the initial sync is done, I don&rsquo;t need to change large files to often and this hasn&rsquo;t yet proved to be an issue.</p>
+<p>This has apps for all the main three phone OS&rsquo;s (i.e. it includes one for Windows phone!) and since my review, has had a few updates. You can now create an encrypted copy of your data on a machine outside of your control (a webserver in a datacentre for example) and this encrypted copy will sync with your local copies bit remain encrypted on this remote version so that the files cannot be read. This alone to me makes it a Dropbox killer as this means that the data centre cannot read your files if they wanted to (though, I&rsquo;m not sure how good the encryption actually is) - the downside to this is that the documentation suggests that small systems (such as a Raspberry Pi and other ARM based devices) might not be able to cope with the extra CPU requirements this incurs. It doesn&rsquo;t say whether this is for the machine that the data is stored on, or as a whole in the network but I assume the locally kept encrypted version only (though I&rsquo;ve not tried it).</p>
+<p>Overall, this allows me to sync my files (including my photo collection, which includes RAW files) between my machines. It works pretty well, however, I have noticed occasionally it&rsquo;ll keep syncing and it seems to be syncing Mac meta data - except I&rsquo;m syncing from a Mac to a Linux machine currently. However, it doesn&rsquo;t seem to stop the basic function. At the minute, I can&rsquo;t use the Pi as the main server, as the main server will also be running Crashplan, but it&rsquo;s not built for ARM. Likewise, as Bittorrent Sync means I don&rsquo;t have to change the location of any of my folders to sync, I&rsquo;ll be setting it up so that Bittorrent Sync on the main server points to my academic papers in my Onedrive folder - this is because Onedrive syncs whilst I&rsquo;m at work and also because I have no problem storing publicly accessible journal papers in the cloud, as that&rsquo;s where I got them from! Linking Onedrive and BTSync means that any changes at home will sync to work, and any changes at work will sync to home - with no intervention (currently I require a manual sync with Syncback Pro).</p>
+<h2 id="remote-access">Remote Access</h2>
+<p>Dropbox offers remote access to files as well as the syncing, via the web interface. This has proved to be very handy at times, where I&rsquo;ve been somewhere other than home and needed to access a file in a hurry. Obviously, if I don&rsquo;t use Dropbox, I wont be able to do this. Using my PC, I would have to keep this on. However, as I&rsquo;ll be using the Pi as an always on node, this sorts this problem out. With some port forwarding, I can access the files stored on the Pi via SFTP (SSH) which allows me to access files as and when required.</p>
+<p>However, there are times I want to edit files and then upload again - this can be done using an SFTP client like Filezilla, but I use <a href="http://www.expandrive.com/expandrive">Expandrive</a> as this pretty much edits the file in place on the server and saves me having to upload and download data. This lets me view the files in place for items such as images and PDF&rsquo;s which I&rsquo;d need occasionally (PDF&rsquo;s such as scans of documents and the like).</p>
+<p>Having SSH open for access also allows me to control the Pi from Putty if needed but also allows me to access the server using <a href="http://www.2brightsparks.com/syncback/sbpro.html">Syncback</a>. Syncback lets me backup or sync files between the server and my work machine (where Bittorrent Sync is blocked) but where I&rsquo;ll still require some form of syncing (1Password files for example).</p>
+<p>One of the downsides to using my own server for storing my notes files, is that they obviously don&rsquo;t sync by Dropbox and it seems that most of the iOS text editors only use Dropbox to sync. However, I realised I had a solution already on my iPad. I had been using <a href="http://omz-software.com/editorial/">Editorial</a> but like mentioned previously, it only uses Dropbox. However, I forgot that I have the fantastic <a href="http://www.textasticapp.com">Textastic</a> on my iPad for when I was editing LaTeX files on the go. This has support for SFTP servers so I can happily connect to my Pi and edit my documents on the go (especially with the 3G iPad).</p>
+<h2 id="what-cant-move">What can&rsquo;t move?</h2>
+<p>Unfortunately, there&rsquo;s a couple of issues with syncing everything in my Dropbox folder. These are usually apps that I use on the iPad and iPod that use Dropbox to sync between themselves. The two that I&rsquo;ve not been able to drop are <a href="http://dayoneapp.com/">Day One</a> and <a href="http://www.youneedabudget.com/">YNAB</a>. I tried these and almost regretted it - I thought I could have a single server with Dropbox installed and then sync between the others using Bittorrent Sync. However, I ended up losing half of the data in my Day One install, which I was thankfully able to get back from Crashplan (due to syncing between two devices using Bittorrent Sync and not Dropbox) and when I thought the same might happen to YNAB, I thought it&rsquo;s not worth it. It does mean that PC&rsquo;s will need to have Dropbox and Bittorrent Sync installed, but that&rsquo;s a small price to pay for not losing data!</p>
+<p>Likewise, whilst my iPad and iPod use Dropbox to sync with my <a href="https://agilebits.com/onepassword">1Password</a> database, this isn&rsquo;t to bad for syncing to a computer via BTSync - items are changed less often and then it seems to deal with changes fairly well (each password is it&rsquo;s own file it seems so it&rsquo;s able to sync well if one password is missing etc) - however, that will remain in Dropbox as well, namely as the iOS apps require the data to be in Dropbox, and I&rsquo;ll manually download that to my work machine via SFTP (and Syncback) as that will give me a chance to review the changes before they&rsquo;re made.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>So in general, whilst I&rsquo;m still using Dropbox, I&rsquo;ve reduced my dependency on it by using Bittorrent - admittedly, there&rsquo;s still some pretty personal information stored in Dropbox (my passwords, my financial information and my journal entries!), however, I&rsquo;ve taken out all of the data that might be of more interest to hackers etc, such as scans of various letters and other items. Storing these solely on my own servers means that I have some form of control over the information that gets to the cloud.</p>
+<p>In fairness, this doesn&rsquo;t deal with information kept on my by others, but that&rsquo;s a whole different kettle of fish…</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2014/07/tour-de-france/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Tour De France</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2014/07/launch-center-pro-and-day-one/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Launch Center Pro and Day One</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

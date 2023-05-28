@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Journaling on Voxcaster</title>
+    <link>http://vox.me.uk/tags/journaling/</link>
+    <description>Recent content in Journaling on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Oct 2020 16:41:40 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/journaling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown Journaling</title>
+      <link>http://vox.me.uk/post/2020/10/markdown-journaling/</link>
+      <pubDate>Tue, 20 Oct 2020 16:41:40 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/10/markdown-journaling/</guid>
+      <description>I&amp;rsquo;ve been journaling now for years. I started off using Day One for iOS and macOS. However, after this updated to the second version and moved to a subscription model, I decided that I didn&amp;rsquo;t want to pay for it, and moved. Since then, I&amp;rsquo;ve been using Zim Wiki for my journaling.
+This has generally served me well, and ran nicely on Windows and Linux1. It worked and the output was portable and under my control, as each page is a text file and displays images inline.</description>
+    </item>
+    
+  </channel>
+</rss>

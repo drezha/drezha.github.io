@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PhotoSync, Photos and iCloud - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="PhotoSync, Photos and iCloud">
+<meta itemprop="description" content="I’ve been a fan of PhotoSync for a while now - I purchased the iOS version in May 2018, so I’ve been using it for 2 years. I’ve also purchased the Android version and it’s one of the key apps I’ve used regularly.
+Prior to finding it, I’d been using Dropbox to save a copy of my photos off my phone. This worked well, and the only reason I changed to PhotoSync was that I could choose different locations to send data (i."><meta itemprop="datePublished" content="2020-06-18T15:31:29+01:00" />
+<meta itemprop="dateModified" content="2020-06-18T15:31:29+01:00" />
+<meta itemprop="wordCount" content="1191">
+<meta itemprop="keywords" content="macOS,Photos,iCloud,File Sync,Hazel,Retrobatch," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">PhotoSync, Photos and iCloud</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-18T15:31:29&#43;01:00">2020-06-18</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/computer/" rel="category">Computer</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>I’ve been a fan of <a href="https://www.photosync-app.com/home.html">PhotoSync</a> for a while now - I purchased the iOS version in May 2018, so I’ve been using it for 2 years. I’ve also purchased the Android version and it’s one of the key apps I’ve used regularly.</p>
+<p>Prior to finding it, I’d been using Dropbox to save a copy of my photos off my phone. This worked well, and the only reason I changed to PhotoSync was that I could choose different locations to send data (i.e. my NAS). However, I then changed it to upload to Dropbox anyhow - though PhotoSync offers a number of additional storage locations.</p>
+<p>However, for the past six months or so, I’ve been paying the monthly fee for iCloud storage - it backs up my photos from my Mac and backs up the photos on my wife’s iPhone and iPad. I still had PhotoSync installed and it uploaded my images to Dropbox for Hazel to process - a HEIC copy that I moved in to the Photos app which would get saved to iCloud, and then a JPG copy that gets copied to my photos folder in my Pictures folder.</p>
+<p>I’ve debated on using iCloud on my phone and iPad as well, but I’d run in to issues - due to the “Optimise iPhone Storage” setting and PhotoSync. With this turned on, PhotoSync uploads the thumbnails from the gallery, rather than the full size photo (as it doesn’t download the full size photo). As PhotoSync is supposed to be uploading these photos for backup, this isn’t ideal!</p>
+<p>This had continued for a few months, until MacSparky released his new <a href="https://learn.macsparky.com/p/photos2">Photos field guide</a>. I have been working through the course and it occurred to me that the solution had been staring me in the face all the time. I can remove PhotoSync and can use the inbuilt iCloud sync and still be able to save my files separately - perhaps with a bit more effort than using Hazel, but it’s a workable solution. At least if the files are in iCloud, they’re backed up off my iPhone.</p>
+<h2 id="photosync">PhotoSync</h2>
+<p>PhotoSync used to be the glue that held all of this together. It allowed me to upload my images in both the original (HEIC) format and in JPG. To make life simple (as I might have multiple phones uploading to the same folder, which includes Android which doesn’t shoot in HEIC), I would upload photos in HEIC only.</p>
+<p><img src="https://www.vox.me.uk/images/2020-06-08_16-40-34.png" alt="PhotoSync upload settings"></p>
+<p>I could also have Photosync set the names of the files, saving me an additional step on my Mac.</p>
+<p><img src="https://www.vox.me.uk/images/2020-06-08_16-40-33.png" alt="File naming"></p>
+<p>One this was done, Dropbox would work its magic and then Hazel would take over.</p>
+<h2 id="hazel">Hazel</h2>
+<p>Hazel would then look at my Dropbox camera upload folder and run the following:</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-06-17%20at%2013.55.09.png" alt="Hazel Rule"></p>
+<p>This rule runs an Automator workflow, as shown below.</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-06-17%20at%2013.55.38.png" alt="Automater Workflow"></p>
+<p>This essentially imports the images in to Photos. Whilst Hazel has this action, I found that it more often than not wouldn’t work, whereas I haven’t had any issues whatsoever with the Automator script doing the hard work.</p>
+<p>Once it’s imported in to Photos, I then have the Hazel rule file my photos into a separate folder.</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-06-17%20at%2013.56.04.png" alt="Date Filing Options"></p>
+<p>If the file was a HEIC file, then the file would be imported in to Photos, then converted to JPG and filed, again using Automator and in this instance, <a href="https://flyingmeat.com/retrobatch/">Retrobatch</a>. I believe Automator would convert the HEIC, but Retrobatch offers some additional features, such as being able to control the JPG quality of the output of the conversion.</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-06-17%20at%2014.06.03.png" alt="Automator for HEIC"></p>
+<p>The Retrobatch script is a simple convert script - open and save within the new format. This is saved to a temporary folder, where Hazel then files it, as per the JPG instructions above - with the exception of the Photos import, as I’ve imported the HEIC file.</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-06-17%20at%2014.05.56.png" alt="Retrobatch"></p>
+<h2 id="issues">Issues</h2>
+<p>This whole workflow served me relatively well. It worked, but it prevented me from using iCloud Photos on my devices, as the iPhone would download the thumbnails, and then the thumbnails get uploaded via Photosync and the whole process runs through a loop - continuously if you aren’t careful, thanks to Photosync’s upload in background!</p>
+<p><img src="https://www.vox.me.uk/images/iCloud-Loop.png" alt="iCloud Loop"></p>
+<p>Not being able to use iCloud Photos was a pain, but it was the Photos field guide that managed to get me to solve the issue!</p>
+<h2 id="photos">Photos</h2>
+<p>It all comes down to the Photos smart albums and export.</p>
+<p>Smart albums allow you to enter criteria and then Photos will search through everything within your library and return only those results. I have a few different ones setup - mainly based around the camera that took the photo. However, I can also sort by last import.</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-06-17%20at%2014.25.49.png" alt="Smart Albums"></p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-06-17%20at%2014.26.15.png" alt="Last import date"></p>
+<p>By entering a date, Photos will show me the images that have been imported since this date.</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-06-17%20at%2014.26.28.png" alt="Last imported"></p>
+<p>As my Mac mini is set to download the full size file and my whole photo library, it downloads the original file in its full size and original HEIC format.</p>
+<p><img src="https://www.vox.me.uk/images/2020-06-17_14-34-49.jpg" alt="Photos view - HEIC downloaded"></p>
+<p>Therefore, this file is then in the cloud, should my phone or Mac go missing or get broken. It is also backed up using Time Machine, so at this point, the image is relatively safe.</p>
+<p>Every so often, I can now come back to Photos and then export the information out to my organised date/time folder in my photos folder. This is done by simply using the export function from Photos, which gives me the following options.</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-06-17%20at%2014.38.36.png" alt="Photos Export Menu"></p>
+<p>These are then saved to a folder, where Hazel monitors - this time, the script is slightly different - when they’re exported, Photos will keep the original name. I have Hazel rename them to the date taken.</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%202020-06-17%20at%2014.39.13.png" alt="Hazel Rule"></p>
+<p>In addition, as the files will now be modified, I use a third party tool, <a href="https://exiftool.org/">Exiftool</a>, to change the modified date back to the date that the photo was created. This isn’t a requirement, but makes the folder look a bit neater. Perhaps it’s a slight OCD streak. This is done using the embedded shell script within Hazel:</p>
+<p><code>exiftool &quot;-FileName&gt;FileModifyDate&quot; -d &quot;%Y:%m:%d %H:%M:%S&quot; -overwriteoriginalinplace &quot;$1&quot;</code></p>
+<p>It then files the images in my photos folder for safe keeping, in a JPG format which I can access and use whenever I’m not on a Mac or iPad<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<h2 id="manual-process">Manual Process</h2>
+<p>So the new process adds a few more manual steps - I have to export the files from my smart album, and then when I do, I have to change the date of the album that Photos is searching for. However, the rest of the process runs automatically.</p>
+<p>I find that this isn’t much different to the previous solution, as I often found that I would have to open Photosync to start the whole process off, so now its silently backing up my photos to start with, and I’m only exporting to the JPG format that is manual - it should mean I’m less likely to lose any, as I’m not waiting for a backup and it means I can take advantage of the iCloud Photo Library!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Windows support of HEIC is flakey still, depending on what third party program you install and sometimes I can’t install any software are all - such as at work, but where I might still need a JPG.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/macos/" rel="tag">macOS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/photos/" rel="tag">Photos</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/icloud/" rel="tag">iCloud</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/file-sync/" rel="tag">File Sync</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/hazel/" rel="tag">Hazel</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/retrobatch/" rel="tag">Retrobatch</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2020/06/pdf-expert-vs-pdf-xchange/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">PDF Expert vs PDF XChange</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2020/06/issues-with-macos/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Issues With MacOS</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

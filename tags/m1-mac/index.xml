@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>M1 Mac on Voxcaster</title>
+    <link>http://vox.me.uk/tags/m1-mac/</link>
+    <description>Recent content in M1 Mac on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Apr 2021 10:46:25 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/m1-mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keychron Keyboard</title>
+      <link>http://vox.me.uk/post/2021/04/keychron-keyboard/</link>
+      <pubDate>Tue, 06 Apr 2021 10:46:25 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/04/keychron-keyboard/</guid>
+      <description>With lockdown continuing in the UK, and working from home, I decided to look once more at the mechanical keyboard market.
+I had been using the Logitech K350 on Windows without any issues, but for whatever reason, I wasn’t able to use this nicely on the Mac - I’d often get drop outs or lag, where what I was typing wasn’t picked up, or was lost completely 1.
+In the mean time, I’d been using a Windows Dell keyboard - a cheap and cheerful keyboard that did the job, and I actually wasn’t getting RSI by using it!</description>
+    </item>
+    
+    <item>
+      <title>Performance per Watt</title>
+      <link>http://vox.me.uk/post/2021/04/performance-per-watt/</link>
+      <pubDate>Sun, 04 Apr 2021 09:34:57 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/04/performance-per-watt/</guid>
+      <description>I wanted to compare the performance per watt of the new M1 Mac mini against that of my Ryzen 1600X powered gaming PC. To throw some additional items in there, I also measured my Ryzen 4300U little Windows office PC as well and my Raspberry Pi 4.
+The speed of the new M1 Mac has shown that Apple’s move to Apple Silicon has been a good move for them. Benchmarks show that it’s faster than some of the Intel and AMD machines.</description>
+    </item>
+    
+    <item>
+      <title>FDS on the M1 Mac</title>
+      <link>http://vox.me.uk/post/2021/01/fds-m1-mac/</link>
+      <pubDate>Thu, 14 Jan 2021 10:33:07 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/01/fds-m1-mac/</guid>
+      <description>So whenever I get a new machine, I always run an FDS benchmark on it - purely for fun and comparative purposes. I’ll often run it, even on a machine that isn’t likely to run FDS in a normal situations, such as the M1T Mini PC and Raspberry Pi.
+So with the M1 Mac Mini, there was no reason not to run the benchmarks as well. However, as the M1 Mac is based on an ARM based chip, I wasn’t expecting it to perform that well - after all, it would be running on the Mac using Rosetta 2, as FDS is compiled for x86 processors1.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Logging Phone Calls with Day One - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Logging Phone Calls with Day One">
+<meta itemprop="description" content="I&rsquo;ve covered before my use of Launch Centre Pro (LCP) to easily create a book log in Day One, by using the URL links within iOS and setting up the same in Keyboard Maestro so I can make life easier wherever I am.
+However, I&rsquo;ve recently created another action that I felt was worth sharing - one for logging telephone calls.
+Logging Calls Normally, I wouldn&rsquo;t log my calls, however, I&rsquo;ve had to make a number of calls to companies for whatever reason - today, it&rsquo;s been because money hasn&rsquo;t been taken from my account for insurance and I wanted to see what the issue was - and more importantly, ensure that there were no fees to pay and that my policy was still in place (it happens that as it was there mistake, my policy is fine)."><meta itemprop="datePublished" content="2014-09-09T20:16:28+00:00" />
+<meta itemprop="dateModified" content="2014-09-09T20:16:28+00:00" />
+<meta itemprop="wordCount" content="518">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Logging Phone Calls with Day One</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-09-09T20:16:28Z">2014-09-09</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>I&rsquo;ve covered before my use of Launch Centre Pro (LCP) to <a href="http://drezha.me.uk/post/92226078514/launch-center-pro-and-day-one">easily create a book log in Day One</a>, by using the URL links within iOS and setting up the same in Keyboard Maestro so I can make life easier wherever I am.</p>
+<p>However, I&rsquo;ve recently created another action that I felt was worth sharing - one for logging telephone calls.</p>
+<h2 id="logging-calls">Logging Calls</h2>
+<p>Normally, I wouldn&rsquo;t log my calls, however, I&rsquo;ve had to make a number of calls to companies for whatever reason - today, it&rsquo;s been because money hasn&rsquo;t been taken from my account for insurance and I wanted to see what the issue was - and more importantly, ensure that there were no fees to pay and that my policy was still in place (it happens that as it was there mistake, my policy is fine). However, with these phone calls, I might rely on them later so I need to keep a record of them for myself. Now, I could <a href="http://www.maplin.co.uk/p/play-and-record-telephone-recording-adapter-zq81c">record my phone calls</a> but this wouldn&rsquo;t work for calls via my mobiles and there&rsquo;s complicated laws regarding telephone recording (in theory, it is allowed in the UK if I keep the recording <a href="https://en.wikipedia.org/wiki/Telephone_recording_laws#United_Kingdom">for my own use</a>). However, the next best thing is to keep a record of the conversation.</p>
+<p>I don&rsquo;t know short hand, so I can&rsquo;t write down the words verbatim, but I can at least summarise the key points. Day One seems an ideal place to log this, as it will automatically log the item in the correct date (and assuming I do the log after making the call, will place it at around the same time as the call was made). In addition, I can also tag items with who I rang, mark it as a telephone call and other tags. This should come in handy in the future, where as I&rsquo;ve been stung before, the company has changed it&rsquo;s mind/policy on me and tried to get extra money from me. It at least lets me look up when I made the call to someone.</p>
+<p>I started just writing down key points in Day One on my mobile, but I realised that this was probably ideally suited to a template using Launch Centre Pro, as I was writing the same stuff each time (Who I rang, what I rang for and any key points). I therefore created a table template in Launch Centre Pro to create the table for me.</p>
+<h2 id="template">Template</h2>
+<p>So the URL encoded template is this:</p>
+<pre><code>&lt;code&gt;dayone://post?entry=%23Telephone_Call%20%23logging%0D%0A%0D%0A%7C%20Telephone%20Call%20%7C%20%7C%0D%0A%7C%20---%20%7C%20---%20%7C%20---%20%7C%0D%0A%7C%20Called%20%7C%20[prompt:Who did you call?]%20%7C%0D%0A%7C%20Reason%20%7C%20[prompt:Why did you call?]%20%7C%0D%0A%7C%20Notes%20%7C%20[prompt:Notes]%20%7C
+&lt;/code&gt;
+</code></pre>
+<p><a href="https://launchcenterpro.com/mpnr4m">Link</a></p>
+<p>This gives the following table, which is filled in with prompts within LCP. It also gives the entry the hashtags Telephone_Call and logging so I can separate them from my normal entries if needed.</p>
+<p><a href="https://www.flickr.com/photos/113531214@N07/15001381209"><img src="https://farm4.staticflickr.com/3854/15001381209_4f2b839256_z.jpg" alt="Untitled"></a></p>
+<p>This easily allows me to record the basic information for the call and lets me recall it at a later date.</p>
+<p>This can also be done for importing Keyboard Maestro by using the following macro:</p>
+<p><a href="https://www.flickr.com/photos/113531214@N07/15191835012"><img src="https://farm4.staticflickr.com/3893/15191835012_a2ced75fda_z.jpg" alt="14-09-09-08-58-30-Screenshot"></a></p>
+<p>This lets me quickly create an entry to let me store the details of the conversation in Day One where I can find it again.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2014/08/working-with-plain-text/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Working with Plain Text</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2014/09/lokis-first-service/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Loki&#39;s First Service</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

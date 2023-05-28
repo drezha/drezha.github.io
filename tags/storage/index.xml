@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on Voxcaster</title>
+    <link>http://vox.me.uk/tags/storage/</link>
+    <description>Recent content in Storage on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Jan 2021 14:47:01 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>QNAP TR 002 DAS</title>
+      <link>http://vox.me.uk/post/2021/01/qnap-tr-002-das/</link>
+      <pubDate>Wed, 06 Jan 2021 14:47:01 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/01/qnap-tr-002-das/</guid>
+      <description>With the recent purchase of the Mac Mini, I needed to have an external drive - partly for Time Machine backups and partly as I only went 256GB internal drive. I’d got a couple of 2.5” hard drive caddies lying around, but also a 3.5” drive that wasn’t being used. Teamed up with the reduced number of ports on the M1 Mac Mini, I decided that I’d purchase a Direct Attached Storage (DAS) device for the Mac.</description>
+    </item>
+    
+  </channel>
+</rss>

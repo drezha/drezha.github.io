@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Personal Image Sharing and Embedding - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Personal Image Sharing and Embedding">
+<meta itemprop="description" content="I&rsquo;ve been looking at writing more of my blog posts on my iPad. However, up until I&rsquo;ve recently been using Flickr for storing all my images and displaying them on my site. This has worked well in the past but has been a long winded - on the iMac, the image is copied into iPhoto and then uploaded to Flickr via that. Adding the image to the blog post is achieved by inserting the image using MarsEdit."><meta itemprop="datePublished" content="2014-12-28T21:30:00+00:00" />
+<meta itemprop="dateModified" content="2014-12-28T21:30:00+00:00" />
+<meta itemprop="wordCount" content="859">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Personal Image Sharing and Embedding</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-12-28T21:30:00Z">2014-12-28</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>I&rsquo;ve been looking at writing more of my blog posts on my iPad. However, up until I&rsquo;ve recently been using Flickr for storing all my images and displaying them on my site. This has worked well in the past but has been a long winded - on the iMac, the image is copied into iPhoto and then uploaded to Flickr via that. Adding the image to the blog post is achieved by inserting the image using MarsEdit.</p>
+<p>The issue is attaching the image inline on the iPad. Whilst I can happily upload images onto Flickr, I can&rsquo;t then get the inline link attachment from the Flickr app itself. I could mess about with mobile Safari and the Flickr website, but the non mobile Flickr site is pretty poor on the iPad, so I&rsquo;ve decided to go another way.</p>
+<h2 id="transmit">Transmit</h2>
+<p>Earlier in 2014, Panic released the excellent Transmit FTP app onto the iOS app store. My decision to move in this direction was influenced in no uncertain terms by <a href="http://www.macdrifter.com/2014/10/making-my-ideal-sharing-tool-with-transmit-for-ios.html">Macdrifter</a>. This guide helped me set out the path that I was to take.</p>
+<p>I use the excellent <a href="https://www.fastmail.com/">Fastmail</a> to host my email, which also comes with FTP space (5GB on my plan). This allows me to host a very basic website (<a href="http://csalter.me.uk">csalter.me.uk</a> and <a href="http://vox.me.uk/">vox.me.uk</a>) on the Fastmail servers - my sites aren&rsquo;t popular enough to reach the bandwidth limits set, so it&rsquo;s a good way of hosting a static site. However, this space wasn&rsquo;t being used and and as I can host from this location, I decided that I&rsquo;d upload images to here and have them linked to on the blog.</p>
+<p>However, after some playing around with the basic idea from Macdrifter, it needed some tweaking to suit me, my host and my blogs.</p>
+<h2 id="uploading-and-resizing">Uploading and Resizing</h2>
+<p>When uploading to Fastmail for testing, I found that the images I was uploading were a bit big and were taking a while to download - the downside of hosting it off the Fastmail servers are that they&rsquo;re great at email, but perhaps I was asking to much, hosting 5 x 5MB images per post on the server and getting Tumblr to resize them dynamically for me. So the best bet seemed to be to resize them before uploading them to the Fastmail servers.</p>
+<p>On the Mac, I currently use <a href="http://imagemagick.org">ImageMagick</a> to resize it with the commands:</p>
+<pre><code>&lt;code&gt;mogrify -resize 307200@ -format JPG *.JPG
+mogrify -resize 307200@ -format jpg *.jpg
+mogrify -resize 307200@ -format jpeg *.jpeg
+mogrify -resize 307200@ -format png *.png
+mogrify -resize 307200@ -format PNG *.PNG
+&lt;/code&gt;
+</code></pre>
+<p>This gives me a image that is about 640 x 480 (though if it&rsquo;s in portrait, it&rsquo;ll be 480 x 640 - the pixel count resizes approximately to this size and keeps the photo ratio). This is uploaded onto the Fastmail server with Transmit.</p>
+<p><img src="http://vox.me.uk/share/Screen%20Shot%202014-12-28%20at%2020.30.41.png" alt=""></p>
+<p>This allows me to copy and paste the URL of the image and paste it directly into my text editor.</p>
+<p>I can now achieve the same on the iPad with the recently released <a href="https://www.workflow.is/">Workflow app</a>. The workflow can be found <a href="https://workflow.is/workflows/0dbb9e339e9c45f99dd2bea90aac62eb">here</a>. It basically takes a photo from your photo roll, resizes it to 640 x 480 and then allows you to open it using an extension, which Transmit has. This then lets you upload to the Fastmail server, using a previously saved bookmark.</p>
+<p><img src="http://vox.me.uk/share/IMG_0355.PNG" alt=""></p>
+<p>Currently, it&rsquo;s very basic as the iPhone/iPad version shown doesn&rsquo;t take into account the orientation of the photo and so it&rsquo;ll always output as 640 x 480, thus ruining portrait photos (like the image of the workflow above would be). I think this could be done in Python within the workflow app, but I would need to learn more Python for that!</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>With Workflow, I can easily take and upload pictures from my iPhone and upload them to Fastmail&rsquo;s web service where I can then copy and paste the URL from Transmit into my Editorial app where I&rsquo;m writing. Unlike my previous workflow of using Flickr, this allows me to upload to the same location whether I&rsquo;m using my iPad or my iMac (or even my Windows work laptop, as occasionally happens!) In addition, I&rsquo;m also retaining control of the images and in theory, I should be able to keep the URL&rsquo;s the same in the future, even if I move from Fastmail as it&rsquo;s on one of my domain names.</p>
+<p>Overall, I&rsquo;m pretty happy with the change. The only issue I do have is that Flickr would link to the full size image - my current setup only shows the smaller picture. However, I don&rsquo;t think this is to much of a loss and it saves on the bandwidth on the Fastmail servers.</p>
+<p>In the future, I could potentially look at using Hazel to automate some of the resize tasks on the iMac. Likewise, I have a small server with <a href="http://buyvm.net/">BuyVM</a> - workflow allows me to run a script on something via SSH, so I could potentially have Workflow (and Hazel) upload an image to there, run a script to resize the image using ImageMagick and then move it to my Fastmail folder. But that&rsquo;s for the future as it&rsquo;s currently working fine at the minute.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2014/12/veloviewer-review/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Veloviewer Review</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2014/12/full-size-bikes/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Full Size Bikes</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Voxcaster</title>
+    <link>http://vox.me.uk/categories/</link>
+    <description>Recent content in Categories on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Feb 2022 08:22:14 +0000</lastBuildDate><atom:link href="http://vox.me.uk/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technology</title>
+      <link>http://vox.me.uk/categories/technology/</link>
+      <pubDate>Sun, 13 Feb 2022 08:22:14 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/categories/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cycling</title>
+      <link>http://vox.me.uk/categories/cycling/</link>
+      <pubDate>Sun, 30 Jan 2022 09:28:52 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/categories/cycling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer</title>
+      <link>http://vox.me.uk/categories/computer/</link>
+      <pubDate>Mon, 24 Jan 2022 09:10:58 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/categories/computer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geocaching</title>
+      <link>http://vox.me.uk/categories/geocaching/</link>
+      <pubDate>Sat, 04 Apr 2020 19:43:17 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/categories/geocaching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncategorised</title>
+      <link>http://vox.me.uk/categories/uncategorised/</link>
+      <pubDate>Wed, 28 Mar 2012 14:05:36 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/categories/uncategorised/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

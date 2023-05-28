@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Synology on Voxcaster</title>
+    <link>http://vox.me.uk/tags/synology/</link>
+    <description>Recent content in Synology on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Jan 2021 10:14:10 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/synology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Synology Issues</title>
+      <link>http://vox.me.uk/post/2021/01/synology-issues/</link>
+      <pubDate>Sun, 10 Jan 2021 10:14:10 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/01/synology-issues/</guid>
+      <description>I ran in to some issues with my Synology over the Christmas period, involving BTRFS and RAID.
+I had been running the NAS with an 8TB hard drive for main storage and a 3TB drive aimed at backups. However, I’d noticed a lot of a files deleted a few weeks ago which made me uneasy and then recently I found a corrupt image file on my gaming rig.
+I wasn’t sure if this was the fault of the desktop, or the Synology, but when I investigated the Synology, I found that the BTRFS file system I was using to help protect against bit rot wasn’t actually protecting me at all.</description>
+    </item>
+    
+    <item>
+      <title>New Synology</title>
+      <link>http://vox.me.uk/post/2020/09/new-synology/</link>
+      <pubDate>Sun, 27 Sep 2020 19:54:01 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/09/new-synology/</guid>
+      <description>With the lockdown and working from home more often, I decided that my Synology (DS 116) was due for an upgrade. I wanted to retire one of my Raspberry Pi&amp;rsquo;s that was running my Pi Hole server and I wanted to have a play with some of the features on the higher end Synology&amp;rsquo;s - such as virtual machines and Docker, as well as make use of the BTRFS file system, so that meant getting one of the Intel Atom powered Synology devices.</description>
+    </item>
+    
+  </channel>
+</rss>

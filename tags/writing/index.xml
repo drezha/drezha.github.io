@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing on Voxcaster</title>
+    <link>http://vox.me.uk/tags/writing/</link>
+    <description>Recent content in Writing on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Oct 2020 20:58:40 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inspire Continued</title>
+      <link>http://vox.me.uk/post/2020/10/inspire-continued/</link>
+      <pubDate>Wed, 21 Oct 2020 20:58:40 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/10/inspire-continued/</guid>
+      <description>After some further experimentation and use, I’ve a few more comments on Inspire Writer. I have been initially impressed with the Windows Ulysses clone. My initial review was written in it and was written using the 10 day free trial period. I purchased the software after using it for a day on the Windows Store - so I’ve been using the Microsoft Store version. There is a stand alone version available as well, though I would hope that there is feature parity between the two.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Problems on Voxcaster</title>
+    <link>http://vox.me.uk/tags/problems/</link>
+    <description>Recent content in Problems on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Jun 2020 08:42:24 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/problems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Issues With MacOS</title>
+      <link>http://vox.me.uk/post/2020/06/issues-with-macos/</link>
+      <pubDate>Tue, 30 Jun 2020 08:42:24 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/06/issues-with-macos/</guid>
+      <description>Lately I&amp;rsquo;ve been running in to issues with macOS that I can&amp;rsquo;t seem to resolve and it&amp;rsquo;s beginning to annoy me no end.
+Startup I&amp;rsquo;d been running in to startup issues for a week or so - the Mac would boot up and I would see the Apple logo on screen with the loading bar.
+However, the screen would then go blank and I would only see the mouse cursor if I wriggled it.</description>
+    </item>
+    
+  </channel>
+</rss>

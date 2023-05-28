@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tidying Markdown Tables - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Tidying Markdown Tables">
+<meta itemprop="description" content="I&rsquo;d been a fan of Dr Drang&rsquo;s table tidy script for Markdown, especially the one he&rsquo;s recently updated here.
+However, he&rsquo;s a BBEdit user and I don&rsquo;t use BBEdit. I&rsquo;m a fairly basic user, and I&rsquo;ll stick with Textastic, nValt and Byword for my writing (LaTeX and Markdown respectively), so I didn&rsquo;t think I could use his code.
+Turns out I&rsquo;m wrong.
+The Script Dr Drang seems to write most of his scripts in Python."><meta itemprop="datePublished" content="2014-11-27T11:07:35+00:00" />
+<meta itemprop="dateModified" content="2014-11-27T11:07:35+00:00" />
+<meta itemprop="wordCount" content="559">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Tidying Markdown Tables</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-11-27T11:07:35Z">2014-11-27</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>I&rsquo;d been a fan of Dr Drang&rsquo;s table tidy script for Markdown, especially the one he&rsquo;s recently updated <a href="http://www.leancrew.com/all-this/2014/11/aligning-text-tables-on-the-decimal-point/">here</a>.</p>
+<p>However, he&rsquo;s a BBEdit user and I don&rsquo;t use BBEdit. I&rsquo;m a fairly basic user, and I&rsquo;ll stick with <a href="http://www.textasticapp.com">Textastic</a>, <a href="http://brettterpstra.com/projects/nvalt/">nValt</a> and <a href="http://bywordapp.com">Byword</a> for my writing (LaTeX and Markdown respectively), so I didn&rsquo;t think I could use his code.</p>
+<p>Turns out I&rsquo;m wrong.</p>
+<h2 id="the-script">The Script</h2>
+<p>Dr Drang seems to write most of his scripts in Python. My Python knowledge is sketchy at best - I could maybe write a Hello World script in Python, but that might be pushing it. In his post he states:</p>
+<blockquote>
+  Although I use this in BBEdit, there’s no reason it couldn’t be adapted to other intelligent text editors. It uses standard input and standard output, so it ought to be easy to incorporate into a Sublime Text, TextMate, Vim, or Emacs workflow.
+</blockquote>
+<p>To me, that seemed like a challenge, as I wanted the benefits of the script, but I didn&rsquo;t want to move to BBEdit - I had a quick look, but I think it wasn&rsquo;t for me. For a start, it didn&rsquo;t have the Cobalt theme (and a quick Google wouldn&rsquo;t find one). However, the tempting nature of having this script run made me want to find a solution.</p>
+<p>The key revolved around the fact it was a Python script. If I could pass the data to it, it would run and output as I would expect.</p>
+<p>It took me an install of BBEdit to see how it worked in there before I could run it. Initially, I thought the script would run on a file after it was complete and make the change, but it relies on highlighting the text in BBEdit and then running the filter. Once I knew that, I realised I couldn&rsquo;t run from the command line. Something niggled at the back of my mind though…</p>
+<h2 id="automator--services">Automator + Services</h2>
+<p>I&rsquo;d known about OS X services for a while - I know that Day One installs one, allowing you to create a note from any selected text, but I&rsquo;d never really used them. However, they&rsquo;re available in any app, so I thought this would hold the key. Turns out I wasn&rsquo;t wrong.</p>
+<p>I had to do a quick Google to find out how to create my own. It turns out services can be created using Automator.</p>
+<p>Automator lets you link tasks together to perform them on occasions. These can be run on folders or items, or as it turns out, on selected text.</p>
+<p>It&rsquo;s a simple case of copying the code into a shell script task and selecting it to run in the Python shell. Select the option to receive input as text and to replace the selected text and it&rsquo;s ready to run.</p>
+<p><a href="https://www.flickr.com/photos/113531214@N07/15270500463"><img src="https://farm8.staticflickr.com/7528/15270500463_38d9880086_z.jpg" alt="Screen Shot 2014-11-27 at 10.26.48"></a></p>
+<p>This then adds the option to run this within the Services menu. You can assign a keyboard shortcut to it using System Preferences, or in my case, I&rsquo;ve done this using Keyboard Maestro as I only want it in some apps and I can change how it effects each one (and the keyboard shortcut if needed).</p>
+<p><a href="https://www.flickr.com/photos/113531214@N07/15888249891"><img src="https://farm9.staticflickr.com/8591/15888249891_75b91380ed_z.jpg" alt="Screen Shot 2014-11-27 at 10.51.07"></a></p>
+<p>Overall, this seems to work well, though I realise it&rsquo;s not as straight forward or as nice as Dr Drang&rsquo;s BBEdit solution, but my workflow changes depending on where I am and what app I&rsquo;m using, so this suits me better.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2014/11/carradice-trial/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Carradice Trial</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2014/12/ipad-update/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">iPad Update</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>journal on Voxcaster</title>
+    <link>http://vox.me.uk/tags/journal/</link>
+    <description>Recent content in journal on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Sep 2018 16:49:03 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zim Journal Continued</title>
+      <link>http://vox.me.uk/post/2018/09/zim-journal-continued/</link>
+      <pubDate>Wed, 05 Sep 2018 16:49:03 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2018/09/zim-journal-continued/</guid>
+      <description>Zim is a notebook type software - think Evernote or Onenote. However, it&amp;rsquo;s free and open source and saves data locally. It also saves all files as plain text, so you can access the files however and wherever you want.
+I&amp;rsquo;ve been using it for a journal for a period of about three years now and I&amp;rsquo;ve written about it before. I did for a time switch back to Day One and tried the new syncing service, but when they had syncing issues earlier this year which exposed private data, I made sure I was back using Zim (syncing between my devices with Resilo Sync and stored on my own devices).</description>
+    </item>
+    
+  </channel>
+</rss>

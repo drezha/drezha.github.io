@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Zim Journal Continued - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Zim Journal Continued">
+<meta itemprop="description" content="Zim is a notebook type software - think Evernote or Onenote. However, it&rsquo;s free and open source and saves data locally. It also saves all files as plain text, so you can access the files however and wherever you want.
+I&rsquo;ve been using it for a journal for a period of about three years now and I&rsquo;ve written about it before. I did for a time switch back to Day One and tried the new syncing service, but when they had syncing issues earlier this year which exposed private data, I made sure I was back using Zim (syncing between my devices with Resilo Sync and stored on my own devices)."><meta itemprop="datePublished" content="2018-09-05T16:49:03+01:00" />
+<meta itemprop="dateModified" content="2018-09-05T16:49:03+01:00" />
+<meta itemprop="wordCount" content="518">
+<meta itemprop="keywords" content="journal,computer,software,zim,scripting," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Zim Journal Continued</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-09-05T16:49:03&#43;01:00">2018-09-05</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>Zim is a notebook type software - think Evernote or Onenote. However, it&rsquo;s free and open source and saves data locally. It also saves all files as plain text, so you can access the files however and wherever you want.</p>
+<p>I&rsquo;ve been using it for a journal for a period of about three years now and I&rsquo;ve written <a href="https://www.vox.me.uk/post/2016/05/zim-journalling/">about it before</a>. I did for a time switch back to Day One and tried the new syncing service, but when they had syncing issues earlier this year <a href="http://help.dayoneapp.com/day-one-sync/may-2018-day-one-outage-postmortem">which exposed private data</a>, I made sure I was back using Zim (syncing between my devices with Resilo Sync and stored on my own devices).</p>
+<p>As a journal, it&rsquo;s set up quite nicely, that I can instantly access todays page and start writing when I need to.  However, I missed certain features of Day One, such as the photo page which displays all the photos that have been attached to posts. I wanted to replicate this in Zim, so I had to turn to some scripting to help out.</p>
+<h2 id="batch-file">Batch File</h2>
+<p>Day One shows thumbnails of the images used and when you click the thumbnail, you go to the date in question where the photo was attached. Adding a photo to Zim is easy enough, and so is linking the photo to the date in question, it was simply the creation of the thumbnails that I needed, as I didn&rsquo;t want the full size picture within my Photos folder.</p>
+<p>This batch files sits on my desktop and allows me to drag and drop images on to the script to run and then it automatically saves the output to my desktop. I didn&rsquo;t want the full size images within the Zim folder - I&rsquo;ve got the full files saved in my Photos folder if I need it, but a larger version for the journal would be nice.</p>
+<p>The first step renames the image - this isn&rsquo;t strictly required, but I found that it made life easier as it removed all spaces from the image name if present).</p>
+<p>The next step runs the images through the <a href="https://www.imagemagick.org/script/mogrify.php">mogrify command</a> of <a href="https://www.imagemagick.org/">Imagemagick</a>.</p>
+<pre tabindex="0"><code>:: Relies on Imagemagick being installed
+:: Set Random String to rename images to
+
+set number=%RANDOM%
+
+:: Resizes images to 1,228,800 pixels (1280x960, assuming a standard landscape iPhone image of 4032x3024 pixels)
+
+magick %1 -resize 1228800@ -format jpg %UserProfile%\Desktop\%number%.jpg
+
+:: Thumbnail creation - 76,800 pixels (320 x 240)
+
+magick %1 -resize 76800@ -format jpg %UserProfile%\Desktop\Thumbnail_%number%.jpg
+</code></pre><p>Once the images are created, I add the larger file in to the day that needs the photo and then I attach the thumbnail image in the Photos note and link it to the day, using the internal Zim linking (i.e. for a photo on the 6 August 2017, you would use Home:2017:08:06).</p>
+<p>The end result is shown below. It&rsquo;s not quite as nicely laid out as Day One - I couldn&rsquo;t have images displayed within a table for some reason within Zim, otherwise, that would have sorted out the layout issues where a portrait and landscape image sit. However, it works well enough to achieve what I&rsquo;m after.</p>
+<p><a data-flickr-embed="true"  href="https://www.flickr.com/photos/113531214@N07/42684762030/in/dateposted-public/" title="2018-09-05 16_38_18-Clipboard"><img src="https://farm2.staticflickr.com/1874/42684762030_77c2abc631.jpg" width="426" height="500" alt="2018-09-05 16_38_18-Clipboard"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/journal/" rel="tag">journal</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/computer/" rel="tag">computer</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/software/" rel="tag">software</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/zim/" rel="tag">zim</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/scripting/" rel="tag">scripting</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2018/08/talbol-geocaching-series/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">TALBOL Geocaching Series</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2018/12/nvalt-on-windows/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">NValt on Windows</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

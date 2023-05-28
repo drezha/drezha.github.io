@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macOS on Voxcaster</title>
+    <link>http://vox.me.uk/tags/macos/</link>
+    <description>Recent content in macOS on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Jan 2022 09:10:58 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Matias Quiet Pro Keyboard</title>
+      <link>http://vox.me.uk/post/2022/01/matias-quiet-pro/</link>
+      <pubDate>Mon, 24 Jan 2022 09:10:58 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2022/01/matias-quiet-pro/</guid>
+      <description>I’ve been playing about with new keyboards over the last few months - my most recent purchase is the Matias Quiet Pro for the Mac.
+This is an American layout board that works with Bluetooth on the Mac and has a Mac based layout. It uses quiet Alps based keyswitches, rather than any of the Cherry MX or Cherry based knockoffs.
+Quality The device feels sturdy enough when being used. However, there are some aspects that make it feel a bit cheaper than it should.</description>
+    </item>
+    
+    <item>
+      <title>Monitor Control</title>
+      <link>http://vox.me.uk/post/2022/01/monitor-control/</link>
+      <pubDate>Tue, 04 Jan 2022 07:09:14 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2022/01/monitor-control/</guid>
+      <description>I’ve got a Mac Mini and this is hooked up to a LG 27UL850-W and Dell S2421NX monitor. They’re both setup on my desk, with the LG as my main monitor and the Dell as a secondary monitor off to the side.
+When using the desktop, I’ve always missed the ability to adjust the screen brightness easily within macOS using the keyboard, like you can on the MacBook and generally any Windows laptop.</description>
+    </item>
+    
+    <item>
+      <title>Search for Windows Alfred</title>
+      <link>http://vox.me.uk/post/2021/12/windows-alfred/</link>
+      <pubDate>Wed, 22 Dec 2021 16:21:38 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/12/windows-alfred/</guid>
+      <description>I&amp;rsquo;ve been mixing macOS and Windows for a number of years. This hasn&amp;rsquo;t normally proved to be problematic in any way and I&amp;rsquo;ve had the best of both worlds.
+One program that I couldn&amp;rsquo;t live with out on the Mac is Alfred. Alfred is a keyboard launcher, allowing you to start and run programs using a key combination and not having to move away from the keyboard. It also provides a quick calculation tool, which allows you to undertake calculations quickly.</description>
+    </item>
+    
+    <item>
+      <title>Bear for Blogging</title>
+      <link>http://vox.me.uk/post/2021/10/bear-for-blogging/</link>
+      <pubDate>Wed, 20 Oct 2021 15:30:38 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/10/bear-for-blogging/</guid>
+      <description>I had ditched Ulysses when it went subscription but during 2020, I’d paid for the subscription as I’d managed to get a discount code for it. It was good to be able to use it across my devices and it’s still one of the best plain text editors in my view - however, I don’t view it as being worth almost £50 a year - consider that Microsoft charge £60 for Office plus storage space, whereas Ulysses makes use of iCloud space to sync, so I’m not even paying them for syncing!</description>
+    </item>
+    
+    <item>
+      <title>Email and Hook</title>
+      <link>http://vox.me.uk/post/2021/09/email-and-hook/</link>
+      <pubDate>Tue, 28 Sep 2021 20:51:37 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/09/email-and-hook/</guid>
+      <description>I&amp;rsquo;d been looking at my email clients on the Mac for using with Hook. I like the ability to link any previous email, as it helps me link to emails I&amp;rsquo;ve received or sent within my Obsidian notebook, and to be honest, it&amp;rsquo;s paid off a number of times now where it was quicker to look for the specific email that I&amp;rsquo;d linked in my Obsidian notebook, rather than search for the email I needed.</description>
+    </item>
+    
+    <item>
+      <title>FDS on the M1 Mac</title>
+      <link>http://vox.me.uk/post/2021/01/fds-m1-mac/</link>
+      <pubDate>Thu, 14 Jan 2021 10:33:07 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/01/fds-m1-mac/</guid>
+      <description>So whenever I get a new machine, I always run an FDS benchmark on it - purely for fun and comparative purposes. I’ll often run it, even on a machine that isn’t likely to run FDS in a normal situations, such as the M1T Mini PC and Raspberry Pi.
+So with the M1 Mac Mini, there was no reason not to run the benchmarks as well. However, as the M1 Mac is based on an ARM based chip, I wasn’t expecting it to perform that well - after all, it would be running on the Mac using Rosetta 2, as FDS is compiled for x86 processors1.</description>
+    </item>
+    
+    <item>
+      <title>QNAP TR 002 DAS</title>
+      <link>http://vox.me.uk/post/2021/01/qnap-tr-002-das/</link>
+      <pubDate>Wed, 06 Jan 2021 14:47:01 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/01/qnap-tr-002-das/</guid>
+      <description>With the recent purchase of the Mac Mini, I needed to have an external drive - partly for Time Machine backups and partly as I only went 256GB internal drive. I’d got a couple of 2.5” hard drive caddies lying around, but also a 3.5” drive that wasn’t being used. Teamed up with the reduced number of ports on the M1 Mac Mini, I decided that I’d purchase a Direct Attached Storage (DAS) device for the Mac.</description>
+    </item>
+    
+    <item>
+      <title>M1 Mac Mini</title>
+      <link>http://vox.me.uk/post/2021/01/m1-mac-mini/</link>
+      <pubDate>Sat, 02 Jan 2021 18:59:21 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/01/m1-mac-mini/</guid>
+      <description>After the issues I’ve had previously with the Mac, I wasn’t sure I was going to get another Mac. But I did.
+I watched the M1 release keynote after it had finished and was impressed with what I saw. If it was true. However, after hanging around the Mac Power Users forum, I’d seen some interesting Mac apps that I fancied giving a go - things like Hook. I also wanted to continue using Photos, as I hadn’t really found an alternative on Windows that really matched it.</description>
+    </item>
+    
+    <item>
+      <title>Insync</title>
+      <link>http://vox.me.uk/post/2020/12/insync/</link>
+      <pubDate>Tue, 15 Dec 2020 15:49:11 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/12/insync/</guid>
+      <description>My current job sees me using Onedrive as the primary storage location for files, and since the initial lockdown in the UK, we moved to using Microsoft Teams and storing data in Teams instead, rather than our on site servers and mapped hard drives.
+This took some getting used to but suited me, as it meant that I could use my Mac Mini at home to access the files and work, rather than a work machine, which was good, as I had forgone the standard laptops that everyone else used so I could have an iPad for carrying out my risk assessments on, but this obviously isn&amp;rsquo;t as good for general office tasks1!</description>
+    </item>
+    
+    <item>
+      <title>Issues With MacOS</title>
+      <link>http://vox.me.uk/post/2020/06/issues-with-macos/</link>
+      <pubDate>Tue, 30 Jun 2020 08:42:24 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/06/issues-with-macos/</guid>
+      <description>Lately I&amp;rsquo;ve been running in to issues with macOS that I can&amp;rsquo;t seem to resolve and it&amp;rsquo;s beginning to annoy me no end.
+Startup I&amp;rsquo;d been running in to startup issues for a week or so - the Mac would boot up and I would see the Apple logo on screen with the loading bar.
+However, the screen would then go blank and I would only see the mouse cursor if I wriggled it.</description>
+    </item>
+    
+    <item>
+      <title>PhotoSync, Photos and iCloud</title>
+      <link>http://vox.me.uk/post/2020/06/photosync-photos-and-icloud/</link>
+      <pubDate>Thu, 18 Jun 2020 15:31:29 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/06/photosync-photos-and-icloud/</guid>
+      <description>I’ve been a fan of PhotoSync for a while now - I purchased the iOS version in May 2018, so I’ve been using it for 2 years. I’ve also purchased the Android version and it’s one of the key apps I’ve used regularly.
+Prior to finding it, I’d been using Dropbox to save a copy of my photos off my phone. This worked well, and the only reason I changed to PhotoSync was that I could choose different locations to send data (i.</description>
+    </item>
+    
+    <item>
+      <title>PDF Expert vs PDF XChange</title>
+      <link>http://vox.me.uk/post/2020/06/pdf-expert-vs-pdf-xchange/</link>
+      <pubDate>Sat, 06 Jun 2020 15:00:29 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/06/pdf-expert-vs-pdf-xchange/</guid>
+      <description>I work in engineering - one of the main formats that gets shared around a lot is the humble PDF. It often means that you can view exactly what the other person sees without the hassle of sharing additional items - I&amp;rsquo;m thinking CAD files here, where an architect may include a lot of references to external files within the CAD file that matches what the architect uses on the system, but won&amp;rsquo;t be installed in the same location or at all, on the clients machine.</description>
+    </item>
+    
+    <item>
+      <title>Colours for Hue</title>
+      <link>http://vox.me.uk/post/2020/05/colours-for-hue/</link>
+      <pubDate>Tue, 05 May 2020 19:54:52 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/05/colours-for-hue/</guid>
+      <description>Colours For Hue Getting Hue lights has meant that I need to control these. Generally, this works well using the Hue application and Siri (with HomeKit), though as I’ve got one in my office as well, it would be nice to control this from my Mac as well.
+This is where Colours for Hue comes in. It’s a Mac app that sits in the menu bar and acts as a Hue light controller.</description>
+    </item>
+    
+    <item>
+      <title>Outlook for Mac</title>
+      <link>http://vox.me.uk/post/2020/04/outlook-for-mac/</link>
+      <pubDate>Wed, 22 Apr 2020 19:49:29 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/outlook-for-mac/</guid>
+      <description>Outlook for Mac One of the aspects that I thought would be good about working from home on the lockdown has come from being able to use my Mac. I’ve been able to use my Mac to do all things that I’d have to do on my Windows machine at work and it’s really given me a chance to see how the Mac would be able to perform my day to day job.</description>
+    </item>
+    
+    <item>
+      <title>iCaching - macOS Review</title>
+      <link>http://vox.me.uk/post/2020/04/icaching-review/</link>
+      <pubDate>Sat, 04 Apr 2020 19:43:17 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/icaching-review/</guid>
+      <description>iCaching - macOS Review I’ve been geocaching for a few years now and I’ve been using Geocaching Swiss Army Knife (GSAK) for the past year. It’s a handy program for keeping track of caches that I’ve found, as well as organising GPX files for import on to my Garmin or phone.
+However, the program is Windows only. Which isn’t the end of the world, as I have a Windows machine, but I’ve also got a Mac and it tends to be my main machine for getting work done at home, so it’s often on.</description>
+    </item>
+    
+    <item>
+      <title>Shush</title>
+      <link>http://vox.me.uk/post/2020/03/shush/</link>
+      <pubDate>Wed, 25 Mar 2020 19:37:13 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/03/shush/</guid>
+      <description>Shush As Covid 19 spreads around the globe and countries go in to lockdown and work from home, I’ve had to do more and more meetings online.
+When I’ve done online meetings in the past, I’ve had to do them either via conference call or via the conferencing setup at work, and therefore on Windows. They’ve generally worked OK.
+However, as we’re all currently confined to working from home in the UK, I’ve been using my Mac.</description>
+    </item>
+    
+  </channel>
+</rss>

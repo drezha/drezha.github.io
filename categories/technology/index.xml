@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on Voxcaster</title>
+    <link>http://vox.me.uk/categories/technology/</link>
+    <description>Recent content in Technology on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Feb 2022 08:22:14 +0000</lastBuildDate><atom:link href="http://vox.me.uk/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Garmin Venu 2 Review</title>
+      <link>http://vox.me.uk/post/2022/02/garmin-venu-2-review/</link>
+      <pubDate>Sun, 13 Feb 2022 08:22:14 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2022/02/garmin-venu-2-review/</guid>
+      <description>When I saw this announced by Garmin, I knew that it was something that I’d be interested in. I’ve flip flopped between Garmin and the Apple Watch over the last two years, often coming back to my Garmin Instinct Solar (and the non solar version before that). However, the reason for going back and testing the Apple Watch was for the onboard Siri support - being able to turn lights on and off in the house with my voice is handy, as well as the occasional quick text message or receiving a phone call whilst my phone is in my bike bag.</description>
+    </item>
+    
+    <item>
+      <title>Pixel 3a vs IPhone SE</title>
+      <link>http://vox.me.uk/post/2020/10/pixel-3a-vs-iphone-se/</link>
+      <pubDate>Tue, 27 Oct 2020 18:36:18 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/10/pixel-3a-vs-iphone-se/</guid>
+      <description>So, the iPhone SE was re-released, perhaps as a way for Apple to compete with the cheaper Android devices out there. Google started something similar last year with the release of the Pixel 3a - a cheaper, less powerful version of the Pixel 3.
+I&amp;rsquo;ve tried both phones - I own the Pixel 3a and my wife has the iPhone SE 2020, so thought I&amp;rsquo;d write a quick review.
+Camera The Pixel series is known for its camera, and the iPhone has always been well regarded for its camera - with Apple pushing the camera features heavily in various advertising.</description>
+    </item>
+    
+    <item>
+      <title>Colours for Hue</title>
+      <link>http://vox.me.uk/post/2020/05/colours-for-hue/</link>
+      <pubDate>Tue, 05 May 2020 19:54:52 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/05/colours-for-hue/</guid>
+      <description>Colours For Hue Getting Hue lights has meant that I need to control these. Generally, this works well using the Hue application and Siri (with HomeKit), though as I’ve got one in my office as well, it would be nice to control this from my Mac as well.
+This is where Colours for Hue comes in. It’s a Mac app that sits in the menu bar and acts as a Hue light controller.</description>
+    </item>
+    
+    <item>
+      <title>Philips Hue</title>
+      <link>http://vox.me.uk/post/2020/05/philips-hue/</link>
+      <pubDate>Fri, 01 May 2020 19:53:02 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/05/philips-hue/</guid>
+      <description>Philips Hue I’ve had a number of smart items around the house now for a few years. These have mainly been the TP-Link smart plugs, but I’d also got two Elgato Eve smart plugs and a single TP-Link bulb.
+In general, these have been OK, though they don’t all link together - TP-Link is controlled through its Kasa platform (and works with Alexa) but the Elgato plugs only work with Apple HomeKit and therefore have to be operated using our phones only (no HomePod).</description>
+    </item>
+    
+    <item>
+      <title>Garmin Vivoactive</title>
+      <link>http://vox.me.uk/post/2015/09/garming-vivoactive/</link>
+      <pubDate>Wed, 02 Sep 2015 23:42:55 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2015/09/garming-vivoactive/</guid>
+      <description>Background I never used to be a watch person, though that all change when I started running when at Loughborough and then when I moved to London and was at the mercy of trains (and meetings), I found a watch to be something I couldn&amp;rsquo;t leave behind.
+For years, I used a classic - the Casio F-91W.
+Not only was it bombproof (though, perhaps the wrong word to use there considering that owning one of the watches in Afghanistan was apparently enough to cause the Americans to detain you for questioning as it was often the watch used for detonators!</description>
+    </item>
+    
+  </channel>
+</rss>

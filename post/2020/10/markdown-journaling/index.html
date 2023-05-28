@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Markdown Journaling - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Markdown Journaling">
+<meta itemprop="description" content="I&rsquo;ve been journaling now for years. I started off using Day One for iOS and macOS. However, after this updated to the second version and moved to a subscription model, I decided that I didn&rsquo;t want to pay for it, and moved. Since then, I&rsquo;ve been using Zim Wiki for my journaling.
+This has generally served me well, and ran nicely on Windows and Linux1. It worked and the output was portable and under my control, as each page is a text file and displays images inline."><meta itemprop="datePublished" content="2020-10-20T16:41:40+01:00" />
+<meta itemprop="dateModified" content="2020-10-20T16:41:40+01:00" />
+<meta itemprop="wordCount" content="1014">
+<meta itemprop="keywords" content="Markdown,Journaling,Windows," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Markdown Journaling</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-10-20T16:41:40&#43;01:00">2020-10-20</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/computer/" rel="category">Computer</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>I&rsquo;ve been journaling now for years. I started off using <a href="https://dayoneapp.com/">Day One</a> for iOS and macOS. However, after this updated to the second version and moved to a subscription model, I decided that I didn&rsquo;t want to pay for it, and moved. Since then, I&rsquo;ve been using <a href="https://zim-wiki.org/">Zim Wiki</a> for my journaling.</p>
+<p>This has generally served me well, and ran nicely on Windows and Linux<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It worked and the output was portable and under my control, as each page is a text file and displays images inline. However, with the update to version 0.73 which uses GTK3, I noticed that a number of my previous entries were missing the photos that were attached.</p>
+<p><img src="https://www.vox.me.uk/images/2020-10-0211_32_25-Journal-Zim.png" alt=""></p>
+<p>I&rsquo;m not sure why this is happening, as the files are visible within the file browser and work, so they aren&rsquo;t corrupted from what I can see. The wiki itself otherwise works without any other issues.</p>
+<p>However, it raises the issue that I might not be able to view the files in the future with updated versions of the software, so I thought I would reconsider how I go about journaling and look at alternative tools.</p>
+<h2 id="markdown">Markdown</h2>
+<p>Markdown is my preferred method of writing. Not only is it plain text so I can access it on any device, but it&rsquo;s also easy to interact with and I can use multiple different editors on the same file.</p>
+<p>For example, if I want a nice writing environment, I can access it with <a href="https://www.inspire-writer.com/">Inspire</a> or <a href="https://typora.io/">Typora</a>. If I need a more code based focus, I can use <a href="https://code.visualstudio.com/">Visual Studio Code</a> and if I want quick notes or easy search, I can access them via <a href="https://www.qownnotes.org/">QOwnnotes</a>, or as they&rsquo;re text files, I can also use command line tools if needed. I can also export it in to a range of different formats and can even change the style easily, as the content is separate from the style.</p>
+<p>Therefore, it made sense that markdown would be the best option for writing my journal.</p>
+<h2 id="organisation">Organisation</h2>
+<p>I decided that the easiest method of organisation is to have a folder for a year and then a single file for each month. This mimics Zim to a degree, which creates a file for each day and places this within a folder for the year and subfolder for the month. I&rsquo;ve created a similar structure for the markdown files and I&rsquo;m now using:</p>
+<pre><code>C:.
+├───2020
+│   │   10.md
+│   │
+│   └───images
+│           2020-10-05_13-42-35.JPG
+│           2020-10-05_18-51-11.JPG
+│           2020-10-05_19-06-30.JPG
+│           2020-10-06_21-35-11.JPG
+│           2020-10-09_18-39-16.JPG
+│           2020-10-18_11-09-23.JPG
+</code></pre>
+<p>I&rsquo;ve kept the images stored in a separate subfolder within the folder - this way, when I open up the year folder, the images don&rsquo;t detract from the markdown files. It means that each folder should have 12 files in and an images folder at the end of each year.</p>
+<p>When writing, I&rsquo;ve had to come up with a method of headings. Markdown supports a number of different heading types, so I&rsquo;ve gone with the following:</p>
+<pre><code> # = Year
+ ## = Month
+ ### = Day
+</code></pre>
+<p>This means that if at a later date I want to use something like <a href="https://pandoc.org/">Pandoc</a>, I can use this to convert everything into a LaTeX file and then PDF if I wanted, as long as it&rsquo;s all consistent.</p>
+<p>The actual journaling is easy - I start each day with it&rsquo;s heading, and this is typed in by using an Autohotkey snippet.</p>
+<pre><code>:*c:Wd::
+    FormatTime, TimeString2,
+    , dddd, dd MMMM yyyy
+    Send %TimeString2%
+return
+</code></pre>
+<p>This converts the phrase &ldquo;Wd&rdquo; in to the date - i.e. Monday, 19 October 2020. It keeps it consistent across the journal.</p>
+<p>The actual writing of the journal isn&rsquo;t special at all - I just follow the markdown format.</p>
+<h2 id="editing-on-the-go">Editing on the Go</h2>
+<p>Mobile editing is fairly simple, as after all, the files are only Markdown files.</p>
+<p>As the files are stored on my NAS, I access this via SFTP on iOS using <a href="https://secureshellfish.app/">Secure Shellfish</a>, as this works nicely with Apple&rsquo;s Files app/system. I could have used Dropbox, but as I don&rsquo;t have Dropbox installed on the PC, that would be unwarranted.</p>
+<p>Equally, if I&rsquo;m at home, I can use the native iOS network share to edit the file (using iA Writer or 1Writer). This seems to be seamless - the only issue here is uploading images automatically - Typora will automatically copy the image in to the images subfolder that I&rsquo;ve setup. Either 1Writer or iA Writer can attach images, but will only place this within the same folder as the text file, so if I want to add an image from mobile, I&rsquo;ll have to upload it and manually add it - not the end of the world perhaps.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>So far, I&rsquo;ve only been using it through October, but so far it seems to work nicely.</p>
+<p>I did run in to some issues with the mobile editing - I&rsquo;m not sure if this was the app itself, if this was due to a poor web connection at the time or with Secure Shellfish. In this case, the text file got saved as multiple files with numbers at the end of the name as different versions. However, when I&rsquo;ve tried on a stable internet connection, I haven&rsquo;t noticed any such issues, so I believe this was the cause.</p>
+<p>In the future, I may run the markdown files through Pandoc and see what the output is like, but for now, I&rsquo;m able to comfortably journal and I can be confident that even if Typora disappears or becomes a subscription, then I can still access my files using another program, and whilst that may not have the same features, it&rsquo;s nothing that can&rsquo;t be worked around.</p>
+<p>Yes, it&rsquo;s not as nice a solution as Day One, and doesn&rsquo;t record some of the metadata that Day One does that&rsquo;s nice to have (such as location where you wrote the article or took a picture), it means I can concentrate on the writing and getting that done. I&rsquo;ll see how things work out.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>I could never get it running nicely on macOS, even though there are guides out there to do so.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/markdown/" rel="tag">Markdown</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/journaling/" rel="tag">Journaling</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/windows/" rel="tag">Windows</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2020/09/new-synology/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">New Synology</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2020/10/inspire-continued/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Inspire Continued</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

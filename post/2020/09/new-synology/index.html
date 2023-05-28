@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>New Synology - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="New Synology">
+<meta itemprop="description" content="With the lockdown and working from home more often, I decided that my Synology (DS 116) was due for an upgrade. I wanted to retire one of my Raspberry Pi&rsquo;s that was running my Pi Hole server and I wanted to have a play with some of the features on the higher end Synology&rsquo;s - such as virtual machines and Docker, as well as make use of the BTRFS file system, so that meant getting one of the Intel Atom powered Synology devices."><meta itemprop="datePublished" content="2020-09-27T19:54:01+01:00" />
+<meta itemprop="dateModified" content="2020-09-27T19:54:01+01:00" />
+<meta itemprop="wordCount" content="1249">
+<meta itemprop="keywords" content="Synology,NAS,Networking," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">New Synology</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-27T19:54:01&#43;01:00">2020-09-27</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/computer/" rel="category">Computer</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>With the lockdown and working from home more often, I decided that my Synology (DS 116) was due for an upgrade. I wanted to retire one of my Raspberry Pi&rsquo;s that was running my <a href="https://www.vox.me.uk/post/2017/01/pi-hole/">Pi Hole server</a> and I wanted to have a play with some of the features on the higher end Synology&rsquo;s - such as virtual machines and Docker, as well as make use of the BTRFS file system, so that meant getting one of the Intel Atom powered Synology devices.</p>
+<p>My previous one was a single bay and I was at about 50% capacity, so I didn&rsquo;t need to go overboard and get myself one of the four bays or larger, which meant I was looking at the two bays.</p>
+<p>I&rsquo;d been recommended the DS218+ but whilst I was looking, Synology released the DS220+, a slightly upgraded version of the 218+. Not a huge amount of difference between the two, but the DS220+ comes with a newer Intel CPU (Celeron J4025 compared to the Celeron J3355, which, whilst the same clock speed, has a higher boost, and <a href="https://www.cpubenchmark.net/compare/Intel-Celeron-J3355-vs-Intel-Celeron-J4025/2960vs3668">achieves a higher benchmark score</a>), as well as an additional LAN port. The price of the 218+ didn&rsquo;t drop and as the 220+ was only £20 more, I ended up buying the newer one, hoping that it&rsquo;s as good as it&rsquo;s older sibling!</p>
+<h2 id="ds220">DS220+</h2>
+<p>Setting up a Synolgy is straight forward and easy, and the 220+ was no different to my previous attempts. The only difference I had this time around was that I had a dual drive NAS, but I&rsquo;ve set it up as two separate drive pools. I&rsquo;m pretty certain, by default, the Synology wants to use <a href="https://www.synology.com/en-global/knowledgebase/DSM/tutorial/Storage/What_is_Synology_Hybrid_RAID_SHR">Synology Hybrid Raid</a> (SHR). However, I didn&rsquo;t want RAID on my device (I&rsquo;ve got backups of all my important data) but wanted two separate disks. To this end, I only added the first drive, which would become my system drive, and then a second drive to act as a backup drive and overflow storage.</p>
+<p>The drives are hot swappable, so I was able to get it set up with the first drive and then add the second one shortly afterwards.</p>
+<h2 id="shucked-hard-drive">Shucked Hard Drive</h2>
+<p>With a new unit, I also decided to upgrade and get a new hard drive<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. My storage needs have slowly increased over the years but I still had about 50% of the 3TB drive left. However, I&rsquo;d been reading <a href="https://old.reddit.com/r/DataHoarder/">/r/DataHoarder</a> and the practise of shucking<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> and also found a good deal on a Western Digital 8TB Elements drive at Amazon. At the price advertised, it was only slightly more expensive than a 6TB Western Digital Red NAS drive that I was looking at.</p>
+<p>I therefore decided to take the plunge and ordered it to shuck<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>. It arrived and I ran my error checking software on it and ran it through HD Tune.</p>
+<p><img src="https://www.vox.me.uk/images/2020-08-2916_33_04-HDTune2.55-HardDiskUtility.png" alt=""></p>
+<p>CrystalDiskMark was able to ID it, where HD Tune incorrectly identified it as a 2TB drive.</p>
+<p><img src="https://www.vox.me.uk/images/2020-08-2916_34_42-CrystalDiskInfo8.7.0x64.png" alt=""></p>
+<p>I was interested to see that I appear to have picked up one of the hard drives that appears to have raised <a href="https://arstechnica.com/gadgets/2020/09/western-digital-is-trying-to-redefine-the-word-rpm/">another issue with Western Digital</a>, where the drive is actually spinning at 7,2000 RPM, rather than the advertised 5,4000 RPM.</p>
+<p>In my mind, I&rsquo;m not to bothered - the drive passed all the error checking fine (I used the <a href="https://support.wdc.com/downloads.aspx?lang=en&amp;p=3">Western Digital Data Lifeguard</a> program to do so, along with HD Tune), so I got the drive out of the box and installed within the NAS.</p>
+<p>Synology picked the drive up fine and everything appears to be working nicely.</p>
+<p><img src="https://www.vox.me.uk/images/2020-08-2918_34_51-OldNAS-SynologyDiskStation.png" alt=""></p>
+<h2 id="data-migration">Data Migration</h2>
+<p>This is one of the tasks I perhaps could have done better. What I ended up doing was copying all the data to an external hard drive and then copying on to the new NAS once setup.</p>
+<p>I could have looked at having both NAS devices running simultaneously and copy between the two, but I wanted to ensure that the data was being copied correctly.</p>
+<p>I made use of <a href="https://www.codesector.com/teracopy">Teracopy</a> to do so. I copied from the old NAS to external and then from the external to the new NAS. It wasn&rsquo;t the quickest method of doing things. Originally I&rsquo;d planned to plug the hard drive in to the NAS and copy across that way, but that doesn&rsquo;t perform any error checking.</p>
+<p>However, once I&rsquo;d managed to set the NAS up and place on the Gigabit switch upstairs along with the PC that was doing the copying, things flew. It was only about 1.5TB I needed to copy, but it was a lot faster when I realised that the initial data transfer had been taking place on WiFi! (30MB/s, compared to 110MB/s!)</p>
+<h2 id="docker-and-virtual-machine">Docker and Virtual Machine</h2>
+<p>Part of the reason I went for the DS220+ was the ability to run Docker and virtual machines. I hadn&rsquo;t had any experience with Docker, so that was something new to me. However, I&rsquo;ve used virtual machines in the past without issues.</p>
+<p>I put a 4GB SODIMM RAM stick in to the NAS, as it comes with 2GB pre-installed. This would allow me to make use of the different software items I wanted to.</p>
+<p>One of the main reasons to for the DS220+ was to replace my Pi Hole server. This would have worked nicely on a virtual machine, but I downloaded and installed it on the NAS using Docker - my first Docker container. The perk of this is that the system resources it needs is less than if I had a virtual Linux server running. This ended up being relatively straightforward once I found <a href="https://mariushosting.com/how-to-install-pi-hole-on-your-synology-nas/">this</a> guide on the internet. Following this guide, I was able to have Pi Hole and working within a few minutes. The only issue I ran in to was when things got messed up with the DHCP settings - I had been using my previous Raspberry Pi as the DHCP server as well, but something didn&rsquo;t work this time round and everything broke. I ended up moving the DHCP server back to the router and then just directed all DNS requests to the Pi Hole. Everything now works, but all the requests at the Pi Hole appear to be the router, rather than each individual client.</p>
+<p>My only issue now is that there perhaps seems to be a DNS loop, as Pi Hole has a number of DNS queries that don&rsquo;t make sense - searching online just brings up the &ldquo;Turn off Conditional Forwarding&rdquo; which, is already off.</p>
+<p><img src="https://www.vox.me.uk/images/2020-09-2710_48_17-Pi-hole-PiHole.png" alt=""></p>
+<p>However, I set up another Pi Hole server using a virtual machine on the NAS - this worked with the DHCP server, but didn&rsquo;t solve the 0.0.0.0.in-addr.arpa DNS lookup. However, with the DHCP server working, Pi Hole was able to tell me that it was the TV that spamming the network.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Overall, I&rsquo;m happy with the purchase so far. It&rsquo;s faster than the previoius model in all tasks, and I&rsquo;ve been able to play around with Docker and the virtual machines which is a nice touch. We&rsquo;ll continue to see how we get on, but at the minute, it&rsquo;s working nicely.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>The existing hard drive has been migrated and is the secondary drive in the NAS.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>The <a href="https://www.backblaze.com/blog/backblaze_drive_farming/">Backblze blog post</a> a few years ago caught my eye initially, but /r/DataHoarders rekindled the interest more recently.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>I&rsquo;d recently shucked an older WD Elements 4TB hard drive I had lying around, to replace a 3TB drive in my gaming rig, to give me more space for games, so I was confident I could shuck a drive without issues.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/synology/" rel="tag">Synology</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/nas/" rel="tag">NAS</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/networking/" rel="tag">Networking</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2020/09/file-juggler/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">File Juggler</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2020/10/markdown-journaling/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Markdown Journaling</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

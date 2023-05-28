@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on Voxcaster</title>
+    <link>http://vox.me.uk/tags/android/</link>
+    <description>Recent content in Android on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Nov 2020 12:10:46 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Motion and Live Photos</title>
+      <link>http://vox.me.uk/post/2020/11/motion-photos/</link>
+      <pubDate>Sat, 07 Nov 2020 12:10:46 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/11/motion-photos/</guid>
+      <description>Apple&amp;rsquo;s Live Photos and Android equivalent, Motion Photos, initially seemed a bit like a gimmick when they were announced. However, there are a number of times now where the Live Photos on the iPhone has been of good use - mainly to capture amusing antics before or after the photo occurred!
+With playing with Android, I was surprised that this didn&amp;rsquo;t appear to have the same. However, after some googling, I discovered it does, and it&amp;rsquo;s called Motion Photos.</description>
+    </item>
+    
+    <item>
+      <title>Pixel 3a vs IPhone SE</title>
+      <link>http://vox.me.uk/post/2020/10/pixel-3a-vs-iphone-se/</link>
+      <pubDate>Tue, 27 Oct 2020 18:36:18 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/10/pixel-3a-vs-iphone-se/</guid>
+      <description>So, the iPhone SE was re-released, perhaps as a way for Apple to compete with the cheaper Android devices out there. Google started something similar last year with the release of the Pixel 3a - a cheaper, less powerful version of the Pixel 3.
+I&amp;rsquo;ve tried both phones - I own the Pixel 3a and my wife has the iPhone SE 2020, so thought I&amp;rsquo;d write a quick review.
+Camera The Pixel series is known for its camera, and the iPhone has always been well regarded for its camera - with Apple pushing the camera features heavily in various advertising.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Voxcaster</title>
+    <link>http://vox.me.uk/tags/linux/</link>
+    <description>Recent content in linux on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Dec 2018 21:49:36 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NValt on Windows</title>
+      <link>http://vox.me.uk/post/2018/12/nvalt-on-windows/</link>
+      <pubDate>Sat, 08 Dec 2018 21:49:36 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2018/12/nvalt-on-windows/</guid>
+      <description>One of the few programs I really miss from macOS is nValt. I used that (rather than Notational Velocity) for a number of years for storing notes and stored everything in it from blog posts, to research notes and paper reviews. It worked well and I preferred it to Evernote.
+Since then however, I&amp;rsquo;ve discovered Zim Wiki and I use that for storing my data that where I may need images, as at the end of the day, it saves data as a text file still, so I&amp;rsquo;ll be able to access it at a later date wherever.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PNG on Voxcaster</title>
+    <link>http://vox.me.uk/tags/png/</link>
+    <description>Recent content in PNG on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Aug 2020 07:52:43 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/png/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OxiPNG and Pngout</title>
+      <link>http://vox.me.uk/post/2020/08/oxipng-and-pngout/</link>
+      <pubDate>Sun, 16 Aug 2020 07:52:43 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/08/oxipng-and-pngout/</guid>
+      <description>One thing that had stuck with me from reading Coding Horror, is that you can increase the speed of your website with free bandwidth. In fairness, it&amp;rsquo;s not free bandwidth, it&amp;rsquo;s reducing the file size of the files that you&amp;rsquo;re hosting, so it&amp;rsquo;s faster to download. The Zopfli article above is the more recent one - the first was regarding pngout (article).
+Both pngout and zopfli can reduce the size of files - specifically in this case, PNG files.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogging on Voxcaster</title>
+    <link>http://vox.me.uk/tags/blogging/</link>
+    <description>Recent content in Blogging on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Oct 2021 15:30:38 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bear for Blogging</title>
+      <link>http://vox.me.uk/post/2021/10/bear-for-blogging/</link>
+      <pubDate>Wed, 20 Oct 2021 15:30:38 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/10/bear-for-blogging/</guid>
+      <description>I had ditched Ulysses when it went subscription but during 2020, I’d paid for the subscription as I’d managed to get a discount code for it. It was good to be able to use it across my devices and it’s still one of the best plain text editors in my view - however, I don’t view it as being worth almost £50 a year - consider that Microsoft charge £60 for Office plus storage space, whereas Ulysses makes use of iCloud space to sync, so I’m not even paying them for syncing!</description>
+    </item>
+    
+  </channel>
+</rss>

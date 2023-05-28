@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Performance per Watt - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Performance per Watt">
+<meta itemprop="description" content="I wanted to compare the performance per watt of the new M1 Mac mini against that of my Ryzen 1600X powered gaming PC. To throw some additional items in there, I also measured my Ryzen 4300U little Windows office PC as well and my Raspberry Pi 4.
+The speed of the new M1 Mac has shown that Apple’s move to Apple Silicon has been a good move for them. Benchmarks show that it’s faster than some of the Intel and AMD machines."><meta itemprop="datePublished" content="2021-04-04T09:34:57+01:00" />
+<meta itemprop="dateModified" content="2021-04-04T09:34:57+01:00" />
+<meta itemprop="wordCount" content="847">
+<meta itemprop="keywords" content="Windows,M1 Mac,Benchmarking,Performance," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Performance per Watt</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-04-04T09:34:57&#43;01:00">2021-04-04</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/computer/" rel="category">Computer</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>I wanted to compare the performance per watt of the new M1 Mac mini against that of my Ryzen 1600X powered gaming PC. To throw some additional items in there, I also measured my Ryzen 4300U little Windows office PC as well and my Raspberry Pi 4.</p>
+<p>The speed of the new M1 Mac has shown that Apple’s move to Apple Silicon has been a good move for them. Benchmarks show that it’s faster than some of the <a href="https://www.tomsguide.com/news/macbook-pro-m1-benchmarks-are-in-and-they-destroy-intel">Intel and AMD machines</a>. I’ve seen the similar when I ran <a href="https://www.vox.me.uk/post/2021/01/fds-m1-mac/">FDS on the M1</a>.</p>
+<p>However, performance is only one aspect to consider. Power consumption is another. I like efficiency - therefore, a well performing CPU with a low power consumption is good news.</p>
+<h2 id="power-draw">Power Draw</h2>
+<p>Measuring the power draw of the machines was done using an <a href="https://www.evehome.com/en/eve-energy">Eve power plug</a>. I’m not sure on the accuracy, but it gives numbers that look reasonable and it’s easy to use and displays the wattage being drawn by the power plug. I measured the power draw at idle and at full load to get an idea of the power draw of each device.</p>
+<p>Idle was measured with nothing specific running and then full load was measured by running Distributed.net, which taxes the CPU of the device.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Device</th>
+<th style="text-align:left">Idle Power (W)</th>
+<th style="text-align:left">Load Power (W)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">AMD 1600X</td>
+<td style="text-align:left">52</td>
+<td style="text-align:left">149</td>
+</tr>
+<tr>
+<td style="text-align:left">Apple M1</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">26</td>
+</tr>
+<tr>
+<td style="text-align:left">AMD 4300U</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">24</td>
+</tr>
+<tr>
+<td style="text-align:left">ARM Cortex-A72</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">6</td>
+</tr>
+</tbody>
+</table>
+<p>I’m interested to see that the power draw of both the M1 Mac and the AMD 4300U. I knew the 4300U is a laptop chip (the U implies it’s a laptop chip). I guessed the M1 was fairly low powered, but was impressed with how low.</p>
+<p><img src="https://vox.me.uk/images/0uliv0q6hqw41.jpg" alt=""></p>
+<p>I guess the M1 and 4300U are fairly similar in measurements as both are essentially laptops in desktop form factor.</p>
+<p>The 1600X is perhaps unfairly crippled in my measurements, as it’s also fitted with an nVidia GTX 1060, where the other devices are not. It’s also got a 2 x SSD’s and a 4TB hard drive, which could be increasing the measured power draw as well, compared to the others which have no moving hard drives in at all.</p>
+<p>However, it gives a good indication of the power between a &ldquo;standard&rdquo; desktop, and a small form factor one.</p>
+<h2 id="distributednet">Distributed.net</h2>
+<p><a href="https://www.distributed.net/Main_Page">Distributed.net</a> is a <a href="https://en.wikipedia.org/wiki/Distributed_computing">distributed computing</a> project. I run the OGR project, which tests mathematical problems.</p>
+<p>I carried out a benchmark test for each machine, using the benchmark test within the application itself. This runs a number of tests to find the fastest core and gives an output in nodes that it can complete per second.</p>
+<p>It should be noted that Dnet is not optimised for Apple Silicon and does not provide a compiled version specifically for it, so the program is run using Rosetta 2, which may have a performance hit instead of native performance. However, in this instance, it doesn’t seem to have effected the speed too much, as it came out on top!</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Manufacturer</th>
+<th style="text-align:left">CPU Name</th>
+<th style="text-align:left">OGR (nodes/sec)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Apple</td>
+<td style="text-align:left">M1</td>
+<td style="text-align:left">89,408,885</td>
+</tr>
+<tr>
+<td style="text-align:left">AMD</td>
+<td style="text-align:left">4300U</td>
+<td style="text-align:left">71,762,931</td>
+</tr>
+<tr>
+<td style="text-align:left">AMD</td>
+<td style="text-align:left">Ryzen 5 1600X</td>
+<td style="text-align:left">69,869,568</td>
+</tr>
+<tr>
+<td style="text-align:left">ARM</td>
+<td style="text-align:left">Cortex-A72</td>
+<td style="text-align:left">13,920,685</td>
+</tr>
+</tbody>
+</table>
+<p>Running each device at full load, the client spits out the following speeds. The 1600X comes out ahead of all the others due to it’s higher thread and core count compared to the others.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Device</th>
+<th style="text-align:left">Cores</th>
+<th style="text-align:left">Threads</th>
+<th style="text-align:left">Total Speed (Mnodes/s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Ryzen 1600X</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">12</td>
+<td style="text-align:left">699.10</td>
+</tr>
+<tr>
+<td style="text-align:left">M1 Mac Mini</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">449.87</td>
+</tr>
+<tr>
+<td style="text-align:left">Ryzen 4300U</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">216.67</td>
+</tr>
+<tr>
+<td style="text-align:left">Pi 4 - 2GB</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">49.12</td>
+</tr>
+</tbody>
+</table>
+<p>The M1 Mac is also based on the <a href="https://en.wikipedia.org/wiki/ARM_big.LITTLE">big.LITTLE</a> architecture, so the first four cores are performance based, and the other four are lower power, slower cores. Without the smaller cores running, the average was about 399 Mnodes/s, with only a 2W reduction in power consumption.</p>
+<p>When looking at the performance per watt, the M1 Mac is streets ahead of the others, with performance over 4 times that of the Ryzen!</p>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Power (W)</th>
+<th>MNodes/s</th>
+<th>MNodes per W</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1 Mac Mini</td>
+<td>26</td>
+<td>449.87</td>
+<td>17.30</td>
+</tr>
+<tr>
+<td>Ryzen 4300U</td>
+<td>24</td>
+<td>216.67</td>
+<td>9.03</td>
+</tr>
+<tr>
+<td>Pi 4</td>
+<td>6</td>
+<td>49.12</td>
+<td>8.19</td>
+</tr>
+<tr>
+<td>Ryzen 1600X</td>
+<td>149</td>
+<td>699.10</td>
+<td>4.69</td>
+</tr>
+</tbody>
+</table>
+<h2 id="temperature">Temperature</h2>
+<p>I had some concerns that there would be temperature issues with the Mac mini running at 100%. It turns out that doesn’t seem to be an issue. The maximum temperature it reaches is 80ºC, which doesn’t cause the Mac fan to spin up audibly, so I’ve probably got some headroom there.</p>
+<p><img src="https://vox.me.uk/images/Screenshot%202021-01-14%20at%2019.01.44.png" alt=""></p>
+<p>Likewise, it wasn’t to much of a problem on the Ryzen either, as this shows that the temperatures are warm, but the device isn&rsquo;t thermal throttling.</p>
+<p><img src="https://www.vox.me.uk/images/2020-12-31%2021_37_15-HWiNFO64%20v6.40-4330%20Sensor%20Status.png" alt=""></p>
+<p>## Conclusion</p>
+<p>Looking at the performance and cost of the M1 Mac, ignoring the power draw for a minute, it is clearly excellent value for money. However, once you factor in the power draw, it pays for itself in terms of the performance it provides against the electrical draw of other machines!</p>
+<p>Overall, it&rsquo;s happily running Dnet without any issues at all and I&rsquo;ve had no issues with it during the day to day use of the machine. I do turn off Dnet when using the Mac but otherwise, it&rsquo;s happily helping crunch problems.</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/windows/" rel="tag">Windows</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/m1-mac/" rel="tag">M1 Mac</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/benchmarking/" rel="tag">Benchmarking</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/performance/" rel="tag">Performance</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2021/03/qnap-raid-0/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">RAID 0 QNAP</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2021/04/keychron-keyboard/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Keychron Keyboard</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

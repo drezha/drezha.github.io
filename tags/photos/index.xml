@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photos on Voxcaster</title>
+    <link>http://vox.me.uk/tags/photos/</link>
+    <description>Recent content in Photos on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Nov 2020 12:10:46 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/photos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Motion and Live Photos</title>
+      <link>http://vox.me.uk/post/2020/11/motion-photos/</link>
+      <pubDate>Sat, 07 Nov 2020 12:10:46 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/11/motion-photos/</guid>
+      <description>Apple&amp;rsquo;s Live Photos and Android equivalent, Motion Photos, initially seemed a bit like a gimmick when they were announced. However, there are a number of times now where the Live Photos on the iPhone has been of good use - mainly to capture amusing antics before or after the photo occurred!
+With playing with Android, I was surprised that this didn&amp;rsquo;t appear to have the same. However, after some googling, I discovered it does, and it&amp;rsquo;s called Motion Photos.</description>
+    </item>
+    
+    <item>
+      <title>PhotoSync, Photos and iCloud</title>
+      <link>http://vox.me.uk/post/2020/06/photosync-photos-and-icloud/</link>
+      <pubDate>Thu, 18 Jun 2020 15:31:29 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/06/photosync-photos-and-icloud/</guid>
+      <description>I’ve been a fan of PhotoSync for a while now - I purchased the iOS version in May 2018, so I’ve been using it for 2 years. I’ve also purchased the Android version and it’s one of the key apps I’ve used regularly.
+Prior to finding it, I’d been using Dropbox to save a copy of my photos off my phone. This worked well, and the only reason I changed to PhotoSync was that I could choose different locations to send data (i.</description>
+    </item>
+    
+  </channel>
+</rss>

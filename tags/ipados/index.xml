@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>iPadOS on Voxcaster</title>
+    <link>http://vox.me.uk/tags/ipados/</link>
+    <description>Recent content in iPadOS on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 May 2020 19:56:21 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/ipados/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iPad Magic Keyboard</title>
+      <link>http://vox.me.uk/post/2020/05/ipad-magic-keyboard/</link>
+      <pubDate>Mon, 11 May 2020 19:56:21 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/05/ipad-magic-keyboard/</guid>
+      <description>iPad Magic Keyboard I tried using the keyboard and mouse with my iPad for a while to see how the iPad could cope with being a laptop replacement.
+I concluded that I wouldn’t get the Magic Keyboard. However, here I am, typing this blog post on it.
+Many people have already written reviews, so I’m a bit late to the game - they’ve pretty much given their opinion on it, and there isn’t a huge amount more I could add.</description>
+    </item>
+    
+    <item>
+      <title>Keyboard and Mouse with the iPad</title>
+      <link>http://vox.me.uk/post/2020/04/keyboard-and-mouse-with-the-ipad/</link>
+      <pubDate>Sun, 26 Apr 2020 19:51:05 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/keyboard-and-mouse-with-the-ipad/</guid>
+      <description>Keyboard and Mouse with the iPad So, I’ve been playing around with the keyboard and mouse for the iPad Pro after Apple brought out the support for it in iPad OS 13.4.
+I’ve been using the Filco 2 Tenkeyless Convertible keyboard and a Logitech MX Master mouse and have been using it on and off over the past week or so.
+The whole intention of this is to consider if it’s worth purchasing the £300 iPad Magic with a touchpad keyboard for the iPad.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geocaching on Voxcaster</title>
+    <link>http://vox.me.uk/categories/geocaching/</link>
+    <description>Recent content in Geocaching on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Apr 2020 19:43:17 +0000</lastBuildDate><atom:link href="http://vox.me.uk/categories/geocaching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iCaching - macOS Review</title>
+      <link>http://vox.me.uk/post/2020/04/icaching-review/</link>
+      <pubDate>Sat, 04 Apr 2020 19:43:17 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/icaching-review/</guid>
+      <description>iCaching - macOS Review I’ve been geocaching for a few years now and I’ve been using Geocaching Swiss Army Knife (GSAK) for the past year. It’s a handy program for keeping track of caches that I’ve found, as well as organising GPX files for import on to my Garmin or phone.
+However, the program is Windows only. Which isn’t the end of the world, as I have a Windows machine, but I’ve also got a Mac and it tends to be my main machine for getting work done at home, so it’s often on.</description>
+    </item>
+    
+    <item>
+      <title>Geocaching Trip</title>
+      <link>http://vox.me.uk/post/2020/02/geocaching-trip/</link>
+      <pubDate>Mon, 03 Feb 2020 19:35:02 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/02/geocaching-trip/</guid>
+      <description>Geocaching trip A quick geocaching trip seemed to be in order this weekend to grab the new souvenir that was released for palindrome day.
+To get the souvenir, only a single geocache was needed, and that was initially all I decided to head out to get, but as I planned it, I ended up thinking I could do a nice loop and get more than just a single cache. It would also be a chance to get out and explore the local area by bike, so that&amp;rsquo;s what I did.</description>
+    </item>
+    
+  </channel>
+</rss>

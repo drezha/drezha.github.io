@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Synology Issues - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Synology Issues">
+<meta itemprop="description" content="I ran in to some issues with my Synology over the Christmas period, involving BTRFS and RAID.
+I had been running the NAS with an 8TB hard drive for main storage and a 3TB drive aimed at backups. However, I’d noticed a lot of a files deleted a few weeks ago which made me uneasy and then recently I found a corrupt image file on my gaming rig.
+I wasn’t sure if this was the fault of the desktop, or the Synology, but when I investigated the Synology, I found that the BTRFS file system I was using to help protect against bit rot wasn’t actually protecting me at all."><meta itemprop="datePublished" content="2021-01-10T10:14:10+00:00" />
+<meta itemprop="dateModified" content="2021-01-10T10:14:10+00:00" />
+<meta itemprop="wordCount" content="831">
+<meta itemprop="keywords" content="Computer,Synology,NAS," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Synology Issues</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-01-10T10:14:10Z">2021-01-10</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/computer/" rel="category">Computer</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>I ran in to some issues with my Synology over the Christmas period, involving BTRFS and RAID.</p>
+<p>I had been running the NAS with an 8TB hard drive for main storage and a 3TB drive aimed at backups. However, I’d noticed a lot of a files deleted a few weeks ago which made me uneasy and then recently I found a corrupt image file on my gaming rig.</p>
+<p>I wasn’t sure if this was the fault of the desktop, or the Synology, but when I investigated the Synology, I found that the BTRFS file system I was using to help protect against <a href="https://en.wikipedia.org/wiki/Data_degradation">bit rot</a> wasn’t actually protecting me at all. It turns out (and I missed this at the time of installation), that the Synology requires that the BTRFS file system is run in a RAID configuration to make use of the automatic error checking, something I wasn’t doing.</p>
+<p>Therefore, I had to purchase another 8TB hard drive to allow me to run my Synology in SHR<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> mode, so that I was benefiting from the automatic file repairs that BTRFS would provide.</p>
+<p>As creating a RAID volume would mean formatting my existing drive, I had to back the data up. The easiest solution (and quickest) I thought would be to copy the data I wanted to keep to the 3TB that was in the NAS, and then stick this in an enclosure to then copy back to newly created RAID array.</p>
+<h2 id="preparation">Preparation</h2>
+<p>So, that’s what I did in preparation for the move. I copied data on to the 3TB drive before removing it.</p>
+<p>I managed to copy everything across that I needed - documents and other items were stored on my other computers, so that wasn’t an issue. When this was done, I simply removed the drive and then installed the new 8TB drive.</p>
+<h2 id="replacing-data">Replacing Data</h2>
+<p>Once the RAID array was built and checked, which took a while<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, I put the old 3TB in to my new TR-002 caddy and went to copy the data across by plugging it in to the NAS via USB.</p>
+<p>Here’s where the issue started.</p>
+<p><img src="https://www.vox.me.uk/images/2020-12-26%2011_13_58-BlackLibrary%C2%A0-%C2%A0Synology%C2%A0NAS%20%E2%80%93%20Mozilla%20Firefox.png" alt=""></p>
+<p>The NAS clearly picks up the drive, but says it’s not supported. This seemed a bit ridiculous, as I’d taken it from the Synology and I’d used BTRFS, which the NAS supports.</p>
+<p>The specification page for the DS220+ also states that it supports BTRFS on external drives!</p>
+<p><img src="https://www.vox.me.uk/images/2020-12-26%2011_16_04-DS220+%20_%20Synology%20Inc.%20%E2%80%93%20Mozilla%20Firefox.png" alt="DS220+ Support Page"></p>
+<p>Feeling a sinking feeling that I was going to have to get my off site backups to restore from, I thought I’d double check everything from a Linux distro and see what that got me.</p>
+<p>Initially I ran in to problems, as I tried it on the Raspberry Pi, and BTRFS isn’t supported by default. After a quick messing about, I ended up downloading Fedora 33 and accessing the drive via a Live boot, as Fedora 33 has BTRFS as the default filesystem - so this should certainly be able to access the drive!</p>
+<p>This is where I ran in to issues - the Fedora disk utility clearly shows a RAID array on the 3TB drive!</p>
+<p><img src="https://www.vox.me.uk/images/Screenshot%20from%202020-12-26%2007-08-57.png" alt=""></p>
+<p>Considering I’d been using the drive as a single disk, this was a bit of a surprise. After some digging, it seems that Synology doesn’t use the BTRFS RAID, but instead uses software RAID and from the looks of the drive, it appears that it creates a RAID array, even if you just have a single drive. It explains why the drive wasn’t supported as an external drive on the Synology, because it had the RAID array over the top of there BTRFS formatting!</p>
+<p>However, thankfully, Fedora was able to mount the drive, even with the RAID and I was then able to copy the data off the drive and back to the NAS, though at greatly reduced speeds (20MB/s, rather than the 110MB/s I’d had copying from the same machine to the NAS when I first got it)</p>
+<p>Thankfully, all my data is now present and correct, but I’m still annoyed that I almost had to get the offsite backup, thanks to Synology applying a RAID layer to a drive that wasn’t in an array.</p>
+<p>I’m keeping an eye on things, as I’m still wary of BTRFS - after all, my previous EXT4 formatted NAS performed fine and I had no data loss there. I’m only a few months in to the ownership of this one, and some data seems to have been corrupted or deleted (though this may not be the cause of the two issues). BTRFS has been around for a while now, but it still has some horror stories associated. For now though, all my data seems to be safe, but it’s a lesson to keep an external off site backup!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Synology Hybrid Raid - A software implementation of RAID by Synology. In fairness, perhaps not needed for a two disk array, but is more flexible than standard RAID 1.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>I sped this up in the end, using the information from this <a href="https://miniliew.org/2020/06/03/synology-tips-speed-up-expanding-or-repairing-of-synology-nas/">blog post</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/computer/" rel="tag">Computer</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/synology/" rel="tag">Synology</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/nas/" rel="tag">NAS</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2021/01/qnap-tr-002-das/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">QNAP TR 002 DAS</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2021/01/fds-m1-mac/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">FDS on the M1 Mac</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ARM on Voxcaster</title>
+    <link>http://vox.me.uk/tags/arm/</link>
+    <description>Recent content in ARM on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Nov 2020 10:28:02 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/arm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Benchmarking ARM</title>
+      <link>http://vox.me.uk/post/2020/11/benchmarking-arm/</link>
+      <pubDate>Tue, 03 Nov 2020 10:28:02 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/11/benchmarking-arm/</guid>
+      <description>There has been much talk on how well ARM processors have moved on and how they can potentially now compete with x86-64 chips. Even though Microsoft have launched the Surface Pro X, which uses an ARM chip and Apple are moving the Mac&amp;rsquo;s to ARM processors, I hadn&amp;rsquo;t really considered just how far they&amp;rsquo;d come.
+I&amp;rsquo;ve had a Raspberry Pi and various versions since they were released and have been able to adequately use the Pi3+ for minimal desktop use and I&amp;rsquo;ve had the iPad Pro for work for a number of years as well, which has performed quite well, but I&amp;rsquo;ve never really put two and two together on how well they compared to the X86 chips I have.</description>
+    </item>
+    
+  </channel>
+</rss>

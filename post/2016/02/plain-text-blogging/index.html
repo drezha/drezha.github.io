@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Plain Text Blogging - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Plain Text Blogging">
+<meta itemprop="description" content="For the past two years, I&rsquo;ve been writing my blog in Markdown and plain text - in fact, almost everything I write at home is in plain text format - using nValt, Byword and Marked2 I&rsquo;m able to write everything I need (blog posts, emails and magazine articles) 1 2. With these three apps, I&rsquo;ve been happily able to work on my MacBook, Windows laptop, work laptop, iPad, Amazon Fire tablet, Android phone and iPhone 3 - plain text documents synced to the cloud via Dropbox and accessible anywhere from pretty much any device I happen to be using."><meta itemprop="datePublished" content="2016-02-13T10:00:23+00:00" />
+<meta itemprop="dateModified" content="2016-02-13T10:00:23+00:00" />
+<meta itemprop="wordCount" content="2528">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Plain Text Blogging</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-13T10:00:23Z">2016-02-13</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>For the past two years, I&rsquo;ve been writing my blog in Markdown and plain text - in fact, almost everything I write at home is in plain text format - using <a href="http://brettterpstra.com/projects/nvalt/">nValt</a>, <a href="http://bywordapp.com/">Byword</a> and <a href="http://marked2app.com/">Marked2</a> I&rsquo;m able to write everything I need (blog posts, emails and magazine articles) 1 2. With these three apps, I&rsquo;ve been happily able to work on my MacBook, Windows laptop, work laptop, iPad, Amazon Fire tablet, Android phone and iPhone 3 - plain text documents synced to the cloud via Dropbox and accessible anywhere from pretty much any device I happen to be using.</p>
+<p>This has worked nicely - I&rsquo;ve no real complaints about the system (other than nValt is Mac only, so I have to resort to workarounds to search my notes in whatever text editor I&rsquo;m using). The only thing that I would like is to edit my blog in Markdown. Which, I kind of already do as I use <a href="http://www.red-sweater.com/marsedit/">MarsEdit</a> to post my blog posts to Wordpress and that allows me to write in Markdown and then post to Wordpress where it is converted into HTML. Whilst this works, I also want to be able to keep the data I write myself - putting it into Wordpress is actually a bit of a pain. Moving hosts means I have to download databases and files and back them up regularly - considering I backup my local files easily, trying to remember to backup the website or even rely on the fairly problematic Wordpress automatic backup plugins is a bit of a pain.</p>
+<p>On this basis, I&rsquo;d been looking at moving my site to a static site, using only a flat file system and no database. I&rsquo;d have to be able to write in Markdown and ideally, I&rsquo;d be able to self host the images and the HTML files. It would mean that I could host my site easily on whatever device or host I wanted. For example, I&rsquo;d be able to use my Fastmail account to host the files as they have static site hosting (for low ish traffic websites) included as part of the annual fee. Otherwise, Github allow you to host a website with them and many other locations have static hosting. I could even use my Synology NAS to host them as well if I wanted - whilst the Synology will also take PHP and MySQL compatible files, I went for one of the lower models and therefore, I&rsquo;d probably be taxing the CPU a lot if it wasn&rsquo;t just a static site and I don&rsquo;t want it interfering with my own use of it whilst at home!</p>
+<p>So the quest for a static blogging site started - MarsEdit was something that I liked the idea of, writing in a program but this then pushes posts to websites. It wouldn&rsquo;t have been to much of a problem, but MarsEdit doesn&rsquo;t keep a copy of all the posts, only the most recent. Whilst I&rsquo;m not the most prolific writer, I still wanted to be able to have a local copy that I could post elsewhere or move if I wanted to at a later date.</p>
+<h2 id="jekyll--octopress">Jekyll / Octopress</h2>
+<p><img src="http://vox.me.uk/images/Octopress.png" alt=""></p>
+<p>So I looked at moving to <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://octopress.org/">Octopress</a> and these seemed to be ideal - initially on first glance. They both generated static sites and would have allowed me to continue writing in Markdown. But they require installing Ruby (whilst it is installed on my Mac, the version isn&rsquo;t new enough to run Octopress) and this was far more technical than I was wanting to do. I followed the guidance to try and install it, but it proved problematic and I decided that it was to much hassle. I wanted to be able to concentrate on writing and publishing, rather than messing around with code. I am a geek, but I don&rsquo;t code day to day and therefore this seemed to be perhaps a bit of a step to far for me. To much time maintaining and trying to get the blog online and in a decent format before I could actually write anything!</p>
+<h2 id="ghost">Ghost</h2>
+<p><img src="http://vox.me.uk/images/ghost_logo.png" alt=""></p>
+<p><a href="https://ghost.org/">Ghost</a> appealed to my nature of publish and write rather than concentrate on looks so I signed up to the website to give it a go. Whilst I was able to use it fairly well, it seemed that all the interaction was within the web editor and most of my writing is as far away from the web editor as I can get! This obviously wouldn&rsquo;t stop me writing my articles within my text editor of choice and then copying and pasting into Ghost. However, I couldn&rsquo;t quite get on with it - not entirely sure why.</p>
+<p>And then, as it&rsquo;s a premium software, there&rsquo;s a monthly payment. In fairness, this goes towards the development and hosting costs, so it&rsquo;s not like it&rsquo;s unwarranted, but for the amount of blogging I actually do, I thought that perhaps it was a little steep. Of course, I could host it myself. But it&rsquo;s node.js based again and it seems a complete PITA to actually setup, not knowing anything about node. It&rsquo;s cheaper to get a <a href="https://www.digitalocean.com">Digital Ocean</a> &ldquo;droplet&rdquo; and use their one click install Ghost to get up and running, rather than use the Ghost lowest package (but then, there are other perks that the Ghost platform does that Digital Ocean don&rsquo;t do, like auto updates etc). Either way, I don&rsquo;t think I can quite justify paying the Ghost fees and I don&rsquo;t want to have to run my own server and maintain the system - whilst I could do it, it&rsquo;s not something that I want to spend ages updating and trying to sort out. And there is the issue of backing it all up again!</p>
+<h2 id="voodoopad">Voodoopad</h2>
+<p><img src="http://vox.me.uk/images/VoodooPad-Logo.jpg" alt=""></p>
+<p><a href="https://plausible.coop/voodoopad/">Voodoopad</a> isn&rsquo;t really a static blog publishing software, it just happens that as a by product of its design, it can <em>act</em> as a static blog publishing engine. It&rsquo;s primary role is a wiki type software for the Mac that allows you create your own wiki space - linking different notes together, inserting pictures etc. It can export to a large number of formats, a webpage being one of them. This standard web export is good, but will export the document as a wiki type site - that is, no order to the chaos you&rsquo;ve introduced into the document by adding articles! However, it does have a static site publishing feature - in fairness, I think this should be renamed into static blog generating as this is what it does - it creates an index page with your last <em>x</em> (selectable by the user) number of notes presented as articles and then generates an archive page with all the previous notes linked to as individual pages and the archive is sorted via date created. It also creates an RSS XML file for RSS readers to connect to.</p>
+<p>In this fashion, it acts as a static blog generator with a number of limitations:</p>
+<ul>
+<li>
+<p>The date of the post is the creation date of the note within the software</p>
+</li>
+<li>
+<p>The date of the note is not editable</p>
+</li>
+</ul>
+<p>With those two issues in mind, it makes it difficult to insert previous blog posts (so it would be ideal for new posts going forwards, but a bit of an issue otherwise).</p>
+<p>To get around the issue above, I managed to set my computer time and date to the specific date that I wanted and then created the note for the post. This worked but was a bit long winded. The next issue I ran into - not all of my posts were published when I wanted to. You have to select which posts to publish and I&rsquo;d made sure that all the ones I wanted were selected. However, it would only export five or so articles which made it problematic for publishing!</p>
+<p>In the end, I tried to resolve the issues but I just couldn&rsquo;t find a way of getting it sorted and therefore I decided to move on (with some regret, as it looked exactly what I was after).</p>
+<h2 id="tumblr">Tumblr</h2>
+<p><img src="http://vox.me.uk/images/img_logo_bluebg_2x.png" alt=""></p>
+<p>Tumblr is synonymous with the sharing of GIF&rsquo;s and short articles, however, I&rsquo;ve used it in the past for writing and publishing. My personal blog and then my cycling blog were both published on Tumblr before I moved off to Wordpress. There were a number of issues I ran into using Tumblr as my blog software - namely the uploading and displaying of images for a long text post. I had been using MarsEdit to write my post and then upload all my photos/pictures to Flickr as there is a good integration between MarsEdit and Flickr. However, I was finding that occasionally Flickr would throw a hissy fit and not display the images how I wanted or would error out completely.</p>
+<p>MarsEdit seemed to be ideal - I thought it was keeping a copy of all my posts but it was only keeping the most recent ones. Whilst all my posts were started in nValt, it would have been nice to have a copy in MarsEdit that I could then move to a new blog if I wanted to. In regards to backup, I ended up linking Tumblr to Evernote with <a href="https://ifttt.com/">IFTTT</a> and using that to automatically send my Tumblr posts to Evernote!</p>
+<p>Overall, Tumblr was probably the best blogging software that I&rsquo;d used. Simple and easy with little to no hassle. It was even easy adding my own DNS records to have it point to my own Tumblr blog, though I could only seem to have a single domain point to a single blog, regardless of how many Tumblr blogs I could edit/write. In fairness, as a free service, this seems reasonable enough to limit it.</p>
+<h2 id="hugo">Hugo</h2>
+<p><img src="http://vox.me.uk/images/hugoSM.png" alt=""></p>
+<p><a href="http://gohugo.io/">Hugo</a> could have appeared further up the list as I tried this after Jekyll and Octopress to be honest - but I gave up. After some more playing around with it though, I think I finally cracked it and have been able to get it working quite nicely.</p>
+<p>It initially appealed  to me - I just have to download the pre-compiled binary from Github and away you go. Well, initially. I was able to get a site up and running in seconds (as promised) but then I wasn&rsquo;t able to get it uploaded to a website. I wasn&rsquo;t even (at the time), able to generate a website - I could only use the Hugo server to display the pages! Whilst they state that this is perfectly fine for various sites, I wanted to export my items as HTML files and then I can use whatever web service I want.</p>
+<p>Well, second time round and some editing of files and reading of data, I&rsquo;ve managed to sort Hugo out to the point where I can produce a site and produce some output (as that&rsquo;s what you&rsquo;re reading now!)</p>
+<p>It took some figuring out, but I think I managed to get there in the end. Finding out where and how to add images was an issue - even now, I&rsquo;m having to use absolute paths to reference them within documents to get them showing up nicely in both the Hugo local server and the web server (it might be ok if I used the Hugo webserver to display my blog, but I&rsquo;m using a hosting account, not a VPS where I have access to the processes on the server). And even with some figuring out, I&rsquo;ve still got some issues to iron out - for example, my current theme is opening all links within new pages when viewed on my webserver, but this isn&rsquo;t the case when viewed locally on the Hugo server. I&rsquo;m not currently sure if this is due to my webserver setup or the theme itself.</p>
+<p>If I want to change the theme in the future, I just build the blog using the new theme and all the content is create afresh using the new layout! Pretty simple!</p>
+<p>As it gives each page its own folder (by default), I was able to replicate the Wordpress content layout for the backend so I should be able to link to all the old pages from Wordpress without any issues. this layout happens to be quite a nice layout (each post is in a folder for the year, then month) so I&rsquo;m pretty happy with that. There are some edits I have to do to get previous images displaying correctly though but in general it works.</p>
+<p>I&rsquo;m just hoping that Google is now able to hit the webpages and start scraping it as a couple of my pages come fairly high up in Google search for specific items. The current theme allows me to use Google Analytics, but I&rsquo;m not currently using it. It seems to be working nicely in both mobile and desktop browsers so that&rsquo;s good to know.</p>
+<p>Overall, it seems to be working pretty well, but I just have to change how I write some posts now - with having to give an absolute path for my images, I have to make sure I get the URL correct, as I&rsquo;ve had a number of images fail to show where I&rsquo;ve missed typed the URL! I&rsquo;m sure Keyboard Maestro or Alfred can help with that!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>So in the end, I&rsquo;ve switched over to using Hugo - it suits my workflow quite nicely, though it does mean I do have some duplicate content on my Mac - namely images and posts. The post content I&rsquo;m not to concerned with as the files are only a few Kb and I don&rsquo;t post sufficiently for that to build up to unreasonable levels really. However, images could be an issue, but I&rsquo;ve dropped them all down to 640x480 for display on the website (partly to cut down on the bandwidth and partly because this seems to be a reasonable size!) and I&rsquo;ve run them through <a href="https://imageoptim.com/">ImageOptim</a> which drops the size of them (in terms of my PNG&rsquo;s, quite considerably in terms of percentage though it does take some time to do so as ZOPFLI and PNGOUT aren&rsquo;t the quickest tools to run - though they can be de-selected). If this begun to cause issues, I could always install Expandrive and have Hugo write directly to the host server via a virtual FTP drive - that would also save me uploading the information to the server after I&rsquo;ve built the website at least!</p>
+<p>With a few small niggles to resolve (adding a search bar to the website and wondering why it opens each page in its own tab), Hugo seems to be working quite nicely.</p>
+<hr>
+<ol>
+<li>
+<p>In fact, the only thing I&rsquo;ve been unable to write in Markdown is a letter. Perhaps with some conversion into LaTeX, it would work, but then I could just use LaTeX to write the letter itself - I&rsquo;ve a few already written that I could use as a template.
+[return]</p>
+</li>
+<li>
+<p>Actually, I haven&rsquo;t converted my invoices from Pages format into Markdown either, but these can remain as they are for the time being I think.
+[return]</p>
+</li>
+<li>
+<p>Not all at once! Over the course of two years, I&rsquo;ve owned a lot of tech…
+[return]</p>
+</li>
+</ol>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2016/02/strava-route-change/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Strava Route Change</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2016/02/goodbye-dropbox/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Goodbye Dropbox!</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ios on Voxcaster</title>
+    <link>http://vox.me.uk/tags/ios/</link>
+    <description>Recent content in ios on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Nov 2020 12:10:46 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Motion and Live Photos</title>
+      <link>http://vox.me.uk/post/2020/11/motion-photos/</link>
+      <pubDate>Sat, 07 Nov 2020 12:10:46 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/11/motion-photos/</guid>
+      <description>Apple&amp;rsquo;s Live Photos and Android equivalent, Motion Photos, initially seemed a bit like a gimmick when they were announced. However, there are a number of times now where the Live Photos on the iPhone has been of good use - mainly to capture amusing antics before or after the photo occurred!
+With playing with Android, I was surprised that this didn&amp;rsquo;t appear to have the same. However, after some googling, I discovered it does, and it&amp;rsquo;s called Motion Photos.</description>
+    </item>
+    
+    <item>
+      <title>Benchmarking ARM</title>
+      <link>http://vox.me.uk/post/2020/11/benchmarking-arm/</link>
+      <pubDate>Tue, 03 Nov 2020 10:28:02 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/11/benchmarking-arm/</guid>
+      <description>There has been much talk on how well ARM processors have moved on and how they can potentially now compete with x86-64 chips. Even though Microsoft have launched the Surface Pro X, which uses an ARM chip and Apple are moving the Mac&amp;rsquo;s to ARM processors, I hadn&amp;rsquo;t really considered just how far they&amp;rsquo;d come.
+I&amp;rsquo;ve had a Raspberry Pi and various versions since they were released and have been able to adequately use the Pi3+ for minimal desktop use and I&amp;rsquo;ve had the iPad Pro for work for a number of years as well, which has performed quite well, but I&amp;rsquo;ve never really put two and two together on how well they compared to the X86 chips I have.</description>
+    </item>
+    
+    <item>
+      <title>Pixel 3a vs IPhone SE</title>
+      <link>http://vox.me.uk/post/2020/10/pixel-3a-vs-iphone-se/</link>
+      <pubDate>Tue, 27 Oct 2020 18:36:18 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/10/pixel-3a-vs-iphone-se/</guid>
+      <description>So, the iPhone SE was re-released, perhaps as a way for Apple to compete with the cheaper Android devices out there. Google started something similar last year with the release of the Pixel 3a - a cheaper, less powerful version of the Pixel 3.
+I&amp;rsquo;ve tried both phones - I own the Pixel 3a and my wife has the iPhone SE 2020, so thought I&amp;rsquo;d write a quick review.
+Camera The Pixel series is known for its camera, and the iPhone has always been well regarded for its camera - with Apple pushing the camera features heavily in various advertising.</description>
+    </item>
+    
+    <item>
+      <title>Apple Watch Background</title>
+      <link>http://vox.me.uk/post/2020/07/apple-watch-background/</link>
+      <pubDate>Wed, 01 Jul 2020 11:23:30 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/07/apple-watch-background/</guid>
+      <description>Apple Watch Faces I’ve been playing around with some Apple Watch faces recently - normally I would use a Modular Infographic face or at least one with a number of complications. However, I saw this one which I thought was a bit of fun.
+As I’m going through a Star Wars phase again at the minute, I thought this was a good one.
+I found the original artist here where you can download the image yourself.</description>
+    </item>
+    
+    <item>
+      <title>Keyboard and Mouse with the iPad</title>
+      <link>http://vox.me.uk/post/2020/04/keyboard-and-mouse-with-the-ipad/</link>
+      <pubDate>Sun, 26 Apr 2020 19:51:05 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/keyboard-and-mouse-with-the-ipad/</guid>
+      <description>Keyboard and Mouse with the iPad So, I’ve been playing around with the keyboard and mouse for the iPad Pro after Apple brought out the support for it in iPad OS 13.4.
+I’ve been using the Filco 2 Tenkeyless Convertible keyboard and a Logitech MX Master mouse and have been using it on and off over the past week or so.
+The whole intention of this is to consider if it’s worth purchasing the £300 iPad Magic with a touchpad keyboard for the iPad.</description>
+    </item>
+    
+    <item>
+      <title>GPS Accuracy</title>
+      <link>http://vox.me.uk/post/2020/02/gps-accuracy/</link>
+      <pubDate>Sat, 01 Feb 2020 19:31:03 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/02/gps-accuracy/</guid>
+      <description>GPS Accuracy After a recent walk, I decided to analyse the data from the Garmin FIT files - one from my eTrex 25 and the other from my Apple Watch 4 and iPhone XR. I was purely interested in seeing how well the Garmin eTrex 25 was able to act as a tracker - mainly as when I was using it for my geocaching walk, it seemed to be tracking me, but looked on the screen to be sticking purely to the paths in the grounds of Wollaton Hall, which was a bit surprising.</description>
+    </item>
+    
+    <item>
+      <title>Moneywiz - iOS Personal Finance</title>
+      <link>http://vox.me.uk/post/2012/03/moneywiz-ios-personal-finance/</link>
+      <pubDate>Wed, 28 Mar 2012 14:05:36 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2012/03/moneywiz-ios-personal-finance/</guid>
+      <description>Is Moneywiz worth it? I&amp;rsquo;d say so. There we are, simple answer to a simple question.
+However, those that don’t know what Moneywiz is might be scratching their heads at this point. What is it and why is it worth whatever it is?
+Intro Moneywiz is an iPad and iPhone app from Silverwiz . It’s a personal finance app designed to be powerful but yet easy to use. Since I&amp;rsquo;ve got my iPad (and Mac), I&amp;rsquo;ve played with various personal finance apps but never found one I liked until now.</description>
+    </item>
+    
+  </channel>
+</rss>

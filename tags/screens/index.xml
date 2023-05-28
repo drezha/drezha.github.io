@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Screens on Voxcaster</title>
+    <link>http://vox.me.uk/tags/screens/</link>
+    <description>Recent content in Screens on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Nov 2020 13:33:11 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/screens/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 10 DPI Scaling</title>
+      <link>http://vox.me.uk/post/2020/11/windows-10-dpi-scaling/</link>
+      <pubDate>Mon, 02 Nov 2020 13:33:11 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/11/windows-10-dpi-scaling/</guid>
+      <description>I&amp;rsquo;ve resisted the high DPI screens for Windows machines for a number of years - mainly due to the cost of the screens. However, I&amp;rsquo;ve since upgraded a number of items and they now have larger screens.
+My monitor is now a Dell S2719DC 27&amp;quot; which has a display of 2560 x 1440 and my Surface Pro 7 has a resolution of 2736 x 1824. Both of which require some Windows scaling to adequately use from my point of view.</description>
+    </item>
+    
+  </channel>
+</rss>

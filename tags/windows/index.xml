@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on Voxcaster</title>
+    <link>http://vox.me.uk/tags/windows/</link>
+    <description>Recent content in windows on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Dec 2021 16:21:38 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Search for Windows Alfred</title>
+      <link>http://vox.me.uk/post/2021/12/windows-alfred/</link>
+      <pubDate>Wed, 22 Dec 2021 16:21:38 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/12/windows-alfred/</guid>
+      <description>I&amp;rsquo;ve been mixing macOS and Windows for a number of years. This hasn&amp;rsquo;t normally proved to be problematic in any way and I&amp;rsquo;ve had the best of both worlds.
+One program that I couldn&amp;rsquo;t live with out on the Mac is Alfred. Alfred is a keyboard launcher, allowing you to start and run programs using a key combination and not having to move away from the keyboard. It also provides a quick calculation tool, which allows you to undertake calculations quickly.</description>
+    </item>
+    
+    <item>
+      <title>Keychron Keyboard</title>
+      <link>http://vox.me.uk/post/2021/04/keychron-keyboard/</link>
+      <pubDate>Tue, 06 Apr 2021 10:46:25 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/04/keychron-keyboard/</guid>
+      <description>With lockdown continuing in the UK, and working from home, I decided to look once more at the mechanical keyboard market.
+I had been using the Logitech K350 on Windows without any issues, but for whatever reason, I wasn’t able to use this nicely on the Mac - I’d often get drop outs or lag, where what I was typing wasn’t picked up, or was lost completely 1.
+In the mean time, I’d been using a Windows Dell keyboard - a cheap and cheerful keyboard that did the job, and I actually wasn’t getting RSI by using it!</description>
+    </item>
+    
+    <item>
+      <title>Performance per Watt</title>
+      <link>http://vox.me.uk/post/2021/04/performance-per-watt/</link>
+      <pubDate>Sun, 04 Apr 2021 09:34:57 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/04/performance-per-watt/</guid>
+      <description>I wanted to compare the performance per watt of the new M1 Mac mini against that of my Ryzen 1600X powered gaming PC. To throw some additional items in there, I also measured my Ryzen 4300U little Windows office PC as well and my Raspberry Pi 4.
+The speed of the new M1 Mac has shown that Apple’s move to Apple Silicon has been a good move for them. Benchmarks show that it’s faster than some of the Intel and AMD machines.</description>
+    </item>
+    
+    <item>
+      <title>RAID 0 QNAP</title>
+      <link>http://vox.me.uk/post/2021/03/qnap-raid-0/</link>
+      <pubDate>Fri, 19 Mar 2021 15:20:21 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/03/qnap-raid-0/</guid>
+      <description>I’d posted about my QNAP TR-002 previously and how I was using it as direct attached storage for my Mac. Recently, I moved it to the PC to use it as storage for gaming, as I’d switched my Mac external storage to a Samsung T7 external drive.
+For the gaming rig, I added a second 3TB drive to the TR-002 and used reformatted to NTFS. RAID 0 should give me some additional speeds over the storage I was currently using.</description>
+    </item>
+    
+    <item>
+      <title>Insync</title>
+      <link>http://vox.me.uk/post/2020/12/insync/</link>
+      <pubDate>Tue, 15 Dec 2020 15:49:11 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/12/insync/</guid>
+      <description>My current job sees me using Onedrive as the primary storage location for files, and since the initial lockdown in the UK, we moved to using Microsoft Teams and storing data in Teams instead, rather than our on site servers and mapped hard drives.
+This took some getting used to but suited me, as it meant that I could use my Mac Mini at home to access the files and work, rather than a work machine, which was good, as I had forgone the standard laptops that everyone else used so I could have an iPad for carrying out my risk assessments on, but this obviously isn&amp;rsquo;t as good for general office tasks1!</description>
+    </item>
+    
+    <item>
+      <title>Motion and Live Photos</title>
+      <link>http://vox.me.uk/post/2020/11/motion-photos/</link>
+      <pubDate>Sat, 07 Nov 2020 12:10:46 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/11/motion-photos/</guid>
+      <description>Apple&amp;rsquo;s Live Photos and Android equivalent, Motion Photos, initially seemed a bit like a gimmick when they were announced. However, there are a number of times now where the Live Photos on the iPhone has been of good use - mainly to capture amusing antics before or after the photo occurred!
+With playing with Android, I was surprised that this didn&amp;rsquo;t appear to have the same. However, after some googling, I discovered it does, and it&amp;rsquo;s called Motion Photos.</description>
+    </item>
+    
+    <item>
+      <title>Benchmarking ARM</title>
+      <link>http://vox.me.uk/post/2020/11/benchmarking-arm/</link>
+      <pubDate>Tue, 03 Nov 2020 10:28:02 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/11/benchmarking-arm/</guid>
+      <description>There has been much talk on how well ARM processors have moved on and how they can potentially now compete with x86-64 chips. Even though Microsoft have launched the Surface Pro X, which uses an ARM chip and Apple are moving the Mac&amp;rsquo;s to ARM processors, I hadn&amp;rsquo;t really considered just how far they&amp;rsquo;d come.
+I&amp;rsquo;ve had a Raspberry Pi and various versions since they were released and have been able to adequately use the Pi3+ for minimal desktop use and I&amp;rsquo;ve had the iPad Pro for work for a number of years as well, which has performed quite well, but I&amp;rsquo;ve never really put two and two together on how well they compared to the X86 chips I have.</description>
+    </item>
+    
+    <item>
+      <title>Windows 10 DPI Scaling</title>
+      <link>http://vox.me.uk/post/2020/11/windows-10-dpi-scaling/</link>
+      <pubDate>Mon, 02 Nov 2020 13:33:11 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/11/windows-10-dpi-scaling/</guid>
+      <description>I&amp;rsquo;ve resisted the high DPI screens for Windows machines for a number of years - mainly due to the cost of the screens. However, I&amp;rsquo;ve since upgraded a number of items and they now have larger screens.
+My monitor is now a Dell S2719DC 27&amp;quot; which has a display of 2560 x 1440 and my Surface Pro 7 has a resolution of 2736 x 1824. Both of which require some Windows scaling to adequately use from my point of view.</description>
+    </item>
+    
+    <item>
+      <title>Inspire Continued</title>
+      <link>http://vox.me.uk/post/2020/10/inspire-continued/</link>
+      <pubDate>Wed, 21 Oct 2020 20:58:40 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/10/inspire-continued/</guid>
+      <description>After some further experimentation and use, I’ve a few more comments on Inspire Writer. I have been initially impressed with the Windows Ulysses clone. My initial review was written in it and was written using the 10 day free trial period. I purchased the software after using it for a day on the Windows Store - so I’ve been using the Microsoft Store version. There is a stand alone version available as well, though I would hope that there is feature parity between the two.</description>
+    </item>
+    
+    <item>
+      <title>Markdown Journaling</title>
+      <link>http://vox.me.uk/post/2020/10/markdown-journaling/</link>
+      <pubDate>Tue, 20 Oct 2020 16:41:40 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/10/markdown-journaling/</guid>
+      <description>I&amp;rsquo;ve been journaling now for years. I started off using Day One for iOS and macOS. However, after this updated to the second version and moved to a subscription model, I decided that I didn&amp;rsquo;t want to pay for it, and moved. Since then, I&amp;rsquo;ve been using Zim Wiki for my journaling.
+This has generally served me well, and ran nicely on Windows and Linux1. It worked and the output was portable and under my control, as each page is a text file and displays images inline.</description>
+    </item>
+    
+    <item>
+      <title>File Juggler</title>
+      <link>http://vox.me.uk/post/2020/09/file-juggler/</link>
+      <pubDate>Mon, 07 Sep 2020 12:36:50 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/09/file-juggler/</guid>
+      <description>One of the programs on macOS that I felt was missing on Windows was an alternative for Hazel. I spent ages looking around for an alternative, and the best I could find for a while was DropIt! The only issue with this is that DropIt is a bit more of a manual process in comparison to Hazel, as you have to drag and drop files into the program for them to be sorted1.</description>
+    </item>
+    
+    <item>
+      <title>OxiPNG and Pngout</title>
+      <link>http://vox.me.uk/post/2020/08/oxipng-and-pngout/</link>
+      <pubDate>Sun, 16 Aug 2020 07:52:43 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/08/oxipng-and-pngout/</guid>
+      <description>One thing that had stuck with me from reading Coding Horror, is that you can increase the speed of your website with free bandwidth. In fairness, it&amp;rsquo;s not free bandwidth, it&amp;rsquo;s reducing the file size of the files that you&amp;rsquo;re hosting, so it&amp;rsquo;s faster to download. The Zopfli article above is the more recent one - the first was regarding pngout (article).
+Both pngout and zopfli can reduce the size of files - specifically in this case, PNG files.</description>
+    </item>
+    
+    <item>
+      <title>Windows PowerToys</title>
+      <link>http://vox.me.uk/post/2020/08/windows-powertoys/</link>
+      <pubDate>Sat, 15 Aug 2020 08:25:52 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/08/windows-powertoys/</guid>
+      <description>Microsoft are making use of their purchase of Github to host the source for their ongoing work in to Powertoys.
+PowerToys is a collection of applications that perform a range of different tasks that users may need to undertake regularly. There&amp;rsquo;s an Image Resizer that hooks in to the right click menu, there&amp;rsquo;s fancy zones, which expands upon Windows snap, by adding zones to snap to.
+However, the big draw for me is PowerToys Run.</description>
+    </item>
+    
+    <item>
+      <title>PDF Expert vs PDF XChange</title>
+      <link>http://vox.me.uk/post/2020/06/pdf-expert-vs-pdf-xchange/</link>
+      <pubDate>Sat, 06 Jun 2020 15:00:29 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/06/pdf-expert-vs-pdf-xchange/</guid>
+      <description>I work in engineering - one of the main formats that gets shared around a lot is the humble PDF. It often means that you can view exactly what the other person sees without the hassle of sharing additional items - I&amp;rsquo;m thinking CAD files here, where an architect may include a lot of references to external files within the CAD file that matches what the architect uses on the system, but won&amp;rsquo;t be installed in the same location or at all, on the clients machine.</description>
+    </item>
+    
+    <item>
+      <title>Inspire Writer</title>
+      <link>http://vox.me.uk/post/2020/04/inspire-writer/</link>
+      <pubDate>Tue, 14 Apr 2020 19:47:29 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/inspire-writer/</guid>
+      <description>Inspire Writer I&amp;rsquo;d been tossing up about purchasing a subscription to Ulysses on the Mac or not this year. In the end, I did and I&amp;rsquo;ve been using it for the last couple of blog posts that I&amp;rsquo;ve written. However, I&amp;rsquo;m not always on the Mac - I&amp;rsquo;m often on Windows and I miss using it when I am using Windows.
+I&amp;rsquo;d been looking around for ages to find something that replicated it.</description>
+    </item>
+    
+    <item>
+      <title>NValt on Windows</title>
+      <link>http://vox.me.uk/post/2018/12/nvalt-on-windows/</link>
+      <pubDate>Sat, 08 Dec 2018 21:49:36 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2018/12/nvalt-on-windows/</guid>
+      <description>One of the few programs I really miss from macOS is nValt. I used that (rather than Notational Velocity) for a number of years for storing notes and stored everything in it from blog posts, to research notes and paper reviews. It worked well and I preferred it to Evernote.
+Since then however, I&amp;rsquo;ve discovered Zim Wiki and I use that for storing my data that where I may need images, as at the end of the day, it saves data as a text file still, so I&amp;rsquo;ll be able to access it at a later date wherever.</description>
+    </item>
+    
+  </channel>
+</rss>

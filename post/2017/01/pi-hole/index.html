@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pi-Hole - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Pi-Hole">
+<meta itemprop="description" content="Pi Hole I had my Raspberry Pi lying around doing nothing. I&rsquo;ve had a version 1 since they were released and I&rsquo;ve had a version 2 for a while as well (in fact, I&rsquo;ve been through two version 2&rsquo;s). I&rsquo;ve had this one in the draw for a while now doing nothing - it&rsquo;s not really seen the light of day since I purchased my Synology DS116 as I had been using it as a home server and accessing my documents via SFTP outside the house."><meta itemprop="datePublished" content="2017-01-07T19:21:23+00:00" />
+<meta itemprop="dateModified" content="2017-01-07T19:21:23+00:00" />
+<meta itemprop="wordCount" content="585">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Pi-Hole</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-01-07T19:21:23Z">2017-01-07</time></div></div>
+		</header><div class="content post__content clearfix">
+			<h1 id="pi-hole">Pi Hole</h1>
+<p>I had my Raspberry Pi lying around doing nothing. I&rsquo;ve had a version 1 since they were released and I&rsquo;ve had a version 2 for a while as well (in fact, I&rsquo;ve been through two version 2&rsquo;s). I&rsquo;ve had this one in the draw for a while now doing nothing - it&rsquo;s not really seen the light of day since I purchased my <a href="https://www.synology.com/en-global/products/DS116">Synology DS116</a> as I had been using it as a home server and accessing my documents via SFTP outside the house.</p>
+<p>However, after I stumbled across the <a href="https://pi-hole.net">Pi Hole</a> project, I decided that it was time to dig it out again. Whilst the NAS is excellent (DS Photo allows me to backup mine and my girlfriends photos from our phones, DS Video allows me to stream videos to my Chromecast, DS Audio streams all my music to my iPad and it can act as a VPN when I&rsquo;m out and about, though this is less of a benefit now I have a years subscription to Private Internet Access), it doesn&rsquo;t allow me to block adverts which is what Pi Hole does. Quite successfully.</p>
+<p>Setup was easy and I had the Pi Hole up and running within 30 minutes or less. Setup was as simple as downloading a fresh copy of Raspbian, installing that, remembering to enable SSH as the new versions of <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/">Raspbian have SSH turned off by default</a></p>
+<blockquote>
+  For headless setup, SSH can be enabled by placing a file named 'ssh', without any extension, onto the boot partition of the SD card.
+</blockquote>
+<p>Once this was done, I updated the Pi and then downloaded the Pi Hole software using the command</p>
+<p><code>curl -sSL https://install.pi-hole.net | bash</code></p>
+<p>This installed everything I needed and set it up. All that I then had to do was to set my router to give the Pi a static IP address and change the DNS settings on my devices to point to the Pi.</p>
+<p>Once I&rsquo;d done that, I&rsquo;ve been able to enjoy ad blocking across all my devices.</p>
+<p>The Pi presents everything in a web interface, so you can keep an eye on the drive at any point of time.</p>
+<p><a href="https://www.flickr.com/photos/113531214@N07/31336378193/in/dateposted-public/"><img src="https://c2.staticflickr.com/1/540/31336378193_2924458aa4_z.jpg" alt="Untitled"></a></p>
+<p>This shows the DNS requests that are being made and you can even drill down into what sites are trying to be accessed.</p>
+<p><a href="https://www.flickr.com/photos/113531214@N07/31305102334/in/dateposted-public/"><img src="https://c7.staticflickr.com/1/365/31305102334_cdebbd7b95_z.jpg" alt="Untitled"></a></p>
+<p>This shows the top domain name requested by devices and the top advertisers being blocked. You can also see what devices are requesting the most domains by IP address.</p>
+<p>The downside I have is that the DNS records on my router cannot be changed, so I&rsquo;ve manually had to change the details on each web connection. This isn&rsquo;t the end of the world and actually can prove handy where I might want to allow an advertiser to track me (such as if I&rsquo;m using a cashback site). However, it does mean that devices like my work laptop, ones that I cannot change the DNS settings on (in this case, due to admin lockdown), will not benefit from the blocking whilst on my network.</p>
+<p>However, overall, the Pi Hole was easy to setup and manages to block a lot of adverts - browsing on the iPad, it&rsquo;s surprising how much cleaner various websites are. There have been a single instances where the website has appeared to be broken due to the blockage and this was solved by white-listing the site. Whilst this should stop the need for running an adblocker in my browser, I&rsquo;ve still got uBlock installed.</p>
+<p>It&rsquo;s certainly worth a try.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2016/12/annual-summary-2016/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Annual Summary 2016</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2017/01/eddington-number/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Eddington Number</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

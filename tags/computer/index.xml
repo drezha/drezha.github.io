@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer on Voxcaster</title>
+    <link>http://vox.me.uk/tags/computer/</link>
+    <description>Recent content in computer on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Jan 2021 10:14:10 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/computer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Synology Issues</title>
+      <link>http://vox.me.uk/post/2021/01/synology-issues/</link>
+      <pubDate>Sun, 10 Jan 2021 10:14:10 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/01/synology-issues/</guid>
+      <description>I ran in to some issues with my Synology over the Christmas period, involving BTRFS and RAID.
+I had been running the NAS with an 8TB hard drive for main storage and a 3TB drive aimed at backups. However, I’d noticed a lot of a files deleted a few weeks ago which made me uneasy and then recently I found a corrupt image file on my gaming rig.
+I wasn’t sure if this was the fault of the desktop, or the Synology, but when I investigated the Synology, I found that the BTRFS file system I was using to help protect against bit rot wasn’t actually protecting me at all.</description>
+    </item>
+    
+    <item>
+      <title>Cheap Mechanical Keyboard</title>
+      <link>http://vox.me.uk/post/2020/04/cheap-mechanical-keyboard/</link>
+      <pubDate>Mon, 18 May 2020 19:45:36 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/cheap-mechanical-keyboard/</guid>
+      <description>Cheap Mechanical Keyboard So I&amp;rsquo;ve been a fan of mechanical keyboards for a while - I&amp;rsquo;ve purchased a number of the years. The best one that I&amp;rsquo;ve used to date is the Matias Tactile Pro but that died after a few years of use, but I&amp;rsquo;ve also tried some of the other ones on the market. I didn&amp;rsquo;t really have a preference in terms of switches, but I&amp;rsquo;d tried the Matias ones, and quite liked them.</description>
+    </item>
+    
+    <item>
+      <title>Colours for Hue</title>
+      <link>http://vox.me.uk/post/2020/05/colours-for-hue/</link>
+      <pubDate>Tue, 05 May 2020 19:54:52 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/05/colours-for-hue/</guid>
+      <description>Colours For Hue Getting Hue lights has meant that I need to control these. Generally, this works well using the Hue application and Siri (with HomeKit), though as I’ve got one in my office as well, it would be nice to control this from my Mac as well.
+This is where Colours for Hue comes in. It’s a Mac app that sits in the menu bar and acts as a Hue light controller.</description>
+    </item>
+    
+    <item>
+      <title>iCaching - macOS Review</title>
+      <link>http://vox.me.uk/post/2020/04/icaching-review/</link>
+      <pubDate>Sat, 04 Apr 2020 19:43:17 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/04/icaching-review/</guid>
+      <description>iCaching - macOS Review I’ve been geocaching for a few years now and I’ve been using Geocaching Swiss Army Knife (GSAK) for the past year. It’s a handy program for keeping track of caches that I’ve found, as well as organising GPX files for import on to my Garmin or phone.
+However, the program is Windows only. Which isn’t the end of the world, as I have a Windows machine, but I’ve also got a Mac and it tends to be my main machine for getting work done at home, so it’s often on.</description>
+    </item>
+    
+    <item>
+      <title>Bitlocker vs Cryptomator</title>
+      <link>http://vox.me.uk/post/2018/12/bitlocker-vs-cryptomator/</link>
+      <pubDate>Tue, 11 Dec 2018 21:58:08 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2018/12/bitlocker-vs-cryptomator/</guid>
+      <description>I carry around a USB drive with me - usually a Sandisk Ultra USB, but occasionally a SSD drive1. It usually comes in handy, as I either want to carry around my documents and images or need to transfer files between devices. However, the most common use, is for work files so that I can edit/continue working whilst I&amp;rsquo;m away from the office and I cannot connect to the VPN or to overcome the poor VPN speeds.</description>
+    </item>
+    
+    <item>
+      <title>NValt on Windows</title>
+      <link>http://vox.me.uk/post/2018/12/nvalt-on-windows/</link>
+      <pubDate>Sat, 08 Dec 2018 21:49:36 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2018/12/nvalt-on-windows/</guid>
+      <description>One of the few programs I really miss from macOS is nValt. I used that (rather than Notational Velocity) for a number of years for storing notes and stored everything in it from blog posts, to research notes and paper reviews. It worked well and I preferred it to Evernote.
+Since then however, I&amp;rsquo;ve discovered Zim Wiki and I use that for storing my data that where I may need images, as at the end of the day, it saves data as a text file still, so I&amp;rsquo;ll be able to access it at a later date wherever.</description>
+    </item>
+    
+    <item>
+      <title>Zim Journal Continued</title>
+      <link>http://vox.me.uk/post/2018/09/zim-journal-continued/</link>
+      <pubDate>Wed, 05 Sep 2018 16:49:03 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2018/09/zim-journal-continued/</guid>
+      <description>Zim is a notebook type software - think Evernote or Onenote. However, it&amp;rsquo;s free and open source and saves data locally. It also saves all files as plain text, so you can access the files however and wherever you want.
+I&amp;rsquo;ve been using it for a journal for a period of about three years now and I&amp;rsquo;ve written about it before. I did for a time switch back to Day One and tried the new syncing service, but when they had syncing issues earlier this year which exposed private data, I made sure I was back using Zim (syncing between my devices with Resilo Sync and stored on my own devices).</description>
+    </item>
+    
+  </channel>
+</rss>

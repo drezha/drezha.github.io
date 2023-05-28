@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on Voxcaster</title>
+    <link>http://vox.me.uk/tags/automation/</link>
+    <description>Recent content in Automation on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Sep 2020 12:36:50 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>File Juggler</title>
+      <link>http://vox.me.uk/post/2020/09/file-juggler/</link>
+      <pubDate>Mon, 07 Sep 2020 12:36:50 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/09/file-juggler/</guid>
+      <description>One of the programs on macOS that I felt was missing on Windows was an alternative for Hazel. I spent ages looking around for an alternative, and the best I could find for a while was DropIt! The only issue with this is that DropIt is a bit more of a manual process in comparison to Hazel, as you have to drag and drop files into the program for them to be sorted1.</description>
+    </item>
+    
+  </channel>
+</rss>

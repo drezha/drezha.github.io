@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Fire Engineering and Git - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Fire Engineering and Git">
+<meta itemprop="description" content="As a geek, Git is a fantastic program. Almost everything I write is in plain text, outside of the office (where I&rsquo;m forced to use Microsoft Word). I wrote my doctoral thesis within LaTeX and Git allowed me to keep a fantastic record of the changes to my thesis as I went through my work, as well as providing a backup. Outside of work, I write occasionally for Micro Mart and of course I write these blog posts and others."><meta itemprop="datePublished" content="2014-02-08T21:20:46+00:00" />
+<meta itemprop="dateModified" content="2014-02-08T21:20:46+00:00" />
+<meta itemprop="wordCount" content="727">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Fire Engineering and Git</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-02-08T21:20:46Z">2014-02-08</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>As a geek, Git is a fantastic program. Almost everything I write is in plain text, outside of the office (where I&rsquo;m forced to use Microsoft Word). I wrote my doctoral thesis within LaTeX and Git allowed me to keep a fantastic record of the changes to my thesis as I went through my work, as well as providing a backup. Outside of work, I write occasionally for <a href="http://www.micromart.co.uk">Micro Mart</a> and of course I write these blog posts and others. I even journal and write a diary in <a href="http://dayoneapp.com">plain text</a>.</p>
+<p>However, when I&rsquo;m in the office, I&rsquo;m expected to use Word, which is fine (but I hate Word with a passion - it&rsquo;s a pain to do some of the advanced functions without taking my hands away from the keyboard and that slows me down). Whilst we use Word for writing our reports, we make use of the free <a href="https://code.google.com/p/fds-smv/">Fire Dynamics Simulator</a> (FDS) for modelling fires. And therein lies the beauty of FDS and Git.</p>
+<h2 id="git">Git</h2>
+<p>Git works well with plain text files, such as coding. That&rsquo;s what it&rsquo;s designed for. Browse Github and you&rsquo;ll find various computer programs and project in a range of different languages, all of them written within a coding editor of some kind. Because it works with plain text files, it can be used to track changes within <strong>any</strong> plain text file and that&rsquo;s where FDS comes in.</p>
+<p>FDS stores it&rsquo;s data in a single plain text file. You create the geometry of the fire compartment using obstructions and specifying the co-ordinates of the actual walls etc. This is obviously quite time consuming and tiresome (which is why there are third party solutions for building models, such as <a href="http://www.thunderheadeng.com/pyrosim/">Pyrosim</a>). Even though Pyrosim runs the models and builds them - at the heart of it all is that single FDS text file that sets out the model parameters - Pyrosim is just a glossy finish to it really.</p>
+<p>So I&rsquo;ve taken to using Git to store and track all the changes to my models. This works really well as you can see in the image below. Bitbucket even highlights some of the sections fairly well, which is quite impressive considering the syntax probably isn&rsquo;t in the database! (I&rsquo;ve blanked out the project name as it identifies the project and I don&rsquo;t want that public).</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/1fb53b36-715d-4d55-b209-9ed91fbb0505/95b65946652ae60b4626d8cd49b3ed14/deep/0/drezha---FDS-Models---source----Bitbucket.png" alt=""></p>
+<p>I&rsquo;ve taken to using <a href="https://bitbucket.org">Bitbucket</a>, which lets me create a private repository where I can store my FDS files. Tracking is important from a quality management role - it&rsquo;s important to show the external auditor that the data is being checked and that the models are being run properly. From a research point of view, the tracking allows all the changes to the model to be understood by a third party that may be reviewing or trying to replicate the results. Similar results can be gathered using <a href="https://github.com">Github</a>. In fact, I host a Github repository for helpful FDS files and the like <a href="https://github.com/drezha/FDS_Resources">here</a>. You&rsquo;ll find a library file there (basically an FDS file that Pyrosim creates with a number of properties/materials/constants in, but no obstructions), with a number of properties specified, taken from literature.</p>
+<p>The benefit of hosting this on Github is that the full history of the changes to the library can be viewed. From a research point of view, this is a fantastic help and means that all the changes can be checked off.</p>
+<p><img src="https://www.evernote.com/shard/s10/sh/5bf6e919-e341-46dd-91b6-a2ebfc6fc44f/af669a0a1a32a76ad938ed65b823a4f1/deep/0/History-for-FDS-Properties-Pyrosim_Basic.fds---drezha-FDS_Resources.png" alt=""></p>
+<p>Another perk of storing these files in Git is that other users can then decide to either fork the data and use it themselves and make changes and they can also then merge the data with your own to help create an organised database of information.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Whilst a slightly technical method of storing FDS files, the perks more than makes up for the little effort required to learn Git. However, even this doesn&rsquo;t have to hard - Github offer an easy to use <a href="http://windows.github.com">Git client</a> and <a href="http://sparkleshare.org">Sparkleshare</a> is a setup and forget solution. However, it&rsquo;s worth learning the extra benefits of Git as it will allow you make the changes you need and add additional information (such as informative commit messages).</p>
+<p>I should point out, that this applies to the FDS files and not the Pyrosim files - as these are a binary file, you don&rsquo;t get the same benefits to storing these in Git as you do with the FDS files.</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2014/02/sun-and-floods/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Sun and Floods</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2014/02/looking-like-a-touring-bike/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Looking like a touring bike!</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

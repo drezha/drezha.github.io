@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Searching on Voxcaster</title>
+    <link>http://vox.me.uk/tags/searching/</link>
+    <description>Recent content in Searching on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Dec 2021 16:21:38 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/searching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Search for Windows Alfred</title>
+      <link>http://vox.me.uk/post/2021/12/windows-alfred/</link>
+      <pubDate>Wed, 22 Dec 2021 16:21:38 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/12/windows-alfred/</guid>
+      <description>I&amp;rsquo;ve been mixing macOS and Windows for a number of years. This hasn&amp;rsquo;t normally proved to be problematic in any way and I&amp;rsquo;ve had the best of both worlds.
+One program that I couldn&amp;rsquo;t live with out on the Mac is Alfred. Alfred is a keyboard launcher, allowing you to start and run programs using a key combination and not having to move away from the keyboard. It also provides a quick calculation tool, which allows you to undertake calculations quickly.</description>
+    </item>
+    
+  </channel>
+</rss>

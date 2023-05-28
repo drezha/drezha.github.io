@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smart Home on Voxcaster</title>
+    <link>http://vox.me.uk/tags/smart-home/</link>
+    <description>Recent content in Smart Home on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 May 2020 19:53:02 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/smart-home/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Philips Hue</title>
+      <link>http://vox.me.uk/post/2020/05/philips-hue/</link>
+      <pubDate>Fri, 01 May 2020 19:53:02 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/05/philips-hue/</guid>
+      <description>Philips Hue I’ve had a number of smart items around the house now for a few years. These have mainly been the TP-Link smart plugs, but I’d also got two Elgato Eve smart plugs and a single TP-Link bulb.
+In general, these have been OK, though they don’t all link together - TP-Link is controlled through its Kasa platform (and works with Alexa) but the Elgato plugs only work with Apple HomeKit and therefore have to be operated using our phones only (no HomePod).</description>
+    </item>
+    
+  </channel>
+</rss>

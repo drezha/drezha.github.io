@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>LaTeX to RTF - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="LaTeX to RTF">
+<meta itemprop="description" content="So for a while, I&rsquo;ve been using LaTeX to write up my work but every now and then someone wants a copy of my work in Word so they can edit it or mark it up and they cant use a PDF editor. This means converting my PDF into a Word document or my LaTeX file into a RTF document.
+The PDF route was probably the easiest as everything was nicely laid out already and set out as it should be and various services on the web manage to convert PDF’s relatively well to Word documents such as Zamzar However, the LaTeX to RTF option is also a possibility using the linux2rtf program however, that seems to be awkward at the best of times and annoyingly problematic at times."><meta itemprop="datePublished" content="2012-01-08T15:14:21+00:00" />
+<meta itemprop="dateModified" content="2012-01-08T15:14:21+00:00" />
+<meta itemprop="wordCount" content="331">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">LaTeX to RTF</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2012-01-08T15:14:21Z">2012-01-08</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>So for a while, I&rsquo;ve been using LaTeX to write up my work but every now and then someone wants a copy of my work in Word so they can edit it or mark it up and they cant use a PDF editor. This means converting my PDF into a Word document or my LaTeX file into a RTF document.</p>
+<p>The PDF route was probably the easiest as everything was nicely laid out already and set out as it should be and various services on the web manage to convert PDF’s relatively well to Word documents such as <a href="http://zamzar.com/">Zamzar</a> <img src="http://i.imgur.com/HUhv8.png" alt="Offsite Link"></p>
+<p>However, the LaTeX to RTF option is also a possibility using the linux2rtf <a href="http://latex2rtf.sourceforge.net/">program</a> <img src="http://i.imgur.com/HUhv8.png" alt="Offsite Link"> however, that seems to be awkward at the best of times and annoyingly problematic at times. And it won’t run on OS X Lion because of the lack of Rosetta support (unless you build it in Macports but that requires a full LaTeX install via Macports as well!)</p>
+<p>it shouldn’t have come as a surprise that the answer was staring me in the face all this time. I&rsquo;d blogged about Pandoc before <a href="http://drezha.me.uk/post/11100157323/markdown-pandoc-mou-and-latex">here</a> and it’s ability to turn Markdown into LaTeX code. Well, it does that and more. Turns out it can output to RTF as well (that&rsquo;ll teach me to RTFM!) so a simple command of:</p>
+<pre><code>&lt;code&gt;pandoc -s LaTeX.tex -o Output.rtf
+&lt;/code&gt;
+</code></pre>
+<p>gives me a very well formatted RTF document that matches the LaTeX document style pretty well.</p>
+<p>For example, in the document in question, I was making use of the url package and the verbatim package quite regularly – Pandoc understands these and formatted them as described in the RTF! Excellent! I don’t know how well it would come with Tables, References and floats but that’s to try another day but considering it handled verbatim and url fine, I have high hopes. latex2rtf is dead, long live LaTeX to RTF!</p>
+<p>So once again, top marks to Pandoc for it’s fantastic ability to read and convert documents!</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2012/01/duckduckgo-stickers/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">DuckDuckGo Stickers</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2012/01/itunes-match/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">iTunes Match</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

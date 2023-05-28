@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Submitting a Springerlink/Elsvier Journal Using LaTeX and Editorial Manager - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="Submitting a Springerlink/Elsvier Journal Using LaTeX and Editorial Manager">
+<meta itemprop="description" content="So I ran into various issues this morning in trying to submit a journal to the Springerlink journal, Fire Technology.
+As recommended by the journal, I was trying to submit my paper in LaTeX form. After all, I spent the time learning it for my thesis, might as well write the paper in it as well right? Yeah, especially as the Word template they provide is terrible and is a complete pain in the ass to use on a Mac (or a newer version of Office than it was designed for – so probably anything after 2003 by looks!"><meta itemprop="datePublished" content="2012-05-09T16:16:52+00:00" />
+<meta itemprop="dateModified" content="2012-05-09T16:16:52+00:00" />
+<meta itemprop="wordCount" content="630">
+<meta itemprop="keywords" content="" />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Submitting a Springerlink/Elsvier Journal Using LaTeX and Editorial Manager</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2012-05-09T16:16:52Z">2012-05-09</time></div></div>
+		</header><div class="content post__content clearfix">
+			<p>So I ran into various issues this morning in trying to submit a journal to the Springerlink journal, <a href="http://www.springerlink.com/content/106597/">Fire Technology</a>.</p>
+<p>As recommended by the journal, I was trying to submit my paper in LaTeX form. After all, I spent the time learning it for my thesis, might as well write the paper in it as well right? Yeah, especially as the Word template they provide is terrible and is a complete pain in the ass to use on a Mac (or a newer version of Office than it was designed for – so probably anything after 2003 by looks!)</p>
+<p>Anyhow, the issues arose come submission time. The LaTeX title page was submitted fine and the LaTeX blind manuscript got uploaded along with the .bibtex file for the paper. They built the PDF and I noticed the references weren’t there but approved it anyhow – after all, they wanted bibtex files (it makes it clear in the preferences in the template TeX file).</p>
+<h2 id="rejection">Rejection</h2>
+<p>As you might have guessed, the file got rejected before the end of the day – I was kindly asked to add the references.</p>
+<p>As much as I tried, the document would not accept the Bibtex file I was uploading, so I resorted to internet searching. Yet Google and DuckDuckGo couldn’t really offer a solution (though a few decent submission tips appeared such as this <a href="http://www.bartneck.de/2010/09/30/submitting-your-latex-manuscript-to-editorial-manager-springer-elsevier/">site</a>) That was until I came across the American Society of Civil Engineers guide to Editorial Manager submissions (used by both Springerlink and Elsevier) <a href="http://www.asce.org/Content.aspx?id=12884907073">here</a>. Tip 1 and Tip 3 make clear that you should be uploading the .bbl file, not the .bib file. Now why don’t Editorial Manager make this clear? And if they don’t why don’t the journals?!</p>
+<p>Either way, an attempt to follow those guidelines failed as well. At this point I was pulling my hair out and potentially having to re-write all the bibtex entries as embedded LaTeX references. Which is pain with it all formatted nicely in Bibtex and not easily convert-able to embedded bibitems. Or so I thought.</p>
+<h2 id="success">Success!</h2>
+<p>So in desperation I opened the .bbl to see what it contained. Well, lo and behold, it’s a converted Bibtex database!</p>
+<pre><code>&lt;code&gt;bibitem{AssociationofBritishInsurers2009}
+{Association of British Insurers}: {Tackling Fire: A Call For Action}.
+newblock Tech. rep., {Association of British Insurers} (2009)
+
+bibitem{BureauVeritas2011}
+{Bureau Veritas}: {Assessing The Roles For Fire Sprinklers}.
+newblock Tech. rep., Business Sprinkler Alliance (2011)
+&lt;/code&gt;
+</code></pre>
+<p>It was then simply a case of copying and pasting the entire contents of the .bbl file into the bottom of the blind manuscript file and commenting out the bibtex entries.</p>
+<p>Uploaded the file and lo and behold, it worked fine!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>LaTeX is supposed to make it easier to focus less on the presentation and more on the content. Why then, cant the journals and Editorial Manager make it clearer how to upload LaTeX files? I know that LaTeX appears to be dying out (most of the grad students in my department are using Word and don’t want to learn LaTeX) but if they seem to push LaTeX, why not make it clearer to those using it how they want the paper uploaded?</p>
+<p>Now my only concern now is the layout of the references – on one hand, the paper submission told me to use a certain bibliography style but compiling and using that style in my referencing meant that the referencing in the article used Surnames, not numbers as it wanted so I used a different Springerlink referencing link – this could prove to be a mistake as well as the references section appears to potentially be displaying more information that needed.</p>
+<p>All I can do now is play the waiting game.</p>
+<p>Anyhow, I hope this helps those trying to upload LaTeX documents to journals for peer review!</p>
+
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2012/04/scrivener-writers-software/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Scrivener - Writers Software</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2012/06/spideroak-lion-and-spideroak-a-few-niggles/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Spideroak - Lion and Spideroak: A Few Niggles</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

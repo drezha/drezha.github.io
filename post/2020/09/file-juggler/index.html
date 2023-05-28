@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>File Juggler - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="File Juggler">
+<meta itemprop="description" content="One of the programs on macOS that I felt was missing on Windows was an alternative for Hazel. I spent ages looking around for an alternative, and the best I could find for a while was DropIt! The only issue with this is that DropIt is a bit more of a manual process in comparison to Hazel, as you have to drag and drop files into the program for them to be sorted1."><meta itemprop="datePublished" content="2020-09-07T12:36:50+01:00" />
+<meta itemprop="dateModified" content="2020-09-07T12:36:50+01:00" />
+<meta itemprop="wordCount" content="960">
+<meta itemprop="keywords" content="Windows,Automation,Software," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">File Juggler</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-07T12:36:50&#43;01:00">2020-09-07</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/computer/" rel="category">Computer</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>One of the programs on macOS that I felt was missing on Windows was an alternative for <a href="https://www.noodlesoft.com/">Hazel</a>. I spent ages looking around for an alternative, and the best I could find for a while was <a href="http://www.dropitproject.com/">DropIt!</a> The only issue with this is that DropIt is a bit more of a manual process in comparison to Hazel, as you have to drag and drop files into the program for them to be sorted<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. It worked, but not as well as Hazel fitted in.</p>
+<p>However, I recently came across <a href="https://www.filejuggler.com/">File Juggler</a> and it&rsquo;s the Hazel replacement for Windows I&rsquo;ve been after.</p>
+<h2 id="program-and-settings">Program and Settings</h2>
+<p>File Juggler acts in the background to monitor folders you set to look at the files you want.</p>
+<p>When you open the program, you&rsquo;re greeted with the rules list, which shows all the rules you have set up.</p>
+<p><img src="https://www.vox.me.uk/images/2020-09-0711_50_31-FileJuggler.png" alt=""></p>
+<p>There&rsquo;s also the log view, so you can see the activity that&rsquo;s been carried out since File Juggler was started. This is useful to ensure that items are happening as they should. It has a search function, so if you&rsquo;re monitoring a lot of files or folders, you can search the log files for a specific instance if you need to. It&rsquo;s a nice touch, but not something I&rsquo;ve needed to date.</p>
+<p><img src="https://www.vox.me.uk/images/2020-09-0711_50_58-FileJuggler.png" alt=""></p>
+<p>However, creating a new rule is the main screen that you&rsquo;d be using - this is where the rules are created.</p>
+<p>The rule is created with three items:</p>
+<ol>
+<li>Monitor Locations - The folders that can be monitored (multiple folders can be checked by one rule, which I found more helpful than Hazel, where rules are on a per folder basis)</li>
+<li>If Statements - The statements that need to be matched for the action to occur<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></li>
+<li>Action - What action is to be undertaken if the If statement is correct.</li>
+</ol>
+<p>This can be seen in a screenshot below of my mobile phone statement filing rule. It works by:</p>
+<ol>
+<li>Monitoring the Downloads or Hazel folder in my Onedrive<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>;</li>
+<li>It checks the file extension for all pdf files, and then checks the contents of the PDF to see if it states &ldquo;Bill for mobile(s)&rdquo; which is a set phrase that occurs within my statements; and</li>
+<li>It then renames the file before moving it to my mobile phone bills folder.</li>
+</ol>
+<p><img src="https://www.vox.me.uk/images/2020-09-0711_49_34-FileJuggler.png" alt=""></p>
+<p>When a file matching this is scanned by File Juggler, it performs the rule on the file and it gets whisked away and filed - keeping my downloads folder tidy and meaning the amount of manual work I have to do is reduced.</p>
+<p>A number of variables can be used for the renaming of files and finding files, which means that you can narrow items down quite a lot if needed. For PDF files, I stick with the file contents item, as it can search inside the document and make sure that I&rsquo;m filing the correct item in the correct location.</p>
+<p><img src="https://www.vox.me.uk/images/Variables.png" alt=""></p>
+<p>Once the rule is saved, tick the box on the rule screen to enable it and then sit back and wait for File Juggler to do it&rsquo;s work. It&rsquo;ll happyily sit in the background monitoring the folders you&rsquo;ve setup.</p>
+<h2 id="differences-to-hazel">Differences to Hazel</h2>
+<p>There are some differences to Hazel, which is to be expected, as File Juggler is written by a different author.</p>
+<p>The number of actions that can be completed by File Juggler are perhaps smaller than the list of actions that can be completed in Hazel, but as the run command can be used, this can be teamed up with other programs and command line actions if needed (for example, Hazel can upload files to SFTP servers, but File Juggler would have to rely on a third party script to do so).</p>
+<p><img src="https://www.vox.me.uk/images/2020-09-0712_02_36-Inspire.png" alt=""></p>
+<p>This isn&rsquo;t a major downside, as most of my automation is to file the information I download to the right place.</p>
+<p>However, on the plus side, it has some nice features that I don&rsquo;t believe Hazel does (or if it does, I didn&rsquo;t see how to use these at the time). One of the ones that I really like is the extract date from the PDF file. The custom date variable allows the program to scan through the PDF file (where the PDF has been OCR&rsquo;d and that information is available) and find the date in the location you state, and then allow you to take that information and change it.</p>
+<p>For example, my mobile bill displays the date in the format of day, full month and full year (1 January 2020) - the following rule below will find the first date in the PDF files and will convert that to yyyy-mm-dd (2020-01-01) ready for the renaming of the file. To me, that saves some time, and allows me to file the PDF&rsquo;s more accurately, as with Hazel, I was using the file created date - which isn&rsquo;t always the same as the date in the file itself, due to file timestamps and downloading the file from the internet/Dropbox.</p>
+<p><img src="2020-09-0712_06_29-ISODate.png" alt=""></p>
+<h2 id="conclusions">Conclusions</h2>
+<p>File Juggler costs for £38 and I paid for it before the 30 day trial was up - once I&rsquo;d got a few rules up and working, it was clear that the money would be well spent and that it&rsquo;s basically the equivalent of Hazel - certainly for my use case, it works well and I&rsquo;ve been able to replace my Hazel workflows with it nicely.</p>
+<p>I&rsquo;d certainly recommend giving the free trial a go and seeing if it&rsquo;s suitable for you.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>It can also watch folders, but I didn&rsquo;t find this to be to good when I used it in the past.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>And the output of the statement is shown just below it in realtime, so you can be sure you&rsquo;re selecting the correct files.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Hazel, because it&rsquo;s a hangover from using Hazel on the Mac!&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/windows/" rel="tag">Windows</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/automation/" rel="tag">Automation</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/software/" rel="tag">Software</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2020/08/oxipng-and-pngout/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">OxiPNG and Pngout</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2020/09/new-synology/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">New Synology</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

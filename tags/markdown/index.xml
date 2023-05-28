@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on Voxcaster</title>
+    <link>http://vox.me.uk/tags/markdown/</link>
+    <description>Recent content in Markdown on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Oct 2021 15:30:38 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bear for Blogging</title>
+      <link>http://vox.me.uk/post/2021/10/bear-for-blogging/</link>
+      <pubDate>Wed, 20 Oct 2021 15:30:38 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/10/bear-for-blogging/</guid>
+      <description>I had ditched Ulysses when it went subscription but during 2020, I’d paid for the subscription as I’d managed to get a discount code for it. It was good to be able to use it across my devices and it’s still one of the best plain text editors in my view - however, I don’t view it as being worth almost £50 a year - consider that Microsoft charge £60 for Office plus storage space, whereas Ulysses makes use of iCloud space to sync, so I’m not even paying them for syncing!</description>
+    </item>
+    
+    <item>
+      <title>Inspire Continued</title>
+      <link>http://vox.me.uk/post/2020/10/inspire-continued/</link>
+      <pubDate>Wed, 21 Oct 2020 20:58:40 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/10/inspire-continued/</guid>
+      <description>After some further experimentation and use, I’ve a few more comments on Inspire Writer. I have been initially impressed with the Windows Ulysses clone. My initial review was written in it and was written using the 10 day free trial period. I purchased the software after using it for a day on the Windows Store - so I’ve been using the Microsoft Store version. There is a stand alone version available as well, though I would hope that there is feature parity between the two.</description>
+    </item>
+    
+    <item>
+      <title>Markdown Journaling</title>
+      <link>http://vox.me.uk/post/2020/10/markdown-journaling/</link>
+      <pubDate>Tue, 20 Oct 2020 16:41:40 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/10/markdown-journaling/</guid>
+      <description>I&amp;rsquo;ve been journaling now for years. I started off using Day One for iOS and macOS. However, after this updated to the second version and moved to a subscription model, I decided that I didn&amp;rsquo;t want to pay for it, and moved. Since then, I&amp;rsquo;ve been using Zim Wiki for my journaling.
+This has generally served me well, and ran nicely on Windows and Linux1. It worked and the output was portable and under my control, as each page is a text file and displays images inline.</description>
+    </item>
+    
+  </channel>
+</rss>

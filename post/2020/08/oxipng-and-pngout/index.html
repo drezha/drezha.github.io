@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>OxiPNG and Pngout - Voxcaster</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta itemprop="name" content="OxiPNG and Pngout">
+<meta itemprop="description" content="One thing that had stuck with me from reading Coding Horror, is that you can increase the speed of your website with free bandwidth. In fairness, it&rsquo;s not free bandwidth, it&rsquo;s reducing the file size of the files that you&rsquo;re hosting, so it&rsquo;s faster to download. The Zopfli article above is the more recent one - the first was regarding pngout (article).
+Both pngout and zopfli can reduce the size of files - specifically in this case, PNG files."><meta itemprop="datePublished" content="2020-08-16T07:52:43+01:00" />
+<meta itemprop="dateModified" content="2020-08-16T07:52:43+01:00" />
+<meta itemprop="wordCount" content="567">
+<meta itemprop="keywords" content="Windows,PNG,Images," />
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Voxcaster" rel="home">
+				<div class="logo__title">Voxcaster</div>
+				<div class="logo__tagline">Somethings Awry</div>
+			</a>
+		</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">OxiPNG and Pngout</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-08-16T07:52:43&#43;01:00">2020-08-16</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/computer/" rel="category">Computer</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>One thing that had stuck with me from reading Coding Horror, is that you can increase the speed of your website with <a href="https://blog.codinghorror.com/zopfli-optimization-literally-free-bandwidth/">free bandwidth</a>. In fairness, it&rsquo;s not free bandwidth, it&rsquo;s reducing the file size of the files that you&rsquo;re hosting, so it&rsquo;s faster to download. The Zopfli article above is the more recent one - the first was regarding <a href="http://advsys.net/ken/utils.htm">pngout</a> (<a href="https://blog.codinghorror.com/getting-the-most-out-of-png/">article</a>).</p>
+<p>Both pngout and zopfli can reduce the size of files - specifically in this case, PNG files. There are other options for JPEG&rsquo;s etc, but I&rsquo;m focusing on PNG files for now. These are most commonly created from screenshots from PC&rsquo;s or phones <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>I use these files a lot, so I&rsquo;ve always run the files through <a href="https://imageoptim.com/mac">Imageoptim</a> on the Mac, even if I&rsquo;m not uploading them to the web - after all, it&rsquo;s saving me disk space as well <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>!</p>
+<h2 id="oxipng">OxiPNG</h2>
+<p>On Windows however, I&rsquo;ve not got the same tools at my disposal, so I&rsquo;ve been living with pngout.</p>
+<p>However, whilst browsing Google, I stumbled upon <a href="https://github.com/shssoichiro/oxipng">Oxipng</a>. I decided to try it instead of pngout, and I&rsquo;m glad I did, as it seems to outstrip pngout in speed and compression.</p>
+<p>I took a screen shot and saved it twice, running one through pngout and the other through oxipng. Both commands were saved as batch files, with the files dropped on to the respective batch file to run.</p>
+<p>Pngout was setup as:</p>
+<pre><code> start pngout %1 /y
+</code></pre>
+<p>oxipng was setup as:</p>
+<pre><code> oxipng -o 4 -i 0 --strip safe %1
+</code></pre>
+<p>This sets the optimisation level of the software, as well as interlacing options. I set the optimisation level to level 4, bearing in mind the warning from oxipng&rsquo;s website</p>
+<blockquote>
+<p>Optimization: -o 1 through -o 6, lower is faster, higher is better compression. The default (-o 2) is sufficiently fast on a modern CPU and provides 30-50% compression gains over an unoptimized PNG. -o 4 is 6 times slower than -o 2 but can provide 5-10% extra compression over -o 2. Using any setting higher than -o 4 is unlikely to give any extra compression gains and is not recommended.</p>
+</blockquote>
+<p>As such, as I was expecting it to take a while.</p>
+<p>Both starting files were the same and were almost 2MB in size.</p>
+<h3 id="before">Before</h3>
+<p><img src="https://www.vox.me.uk/images/2020-08-1216_09_39-.png" alt=""></p>
+<p>Putting one through pngout and the other through oxipng gave me the following:</p>
+<h3 id="after">After</h3>
+<p><img src="https://www.vox.me.uk/images/2020-08-1216_17_19-.png" alt=""></p>
+<p>For oxipng, that&rsquo;s about a 34% reduction, pngout giving 11% reduction. And speed wise, I had to check, as oxipng ran so quick, the command window closed so quickly, I thought I&rsquo;d run in to an error!</p>
+<p>So it&rsquo;s reducing the PNG files to a smaller size, as well as running far faster!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I couldn&rsquo;t see any visible differences between what was shown in the two files, so I&rsquo;ve switched to using OxiPNG for all my PNG reductions now. It seemed like a no brainer to have something that would run faster and make smaller files replace the older software. I&rsquo;ll perhaps see how things go, but for now, I see no reason why I would switch back.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Though, for whatever reason, <a href="https://forums.oneplus.com/threads/save-screenshots-as-png.1118560/">Oneplus abandoned it</a> in favour of JPEG - not sure if this is the same in the newer versions of the Oneplus, but it put me off the 7 when I had it!&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>I&rsquo;d often use it on JPEG&rsquo;s as well to strip EXIF data, like location data, if I didn&rsquo;t want that information in te public.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/windows/" rel="tag">Windows</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/png/" rel="tag">PNG</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/images/" rel="tag">Images</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/post/2020/08/windows-powertoys/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Windows PowerToys</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="/post/2020/09/file-juggler/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">File Juggler</p>
+		</a>
+	</div>
+</nav>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 Voxcaster.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
+</html>

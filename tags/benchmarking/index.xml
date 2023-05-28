@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Benchmarking on Voxcaster</title>
+    <link>http://vox.me.uk/tags/benchmarking/</link>
+    <description>Recent content in Benchmarking on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Apr 2021 09:34:57 +0100</lastBuildDate><atom:link href="http://vox.me.uk/tags/benchmarking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Performance per Watt</title>
+      <link>http://vox.me.uk/post/2021/04/performance-per-watt/</link>
+      <pubDate>Sun, 04 Apr 2021 09:34:57 +0100</pubDate>
+      
+      <guid>http://vox.me.uk/post/2021/04/performance-per-watt/</guid>
+      <description>I wanted to compare the performance per watt of the new M1 Mac mini against that of my Ryzen 1600X powered gaming PC. To throw some additional items in there, I also measured my Ryzen 4300U little Windows office PC as well and my Raspberry Pi 4.
+The speed of the new M1 Mac has shown that Apple’s move to Apple Silicon has been a good move for them. Benchmarks show that it’s faster than some of the Intel and AMD machines.</description>
+    </item>
+    
+    <item>
+      <title>Benchmarking ARM</title>
+      <link>http://vox.me.uk/post/2020/11/benchmarking-arm/</link>
+      <pubDate>Tue, 03 Nov 2020 10:28:02 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/11/benchmarking-arm/</guid>
+      <description>There has been much talk on how well ARM processors have moved on and how they can potentially now compete with x86-64 chips. Even though Microsoft have launched the Surface Pro X, which uses an ARM chip and Apple are moving the Mac&amp;rsquo;s to ARM processors, I hadn&amp;rsquo;t really considered just how far they&amp;rsquo;d come.
+I&amp;rsquo;ve had a Raspberry Pi and various versions since they were released and have been able to adequately use the Pi3+ for minimal desktop use and I&amp;rsquo;ve had the iPad Pro for work for a number of years as well, which has performed quite well, but I&amp;rsquo;ve never really put two and two together on how well they compared to the X86 chips I have.</description>
+    </item>
+    
+  </channel>
+</rss>

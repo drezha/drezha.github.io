@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lights on Voxcaster</title>
+    <link>http://vox.me.uk/tags/lights/</link>
+    <description>Recent content in Lights on Voxcaster</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 May 2020 19:54:52 +0000</lastBuildDate><atom:link href="http://vox.me.uk/tags/lights/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colours for Hue</title>
+      <link>http://vox.me.uk/post/2020/05/colours-for-hue/</link>
+      <pubDate>Tue, 05 May 2020 19:54:52 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/05/colours-for-hue/</guid>
+      <description>Colours For Hue Getting Hue lights has meant that I need to control these. Generally, this works well using the Hue application and Siri (with HomeKit), though as I’ve got one in my office as well, it would be nice to control this from my Mac as well.
+This is where Colours for Hue comes in. It’s a Mac app that sits in the menu bar and acts as a Hue light controller.</description>
+    </item>
+    
+    <item>
+      <title>Philips Hue</title>
+      <link>http://vox.me.uk/post/2020/05/philips-hue/</link>
+      <pubDate>Fri, 01 May 2020 19:53:02 +0000</pubDate>
+      
+      <guid>http://vox.me.uk/post/2020/05/philips-hue/</guid>
+      <description>Philips Hue I’ve had a number of smart items around the house now for a few years. These have mainly been the TP-Link smart plugs, but I’d also got two Elgato Eve smart plugs and a single TP-Link bulb.
+In general, these have been OK, though they don’t all link together - TP-Link is controlled through its Kasa platform (and works with Alexa) but the Elgato plugs only work with Apple HomeKit and therefore have to be operated using our phones only (no HomePod).</description>
+    </item>
+    
+  </channel>
+</rss>
